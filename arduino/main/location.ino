@@ -28,9 +28,8 @@ void Setup_GPS(){
     }
 
     myGPS.setI2COutput(COM_TYPE_UBX); //Set the I2C port to output UBX only (turn off NMEA noise)
-    myGPS.setNavigationFrequency(Sample_Rate); //Produce two solutions per second
+    myGPS.setNavigationFrequency(GPS_Sample_Rate); //Produce two solutions per second
     // myGPS.enableDebugging(Serial);
-    myGPS.setI2COutput(COM_TYPE_UBX); //Set the I2C port to output UBX only (turn off NMEA noise)
 
   // If we are going to change the dynamic platform model, let's do it here.
   // Possible values are:
@@ -102,12 +101,18 @@ void Location::Update_Position(){
     {
         if (myGPS.getPVT())
         {
+            Serial.print(F("loops since last update: "));
+            Serial.println(count);
+            Serial.print(F("millis since last update: "));
+            Serial.println(millis() - last_gps_measurement);
             last_gps_measurement = millis();  //Update the time stamp for the GPS reading
             gps_latitude = myGPS.getHighResLatitude();
             gps_longitude = myGPS.getHighResLongitude();
             gps_altitude = myGPS.getAltitude();
             gps_heading = myGPS.getHeading();
-            gps_speed = myGPS.getGroundSpeed();
+            gps_velN = myGPS.getVelN();
+            gps_velE = myGPS.getVelE();
+            gps_velD = myGPS.getVelD();
             gps_haccuracy = myGPS.getHorizontalAccuracy();
             gps_accuracy = myGPS.getPositionAccuracy();
 
@@ -116,21 +121,14 @@ void Location::Update_Position(){
             computed_altitude = gps_altitude;
             computed_haccuracy = gps_haccuracy;
             computed_accuracy = gps_accuracy;
-            Serial.println();
-            Serial.print(F("loops since last update: "));
-            Serial.println(count);
-
-            Serial.print(F("millis since last update: "));
-            Serial.println(last_gps_measurement);
             count=0;
         } else {
+            
             count++;
-            Serial.print(".");
             // delay(50);
         }
     } else {
         count++;
-        Serial.print(".");
         // delay(50);
     }
 }

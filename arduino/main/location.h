@@ -3,10 +3,10 @@
 
 #include "MPU9250.h"
 
-#define Sample_Rate 5
+#define GPS_Sample_Rate 5
 
-#define origin_latitude = -91000000
-#define orgigin_longitude = 41000000
+#define origin_latitude -91000000
+#define orgigin_longitude 41000000
 #define RADIUS_OF_EARTH 6378137
 
 class Location {
@@ -15,7 +15,9 @@ class Location {
     int32_t gps_longitude;
     int32_t gps_altitude;
     int32_t gps_heading;
-    int32_t gps_speed;
+    int32_t gps_velN;
+    int32_t gps_velE;
+    int32_t gps_velD;
     uint32_t gps_haccuracy;
     uint32_t gps_accuracy;
 

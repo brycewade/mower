@@ -47,6 +47,27 @@ void process_line(char *string){
         case 'G':
             // Serial.println(F("It's a G code"));
             switch(value){
+                case 92: {
+                        ptr = strtok(NULL, delim);
+                        while(ptr != NULL) {
+                            letter = ptr[0];
+                            value = atoi(ptr+1);
+                            switch(letter) {
+                                case 'X':
+                                    location.setOriginX(static_cast<int32_t>(value));
+                                    break;
+                                case 'Y':
+                                    location.setOriginY(static_cast<int32_t>(value));
+                                    break;
+                                case 'Z':
+                                    location.setOriginZ(static_cast<int32_t>(value));
+                                    break;
+                            }
+                            ptr = strtok(NULL, delim);
+                        }
+                        send_ok();
+                    }
+                    break;
                 case 1000: {
                         short int left = -999;
                         short int right = -999;
