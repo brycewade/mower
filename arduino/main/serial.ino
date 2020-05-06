@@ -35,7 +35,8 @@ void process_serial_input(){
 void process_line(char *string){
     char delim[] = " ";
     char letter;
-    int value;
+    long value;
+    float number;
     // Get the first word of the string:
     char *ptr = strtok(string, delim);
     if(ptr == NULL){
@@ -47,24 +48,58 @@ void process_line(char *string){
         case 'G':
             // Serial.println(F("It's a G code"));
             switch(value){
-                case 92: {
+                case 0:{
+                        ptr = strtok(NULL, delim);
+                        value=atoi(ptr);
+                        location.Set_Time_Step(static_cast<uint16_t>(value));
+                        send_ok();
+                    }
+                    break;
+                case 1:{
+                        float x = -999999;
+                        float y = -999999;
                         ptr = strtok(NULL, delim);
                         while(ptr != NULL) {
                             letter = ptr[0];
-                            value = atoi(ptr+1);
+                            number = atof(ptr+1);
                             switch(letter) {
                                 case 'X':
-                                    location.setOriginX(static_cast<int32_t>(value));
+                                    x = number;
                                     break;
                                 case 'Y':
-                                    location.setOriginY(static_cast<int32_t>(value));
-                                    break;
-                                case 'Z':
-                                    location.setOriginZ(static_cast<int32_t>(value));
+                                    y = number;
                                     break;
                             }
                             ptr = strtok(NULL, delim);
                         }
+                        if((x==-999999) || (y==-999999)){
+                            // We didn't get a properly formatted line
+                            send_err();
+                            return;
+                        }
+                        location.Set_Destination(x, y);
+                        location.Set_Self_Drive(true);
+                    }
+                    break;
+                case 92: {
+                        ptr = strtok(NULL, delim);
+                        while(ptr != NULL) {
+                            letter = ptr[0];
+                            value = atol(ptr+1);
+                            switch(letter) {
+                                case 'X':
+                                    location.setOriginLongitude(static_cast<int32_t>(value));
+                                    break;
+                                case 'Y':
+                                    location.setOriginLatitude(static_cast<int32_t>(value));
+                                    break;
+                                case 'Z':
+                                    location.setOriginAltitude(static_cast<int32_t>(value));
+                                    break;
+                            }
+                            ptr = strtok(NULL, delim);
+                        }
+                        location.computeScaling();
                         send_ok();
                     }
                     break;
@@ -86,6 +121,7 @@ void process_line(char *string){
                         if((left==-999) || (right==-999)){
                             // We didn't get a properly formatted line
                             send_err();
+                            return;
                         }
                         //Sanitize the numbers
                         if(left < -255){
@@ -100,6 +136,7 @@ void process_line(char *string){
                         if(right > 255){
                             right = 255;
                         }
+                        location.Set_Self_Drive(false);
                         wheels.set_speeds(left, right);
                         send_ok();
                     }
@@ -152,11 +189,11 @@ void process_line(char *string){
             // Serial.println(F("It's a M code"));
             switch(value){
                 case 114:
-                    Serial.print(location.Get_Latitude());
+                    Serial.print(location.Get_X());
                     Serial.print(F(" "));
-                    Serial.print(location.Get_Longitude());
+                    Serial.print(location.Get_Y());
                     Serial.print(F(" "));
-                    Serial.print(location.Get_Altitude());
+                    Serial.print(location.Get_Z());
                     Serial.print(F(" "));
                     Serial.print(location.Get_Horizontal_Accuracy());
                     Serial.print(F(" "));

@@ -42,6 +42,9 @@ void setup(){
     serial_init();
     Wire.begin();
     Setup_GPS();
+    Setup_Scaling();
+    location.Set_Time_Step(INITIAL_TIME_STEP);
+    Setup_Compass();
     myGPS.setAutoPVT(true); //Tell the GPS to "send" each solution
     blades.enable_blades();
 }
@@ -49,4 +52,5 @@ void setup(){
 void loop(){
     process_serial_input();
     location.Update_Position();
+    location.Navigate();
 }

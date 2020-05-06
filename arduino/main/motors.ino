@@ -104,7 +104,7 @@ void Blades::enable_blades(){
     digitalWrite(TR_EN, HIGH);
     digitalWrite(TL_EN, HIGH);
 
-    Serial.print(F("Blades:ON_|"));
+    Serial.println(F("Blades:ON_|"));
 }
 
 void Blades::disable_blades(){
@@ -117,7 +117,7 @@ void Blades::disable_blades(){
     digitalWrite(TR_EN, LOW);
     digitalWrite(TL_EN, LOW);
 
-    Serial.print(F("Blades:OFF_|"));
+    Serial.println(F("Blades:OFF_|"));
 }
 
 void Blades::set_left_blade(unsigned char left){
