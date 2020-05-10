@@ -189,6 +189,7 @@ void process_line(char *string){
                     break;
                 case 1002:{
                         ptr = strtok(NULL, delim);
+                        number=-9999;
                         if(ptr != NULL)
                             number = atof(ptr);
                         if((number<0) || (number>=360)){
@@ -202,6 +203,8 @@ void process_line(char *string){
                     break;
                 case 1003:{
                         number = location.Get_Compass_Reading();
+                        Serial.print(F("Holding heading: "));
+                        Serial.println(number);
                         location.Set_Self_Drive(false);
                         location.Set_Heading(number);
                     }

@@ -40,7 +40,7 @@ def record_position(arduino):
 
 
 def hold_heading(arduino):
-    send_to_arduino(arduino, "G1002")
+    send_to_arduino(arduino, "G1003")
 
 
 def send_updated_directions(arduino, left, right):
