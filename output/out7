@@ -1,0 +1,49 @@
+|Mower Initializing
+Initialziging GPS
+Current update rate:5
+Dynamic platform model changed successfully!
+UBX_NAV_HPPOSLLH rate set successfully!
+Current update rate:255
+Setting Calibration of compass from EEPROM.
+nan,nan
+nan,nan
+nan,nan
+Blades:ON_|
+
+M114
+1.06 16.84 203.00 141 0
+OK
+G132
+Set wheels to: -255, 255
+Set wheels to: 0, 0
+Set wheels to: 255, -255
+Set wheels to: 0, 0
+Writing calibration of compass to EEPROM.
+26.44, -0.05  0.00, 2.05OK
+
+
+G132
+Set wheels to: -255, 255
+Set wheels to: 0, 0
+Set wheels to: 255, -255
+Set wheels to: 0, 0
+Writing calibration of compass to EEPROM.
+50.31, -0.08  0.00, 2.08OK
+|Mower Initializing
+Initialziging GPS
+Current update rate:5
+Dynamic platform model changed successfully!
+UBX_NAV_HPPOSLLH rate set successfully!
+Current update rate:5
+Setting Calibration of compass from EEPROM.
+50.31,nan
+nan,nan
+nan,nan
+Blades:ON_|
+G132
+Set wheels to: -255, 255
+Set wheels to: 0, 0
+Set wheels to: 255, -255
+Set wheels to: 0, 0
+Writing calibration of compass to EEPROM.
+31.50, -0.04  0.00, 2.04OK

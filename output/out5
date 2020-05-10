@@ -1,0 +1,6936 @@
+|Mower Initializing
+Initialziging GPS
+Current update rate:5
+Dynamic platform model changed successfully!
+UBX_NAV_HPPOSLLH rate set successfully!
+Current update rate:5
+Setting Calibration of compass.
+Blades:ON_|
+M114
+-11.77 -1.20 212.00 28014 0
+OK
+M114
+-11.78 -1.51 211.00 28130 0
+OK
+G500
+ERROR
+F
+G0 500
+OK
+G1 X-11.78 Y 0
+Location: -12.29, -2.28
+Destination: -11.78, 0.00
+Distance: 2.34 m
+X Distance: 0.51 Y Distance: 2.28
+Bearing: 12.53
+BHD: 12.53 188.18 -175.64
+Set wheels to: -242, 255
+Location: -12.29, -2.29
+Destination: -11.78, 0.00
+Distance: 2.35 m
+X Distance: 0.51 Y Distance: 2.29
+Bearing: 12.50
+BHD: 12.50 185.57 -173.07
+Set wheels to: -234, 255
+Location: -12.30, -2.29
+Destination: -11.78, 0.00
+Distance: 2.35 m
+X Distance: 0.52 Y Distance: 2.29
+Bearing: 12.69
+BHD: 12.69 185.49 -172.80
+Set wheels to: -234, 255
+Location: -12.31, -2.29
+Destination: -11.78, 0.00
+Distance: 2.35 m
+X Distance: 0.53 Y Distance: 2.29
+Bearing: 13.10
+BHD: 13.10 185.98 -172.89
+Set wheels to: -234, 255
+Location: -12.32, -2.28
+Destination: -11.78, 0.00
+Distance: 2.34 m
+X Distance: 0.54 Y Distance: 2.28
+Bearing: 13.34
+BHD: 13.34 188.56 -175.21
+Set wheels to: -240, 255
+Location: -12.32, -2.29
+Destination: -11.78, 0.00
+Distance: 2.36 m
+X Distance: 0.54 Y Distance: 2.29
+Bearing: 13.28
+BHD: 13.28 191.24 -177.96
+Set wheels to: -248, 255
+Location: -12.33, -2.29
+Destination: -11.78, 0.00
+Distance: 2.35 m
+X Distance: 0.55 Y Distance: 2.29
+Bearing: 13.50
+BHD: 13.50 183.85 -170.34
+Set wheels to: -227, 255
+Location: -12.33, -2.29
+Destination: -11.78, 0.00
+Distance: 2.35 m
+X Distance: 0.55 Y Distance: 2.29
+Bearing: 13.50
+BHD: 13.50 190.95 -177.45
+Set wheels to: -247, 255
+Location: -12.34, -2.28
+Destination: -11.78, 0.00
+Distance: 2.35 m
+X Distance: 0.56 Y Distance: 2.28
+Bearing: 13.73
+BHD: 13.73 184.50 -170.77
+Set wheels to: -228, 255
+Location: -12.35, -2.28
+Destination: -11.78, 0.00
+Distance: 2.35 m
+X Distance: 0.57 Y Distance: 2.28
+Bearing: 14.16
+BHD: 14.16 178.85 -164.68
+Set wheels to: -211, 255
+Location: -12.35, -2.25
+Destination: -11.78, 0.00
+Distance: 2.33 m
+X Distance: 0.57 Y Distance: 2.25
+Bearing: 14.30
+BHD: 14.30 186.87 -172.57
+Set wheels to: -233, 255
+Location: -12.34, -2.24
+Destination: -11.78, 0.00
+Distance: 2.31 m
+X Distance: 0.56 Y Distance: 2.24
+Bearing: 13.99
+BHD: 13.99 187.98 -173.99
+Set wheels to: -237, 255
+Location: -12.34, -2.22
+Destination: -11.78, 0.00
+Distance: 2.29 m
+X Distance: 0.56 Y Distance: 2.22
+Bearing: 14.12
+BHD: 14.12 184.58 -170.46
+Set wheels to: -227, 255
+Location: -12.35, -2.21
+Destination: -11.78, 0.00
+Distance: 2.28 m
+X Distance: 0.57 Y Distance: 2.21
+Bearing: 14.34
+BHD: 14.34 187.98 -173.63
+Set wheels to: -236, 255
+Location: -12.34, -2.21
+Destination: -11.78, 0.00
+Distance: 2.28 m
+X Distance: 0.56 Y Distance: 2.21
+Bearing: 14.14
+BHD: 14.14 191.51 -177.37
+Set wheels to: -247, 255
+Location: -12.35, -2.22
+Destination: -11.78, 0.00
+Distance: 2.29 m
+X Distance: 0.57 Y Distance: 2.22
+Bearing: 14.52
+BHD: 14.52 190.53 -176.01
+Set wheels to: -243, 255
+Location: -12.36, -2.22
+Destination: -11.78, 0.00
+Distance: 2.29 m
+X Distance: 0.58 Y Distance: 2.22
+Bearing: 14.71
+BHD: 14.71 186.44 -171.74
+Set wheels to: -231, 255
+Location: -12.38, -2.23
+Destination: -11.78, 0.00
+Distance: 2.30 m
+X Distance: 0.60 Y Distance: 2.23
+Bearing: 15.07
+BHD: 15.07 187.61 -172.54
+Set wheels to: -233, 255
+Location: -12.39, -2.22
+Destination: -11.78, 0.00
+Distance: 2.30 m
+X Distance: 0.61 Y Distance: 2.22
+Bearing: 15.32
+BHD: 15.32 182.38 -167.06
+Set wheels to: -217, 255
+Location: -12.40, -2.22
+Destination: -11.78, 0.00
+Distance: 2.30 m
+X Distance: 0.62 Y Distance: 2.22
+Bearing: 15.51
+BHD: 15.51 182.56 -167.06
+Set wheels to: -217, 255
+Location: -12.40, -2.21
+Destination: -11.78, 0.00
+Distance: 2.29 m
+X Distance: 0.62 Y Distance: 2.21
+Bearing: 15.59
+BHD: 15.59 187.97 -172.38
+Set wheels to: -232, 255
+Location: -12.40, -2.19
+Destination: -11.78, 0.00
+Distance: 2.28 m
+X Distance: 0.62 Y Distance: 2.19
+Bearing: 15.89
+BHD: 15.89 183.65 -167.76
+Set wheels to: -219, 255
+Location: -12.41, -2.20
+Destination: -11.78, 0.00
+Distance: 2.29 m
+X Distance: 0.63 Y Distance: 2.20
+Bearing: 16.03
+BHD: 16.03 189.46 -173.42
+Set wheels to: -235, 255
+Location: -12.39, -2.17
+Destination: -11.78, 0.00
+Distance: 2.25 m
+X Distance: 0.61 Y Distance: 2.17
+Bearing: 15.64
+BHD: 15.64 188.39 -172.75
+Set wheels to: -233, 255
+Location: -12.40, -2.17
+Destination: -11.78, 0.00
+Distance: 2.26 m
+X Distance: 0.62 Y Distance: 2.17
+Bearing: 16.02
+BHD: 16.02 190.32 -174.30
+Set wheels to: -238, 255
+Location: -12.39, -2.17
+Destination: -11.78, 0.00
+Distance: 2.25 m
+X Distance: 0.61 Y Distance: 2.17
+Bearing: 15.65
+BHD: 15.65 185.84 -170.19
+Set wheels to: -226, 255
+Location: -12.40, -2.15
+Destination: -11.78, 0.00
+Distance: 2.24 m
+X Distance: 0.62 Y Distance: 2.15
+Bearing: 15.97
+BHD: 15.97 188.99 -173.02
+Set wheels to: -234, 255
+Location: -12.40, -2.15
+Destination: -11.78, 0.00
+Distance: 2.24 m
+X Distance: 0.62 Y Distance: 2.15
+Bearing: 15.99
+BHD: 15.99 185.84 -169.85
+Set wheels to: -225, 255
+Location: -12.40, -2.15
+Destination: -11.78, 0.00
+Distance: 2.23 m
+X Distance: 0.62 Y Distance: 2.15
+Bearing: 16.01
+BHD: 16.01 185.09 -169.08
+Set wheels to: -223, 255
+Location: -12.39, -2.14
+Destination: -11.78, 0.00
+Distance: 2.22 m
+X Distance: 0.61 Y Distance: 2.14
+Bearing: 15.85
+BHD: 15.85 186.15 -170.30
+Set wheels to: -227, 255
+Location: -12.40, -2.12
+Destination: -11.78, 0.00
+Distance: 2.21 m
+X Distance: 0.62 Y Distance: 2.12
+Bearing: 16.42
+BHD: 16.42 192.24 -175.81
+Set wheels to: -242, 255
+Location: -12.40, -2.11
+Destination: -11.78, 0.00
+Distance: 2.20 m
+X Distance: 0.62 Y Distance: 2.11
+Bearing: 16.44
+BHD: 16.44 187.03 -170.59
+Set wheels to: -227, 255
+Location: -12.35, -2.10
+Destination: -11.78, 0.00
+Distance: 2.18 m
+X Distance: 0.57 Y Distance: 2.10
+Bearing: 15.06
+BHD: 15.06 182.76 -167.70
+Set wheels to: -219, 255
+Location: -12.29, -2.09
+Destination: -11.78, 0.00
+Distance: 2.15 m
+X Distance: 0.51 Y Distance: 2.09
+Bearing: 13.65
+BHD: 13.65 186.52 -172.87
+Set wheels to: -234, 255
+Location: -12.25, -2.09
+Destination: -11.78, 0.00
+Distance: 2.14 m
+X Distance: 0.47 Y Distance: 2.09
+Bearing: 12.56
+BHD: 12.56 185.22 -172.66
+Set wheels to: -233, 255
+Location: -12.18, -2.09
+Destination: -11.78, 0.00
+Distance: 2.13 m
+X Distance: 0.40 Y Distance: 2.09
+Bearing: 10.81
+BHD: 10.81 186.14 -175.33
+Set wheels to: -241, 255
+Location: -12.14, -2.08
+Destination: -11.78, 0.00
+Distance: 2.11 m
+X Distance: 0.36 Y Distance: 2.08
+Bearing: 9.78
+BHD: 9.78 183.74 -173.96
+Set wheels to: -237, 255
+Location: -12.06, -2.07
+Destination: -11.78, 0.00
+Distance: 2.09 m
+X Distance: 0.28 Y Distance: 2.07
+Bearing: 7.58
+BHD: 7.58 183.83 -176.25
+Set wheels to: -243, 255
+Location: -12.01, -2.07
+Destination: -11.78, 0.00
+Distance: 2.08 m
+X Distance: 0.23 Y Distance: 2.07
+Bearing: 6.46
+BHD: 6.46 185.70 -179.24
+Set wheels to: -252, 255
+Location: -11.96, -2.06
+Destination: -11.78, 0.00
+Distance: 2.06 m
+X Distance: 0.18 Y Distance: 2.06
+Bearing: 4.88
+BHD: 4.88 186.60 178.28
+Set wheels to: 255, -250
+Location: -11.76, -1.49
+Destination: -11.78, 0.00
+Distance: 1.49 m
+X Distance: -0.02 Y Distance: 1.49
+Bearing: 359.42
+BHD: 359.42 185.88 173.54
+Set wheels to: 255, -237
+Location: -11.24, -0.96
+Destination: -11.78, 0.00
+Distance: 1.10 m
+X Distance: -0.54 Y Distance: 0.96
+Bearing: 330.80
+BHD: 330.80 188.36 142.44
+Set wheels to: 255, -149
+Location: -10.78, -0.78
+Destination: -11.78, 0.00
+Distance: 1.27 m
+X Distance: -1.00 Y Distance: 0.78
+Bearing: 307.95
+BHD: 307.95 186.63 121.32
+Set wheels to: 255, -89
+Location: -10.53, -0.70
+Destination: -11.78, 0.00
+Distance: 1.44 m
+X Distance: -1.25 Y Distance: 0.70
+Bearing: 299.36
+BHD: 299.36 192.27 107.09
+Set wheels to: 255, -48
+Location: -10.21, -0.62
+Destination: -11.78, 0.00
+Distance: 1.69 m
+X Distance: -1.57 Y Distance: 0.62
+Bearing: 291.63
+BHD: 291.63 186.29 105.33
+Set wheels to: 255, -43
+Location: -9.94, -0.57
+Destination: -11.78, 0.00
+Distance: 1.93 m
+X Distance: -1.84 Y Distance: 0.57
+Bearing: 287.13
+BHD: 287.13 186.14 100.99
+Set wheels to: 255, -31
+Location: -9.72, -0.52
+Destination: -11.78, 0.00
+Distance: 2.12 m
+X Distance: -2.06 Y Distance: 0.52
+Bearing: 284.10
+BHD: 284.10 185.98 98.11
+Set wheels to: 255, -23
+Location: -9.59, -0.49
+Destination: -11.78, 0.00
+Distance: 2.25 m
+X Distance: -2.19 Y Distance: 0.49
+Bearing: 282.67
+BHD: 282.67 188.97 93.69
+Set wheels to: 255, -10
+Location: -9.42, -0.45
+Destination: -11.78, 0.00
+Distance: 2.41 m
+X Distance: -2.36 Y Distance: 0.45
+Bearing: 280.86
+BHD: 280.86 185.84 95.02
+Set wheels to: 255, -14
+Location: -9.27, -0.42
+Destination: -11.78, 0.00
+Distance: 2.55 m
+X Distance: -2.51 Y Distance: 0.42
+Bearing: 279.59
+BHD: 279.59 184.56 95.02
+Set wheels to: 255, -14
+Location: -9.14, -0.40
+Destination: -11.78, 0.00
+Distance: 2.67 m
+X Distance: -2.64 Y Distance: 0.40
+Bearing: 278.58
+BHD: 278.58 189.12 89.46
+Set wheels to: 255, 2
+Location: -9.07, -0.38
+Destination: -11.78, 0.00
+Distance: 2.74 m
+X Distance: -2.71 Y Distance: 0.38
+Bearing: 278.04
+BHD: 278.04 183.57 94.47
+Set wheels to: 255, -13
+Location: -9.04, -0.38
+Destination: -11.78, 0.00
+Distance: 2.76 m
+X Distance: -2.74 Y Distance: 0.38
+Bearing: 277.85
+BHD: 277.85 189.04 88.81
+Set wheels to: 255, 3
+Location: -8.98, -0.35
+Destination: -11.78, 0.00
+Distance: 2.83 m
+X Distance: -2.80 Y Distance: 0.35
+Bearing: 277.15
+BHD: 277.15 185.09 92.05
+Set wheels to: 255, -6
+Location: -8.95, -0.35
+Destination: -11.78, 0.00
+Distance: 2.85 m
+X Distance: -2.83 Y Distance: 0.35
+Bearing: 276.98
+BHD: 276.98 184.86 92.11
+Set wheels to: 255, -6
+Location: -8.96, -0.34
+Destination: -11.78, 0.00
+Distance: 2.84 m
+X Distance: -2.82 Y Distance: 0.34
+Bearing: 276.96
+BHD: 276.96 192.10 84.87
+Set wheels to: 255, 15
+Location: -8.97, -0.34
+Destination: -11.78, 0.00
+Distance: 2.83 m
+X Distance: -2.81 Y Distance: 0.34
+Bearing: 276.88
+BHD: 276.88 191.99 84.89
+Set wheels to: 255, 14
+Location: -8.98, -0.34
+Destination: -11.78, 0.00
+Distance: 2.82 m
+X Distance: -2.80 Y Distance: 0.34
+Bearing: 277.00
+BHD: 277.00 185.84 91.16
+Set wheels to: 255, -3
+Location: -8.97, -0.34
+Destination: -11.78, 0.00
+Distance: 2.83 m
+X Distance: -2.81 Y Distance: 0.34
+Bearing: 276.85
+BHD: 276.85 188.61 88.24
+Set wheels to: 255, 5
+Location: -8.93, -0.31
+Destination: -11.78, 0.00
+Distance: 2.87 m
+X Distance: -2.85 Y Distance: 0.31
+Bearing: 276.21
+BHD: 276.21 192.65 83.56
+Set wheels to: 255, 18
+Location: -8.83, -0.27
+Destination: -11.78, 0.00
+Distance: 2.96 m
+X Distance: -2.95 Y Distance: 0.27
+Bearing: 275.26
+BHD: 275.26 188.14 87.11
+Set wheels to: 255, 8
+Location: -8.76, -0.25
+Destination: -11.78, 0.00
+Distance: 3.03 m
+X Distance: -3.02 Y Distance: 0.25
+Bearing: 274.75
+BHD: 274.75 184.47 90.28
+Set wheels to: 255, -1
+Location: -8.70, -0.23
+Destination: -11.78, 0.00
+Distance: 3.09 m
+X Distance: -3.08 Y Distance: 0.23
+Bearing: 274.24
+BHD: 274.24 185.84 88.40
+Set wheels to: 255, 5
+Location: -8.68, -0.22
+Destination: -11.78, 0.00
+Distance: 3.11 m
+X Distance: -3.10 Y Distance: 0.22
+Bearing: 273.97
+BHD: 273.97 189.34 84.63
+Set wheels to: 255, 15
+Location: -8.60, -0.20
+Destination: -11.78, 0.00
+Distance: 3.18 m
+X Distance: -3.18 Y Distance: 0.20
+Bearing: 273.55
+BHD: 273.55 181.72 91.83
+Set wheels to: 255, -5
+Location: -8.54, -0.18
+Destination: -11.78, 0.00
+Distance: 3.25 m
+X Distance: -3.24 Y Distance: 0.18
+Bearing: 273.15
+BHD: 273.15 187.76 85.39
+Set wheels to: 255, 13
+Location: -8.54, -0.18
+Destination: -11.78, 0.00
+Distance: 3.25 m
+X Distance: -3.24 Y Distance: 0.18
+Bearing: 273.11
+BHD: 273.11 183.17 89.94
+Set wheels to: 255, 0
+Location: -8.53, -0.17
+Destination: -11.78, 0.00
+Distance: 3.26 m
+X Distance: -3.25 Y Distance: 0.17
+Bearing: 273.08
+BHD: 273.08 191.30 81.77
+Set wheels to: 255, 23
+Location: -8.52, -0.16
+Destination: -11.78, 0.00
+Distance: 3.27 m
+X Distance: -3.26 Y Distance: 0.16
+Bearing: 272.78
+BHD: 272.78 185.57 87.21
+Set wheels to: 255, 8
+Location: -8.52, -0.15
+Destination: -11.78, 0.00
+Distance: 3.27 m
+X Distance: -3.26 Y Distance: 0.15
+Bearing: 272.66
+BHD: 272.66 186.44 86.21
+Set wheels to: 255, 11
+Location: -8.49, -0.16
+Destination: -11.78, 0.00
+Distance: 3.29 m
+X Distance: -3.29 Y Distance: 0.16
+Bearing: 272.73
+BHD: 272.73 186.14 86.59
+Set wheels to: 255, 10
+Location: -8.49, -0.16
+Destination: -11.78, 0.00
+Distance: 3.30 m
+X Distance: -3.29 Y Distance: 0.16
+Bearing: 272.73
+BHD: 272.73 187.61 85.12
+Set wheels to: 255, 14
+Location: -8.49, -0.14
+Destination: -11.78, 0.00
+Distance: 3.29 m
+X Distance: -3.29 Y Distance: 0.14
+Bearing: 272.43
+BHD: 272.43 189.57 82.85
+Set wheels to: 255, 20
+Location: -8.49, -0.13
+Destination: -11.78, 0.00
+Distance: 3.29 m
+X Distance: -3.29 Y Distance: 0.13
+Bearing: 272.23
+BHD: 272.23 186.87 85.36
+Set wheels to: 255, 13
+Location: -8.49, -0.13
+Destination: -11.78, 0.00
+Distance: 3.30 m
+X Distance: -3.29 Y Distance: 0.13
+Bearing: 272.18
+BHD: 272.18 184.92 87.26
+Set wheels to: 255, 8
+Location: -8.48, -0.12
+Destination: -11.78, 0.00
+Distance: 3.31 m
+X Distance: -3.30 Y Distance: 0.12
+Bearing: 272.06
+BHD: 272.06 186.72 85.34
+Set wheels to: 255, 13
+Location: -8.48, -0.11
+Destination: -11.78, 0.00
+Distance: 3.30 m
+X Distance: -3.30 Y Distance: 0.11
+Bearing: 271.87
+BHD: 271.87 184.26 87.61
+Set wheels to: 255, 7
+Location: -8.49, -0.10
+Destination: -11.78, 0.00
+Distance: 3.30 m
+X Distance: -3.29 Y Distance: 0.10
+Bearing: 271.82
+BHD: 271.82 187.98 83.84
+Set wheels to: 255, 17
+Location: -8.47, -0.11
+Destination: -11.78, 0.00
+Distance: 3.31 m
+X Distance: -3.31 Y Distance: 0.11
+Bearing: 271.84
+BHD: 271.84 185.09 86.75
+Set wheels to: 255, 9
+Location: -8.47, -0.10
+Destination: -11.78, 0.00
+Distance: 3.31 m
+X Distance: -3.31 Y Distance: 0.10
+Bearing: 271.73
+BHD: 271.73 179.63 92.10
+Set wheels to: 255, -6
+Location: -8.47, -0.09
+Destination: -11.78, 0.00
+Distance: 3.31 m
+X Distance: -3.31 Y Distance: 0.09
+Bearing: 271.56
+BHD: 271.56 190.95 80.61
+Set wheels to: 255, 27
+Location: -8.46, -0.08
+Destination: -11.78, 0.00
+Distance: 3.32 m
+X Distance: -3.32 Y Distance: 0.08
+Bearing: 271.34
+BHD: 271.34 184.72 86.62
+Set wheels to: 255, 10
+Location: -8.46, -0.09
+Destination: -11.78, 0.00
+Distance: 3.32 m
+X Distance: -3.32 Y Distance: 0.09
+Bearing: 271.47
+BHD: 271.47 188.99 82.48
+Set wheels to: 255, 21
+Location: -8.46, -0.08
+Destination: -11.78, 0.00
+Distance: 3.32 m
+X Distance: -3.32 Y Distance: 0.08
+Bearing: 271.40
+BHD: 271.40 187.30 84.10
+Set wheels to: 255, 17
+Location: -8.48, -0.06
+Destination: -11.78, 0.00
+Distance: 3.30 m
+X Distance: -3.30 Y Distance: 0.06
+Bearing: 271.06
+BHD: 271.06 192.41 78.64
+Set wheels to: 255, 32
+Location: -8.49, -0.07
+Destination: -11.78, 0.00
+Distance: 3.30 m
+X Distance: -3.29 Y Distance: 0.07
+Bearing: 271.28
+BHD: 271.28 184.70 86.58
+Set wheels to: 255, 10
+Location: -8.51, -0.06
+Destination: -11.78, 0.00
+Distance: 3.27 m
+X Distance: -3.27 Y Distance: 0.06
+Bearing: 271.07
+BHD: 271.07 190.97 80.10
+Set wheels to: 255, 28
+Location: -8.51, -0.05
+Destination: -11.78, 0.00
+Distance: 3.27 m
+X Distance: -3.27 Y Distance: 0.05
+Bearing: 270.88
+BHD: 270.88 187.20 83.67
+Set wheels to: 255, 18
+Location: -8.51, -0.05
+Destination: -11.78, 0.00
+Distance: 3.27 m
+X Distance: -3.27 Y Distance: 0.05
+Bearing: 270.83
+BHD: 270.83 185.09 85.73
+Set wheels to: 255, 12
+Location: -8.52, -0.05
+Destination: -11.78, 0.00
+Distance: 3.26 m
+X Distance: -3.26 Y Distance: 0.05
+Bearing: 270.79
+BHD: 270.79 188.61 82.19
+Set wheels to: 255, 22
+Location: -8.53, -0.04
+Destination: -11.78, 0.00
+Distance: 3.25 m
+X Distance: -3.25 Y Distance: 0.04
+Bearing: 270.69
+BHD: 270.69 180.34 90.35
+Set wheels to: 255, -1
+Location: -8.53, -0.06
+Destination: -11.78, 0.00
+Distance: 3.25 m
+X Distance: -3.25 Y Distance: 0.06
+Bearing: 271.00
+BHD: 271.00 189.72 81.28
+Set wheels to: 255, 25
+Location: -8.54, -0.05
+Destination: -11.78, 0.00
+Distance: 3.25 m
+X Distance: -3.24 Y Distance: 0.05
+Bearing: 270.86
+BHD: 270.86 187.93 82.92
+Set wheels to: 255, 20
+Location: -8.53, -0.05
+Destination: -11.78, 0.00
+Distance: 3.25 m
+X Distance: -3.25 Y Distance: 0.05
+Bearing: 270.89
+BHD: 270.89 189.57 81.32
+Set wheels to: 255, 25
+Location: -8.54, -0.04
+Destination: -11.78, 0.00
+Distance: 3.25 m
+X Distance: -3.24 Y Distance: 0.04
+Bearing: 270.62
+BHD: 270.62 186.77 83.86
+Set wheels to: 255, 17
+Location: -8.53, -0.05
+Destination: -11.78, 0.00
+Distance: 3.25 m
+X Distance: -3.25 Y Distance: 0.05
+Bearing: 270.83
+BHD: 270.83 190.97 79.86
+Set wheels to: 255, 29
+Location: -8.54, -0.05
+Destination: -11.78, 0.00
+Distance: 3.24 m
+X Distance: -3.24 Y Distance: 0.05
+Bearing: 270.85
+BHD: 270.85 189.34 81.51
+Set wheels to: 255, 24
+Location: -8.54, -0.03
+Destination: -11.78, 0.00
+Distance: 3.24 m
+X Distance: -3.24 Y Distance: 0.03
+Bearing: 270.47
+BHD: 270.47 189.82 80.65
+Set wheels to: 255, 26
+Location: -8.54, -0.00
+Destination: -11.78, 0.00
+Distance: 3.24 m
+X Distance: -3.24 Y Distance: 0.00
+Bearing: 270.04
+BHD: 270.04 187.11 82.93
+Set wheels to: 255, 20
+Location: -8.54, -0.04
+Destination: -11.78, 0.00
+Distance: 3.25 m
+X Distance: -3.24 Y Distance: 0.04
+Bearing: 270.67
+BHD: 270.67 184.36 86.31
+Set wheels to: 255, 10
+Location: -8.56, -0.03
+Destination: -11.78, 0.00
+Distance: 3.22 m
+X Distance: -3.22 Y Distance: 0.03
+Bearing: 270.61
+BHD: 270.61 183.10 87.52
+Set wheels to: 255, 7
+Location: -8.58, -0.05
+Destination: -11.78, 0.00
+Distance: 3.20 m
+X Distance: -3.20 Y Distance: 0.05
+Bearing: 270.85
+BHD: 270.85 183.65 87.20
+Set wheels to: 255, 8
+Location: -8.60, -0.03
+Destination: -11.78, 0.00
+Distance: 3.18 m
+X Distance: -3.18 Y Distance: 0.03
+Bearing: 270.62
+BHD: 270.62 186.94 83.68
+Set wheels to: 255, 18
+Location: -8.62, -0.03
+Destination: -11.78, 0.00
+Distance: 3.16 m
+X Distance: -3.16 Y Distance: 0.03
+Bearing: 270.52
+BHD: 270.52 189.45 81.07
+Set wheels to: 255, 25
+Location: -8.63, -0.03
+Destination: -11.78, 0.00
+Distance: 3.15 m
+X Distance: -3.15 Y Distance: 0.03
+Bearing: 270.46
+BHD: 270.46 186.29 84.17
+Set wheels to: 255, 17
+Location: -8.64, -0.02
+Destination: -11.78, 0.00
+Distance: 3.14 m
+X Distance: -3.14 Y Distance: 0.02
+Bearing: 270.45
+BHD: 270.45 187.98 82.47
+Set wheels to: 255, 21
+Location: -8.66, -0.01
+Destination: -11.78, 0.00
+Distance: 3.12 m
+X Distance: -3.12 Y Distance: 0.01
+Bearing: 270.12
+BHD: 270.12 184.86 85.26
+Set wheels to: 255, 13
+Location: -8.68, 0.00
+Destination: -11.78, 0.00
+Distance: 3.10 m
+X Distance: -3.10 Y Distance: -0.00
+Bearing: 269.98
+BHD: 269.98 187.79 82.19
+Set wheels to: 255, 22
+Location: -8.74, 0.02
+Destination: -11.78, 0.00
+Distance: 3.04 m
+X Distance: -3.04 Y Distance: -0.02
+Bearing: 269.65
+BHD: 269.65 188.99 80.66
+Set wheels to: 255, 26
+Location: -8.73, 0.05
+Destination: -11.78, 0.00
+Distance: 3.05 m
+X Distance: -3.05 Y Distance: -0.05
+Bearing: 269.04
+BHD: 269.04 187.98 81.06
+Set wheels to: 255, 25
+Location: -8.70, 0.06
+Destination: -11.78, 0.00
+Distance: 3.08 m
+X Distance: -3.08 Y Distance: -0.06
+Bearing: 268.82
+BHD: 268.82 185.22 83.60
+Set wheels to: 255, 18
+Location: -8.67, 0.05
+Destination: -11.78, 0.00
+Distance: 3.11 m
+X Distance: -3.11 Y Distance: -0.05
+Bearing: 269.08
+BHD: 269.08 188.18 80.90
+Set wheels to: 255, 26
+Location: -8.63, 0.03
+Destination: -11.78, 0.00
+Distance: 3.15 m
+X Distance: -3.15 Y Distance: -0.03
+Bearing: 269.44
+BHD: 269.44 183.17 86.27
+Set wheels to: 255, 11
+Location: -8.63, 0.03
+Destination: -11.78, 0.00
+Distance: 3.15 m
+X Distance: -3.15 Y Distance: -0.03
+Bearing: 269.44
+BHD: 269.44 176.93 92.51
+Set wheels to: 255, -7
+Location: -8.68, 0.03
+Destination: -11.78, 0.00
+Distance: 3.10 m
+X Distance: -3.10 Y Distance: -0.03
+Bearing: 269.37
+BHD: 269.37 190.67 78.71
+Set wheels to: 255, 32
+Location: -8.70, 0.03
+Destination: -11.78, 0.00
+Distance: 3.08 m
+X Distance: -3.08 Y Distance: -0.03
+Bearing: 269.43
+BHD: 269.43 186.69 82.74
+Set wheels to: 255, 21
+Location: -8.72, 0.03
+Destination: -11.78, 0.00
+Distance: 3.06 m
+X Distance: -3.06 Y Distance: -0.03
+Bearing: 269.35
+BHD: 269.35 189.34 80.00
+Set wheels to: 255, 28
+Location: -8.73, 0.05
+Destination: -11.78, 0.00
+Distance: 3.05 m
+X Distance: -3.05 Y Distance: -0.05
+Bearing: 269.10
+BHD: 269.10 193.87 75.24
+Set wheels to: 255, 42
+Location: -8.76, 0.05
+Destination: -11.78, 0.00
+Distance: 3.02 m
+X Distance: -3.02 Y Distance: -0.05
+Bearing: 269.14
+BHD: 269.14 189.45 79.69
+Set wheels to: 255, 29
+Location: -8.78, 0.04
+Destination: -11.78, 0.00
+Distance: 3.00 m
+X Distance: -3.00 Y Distance: -0.04
+Bearing: 269.18
+BHD: 269.18 187.94 81.24
+Set wheels to: 255, 25
+Location: -8.81, 0.05
+Destination: -11.78, 0.00
+Distance: 2.97 m
+X Distance: -2.97 Y Distance: -0.05
+Bearing: 268.94
+BHD: 268.94 186.77 82.17
+Set wheels to: 255, 22
+Location: -8.83, 0.05
+Destination: -11.78, 0.00
+Distance: 2.95 m
+X Distance: -2.95 Y Distance: -0.05
+Bearing: 268.94
+BHD: 268.94 188.91 80.03
+Set wheels to: 255, 28
+Location: -8.85, 0.07
+Destination: -11.78, 0.00
+Distance: 2.93 m
+X Distance: -2.93 Y Distance: -0.07
+Bearing: 268.71
+BHD: 268.71 188.18 80.54
+Set wheels to: 255, 27
+Location: -8.88, 0.07
+Destination: -11.78, 0.00
+Distance: 2.90 m
+X Distance: -2.90 Y Distance: -0.07
+Bearing: 268.60
+BHD: 268.60 184.58 84.02
+Set wheels to: 255, 17
+Location: -8.92, 0.09
+Destination: -11.78, 0.00
+Distance: 2.86 m
+X Distance: -2.86 Y Distance: -0.09
+Bearing: 268.26
+BHD: 268.26 190.73 77.54
+Set wheels to: 255, 35
+Location: -8.93, 0.08
+Destination: -11.78, 0.00
+Distance: 2.85 m
+X Distance: -2.85 Y Distance: -0.08
+Bearing: 268.33
+BHD: 268.33 193.18 75.15
+Set wheels to: 255, 42
+Location: -8.96, 0.09
+Destination: -11.78, 0.00
+Distance: 2.82 m
+X Distance: -2.82 Y Distance: -0.09
+Bearing: 268.16
+BHD: 268.16 189.46 78.70
+Set wheels to: 255, 32
+Location: -9.01, 0.10
+Destination: -11.78, 0.00
+Distance: 2.77 m
+X Distance: -2.77 Y Distance: -0.10
+Bearing: 267.84
+BHD: 267.84 183.25 84.59
+Set wheels to: 255, 15
+Location: -9.04, 0.11
+Destination: -11.78, 0.00
+Distance: 2.74 m
+X Distance: -2.74 Y Distance: -0.11
+Bearing: 267.69
+BHD: 267.69 180.36 87.33
+Set wheels to: 255, 8
+Location: -9.07, 0.11
+Destination: -11.78, 0.00
+Distance: 2.72 m
+X Distance: -2.71 Y Distance: -0.11
+Bearing: 267.60
+BHD: 267.60 192.04 75.56
+Set wheels to: 255, 41
+Location: -9.10, 0.12
+Destination: -11.78, 0.00
+Distance: 2.68 m
+X Distance: -2.68 Y Distance: -0.12
+Bearing: 267.39
+BHD: 267.39 185.98 81.40
+Set wheels to: 255, 24
+Location: -9.12, 0.13
+Destination: -11.78, 0.00
+Distance: 2.67 m
+X Distance: -2.66 Y Distance: -0.13
+Bearing: 267.31
+BHD: 267.31 186.87 80.44
+Set wheels to: 255, 27
+Location: -9.15, 0.14
+Destination: -11.78, 0.00
+Distance: 2.63 m
+X Distance: -2.63 Y Distance: -0.14
+Bearing: 267.03
+BHD: 267.03 187.43 79.60
+Set wheels to: 255, 29
+Location: -9.16, 0.14
+Destination: -11.78, 0.00
+Distance: 2.63 m
+X Distance: -2.62 Y Distance: -0.14
+Bearing: 267.00
+BHD: 267.00 190.31 76.69
+Set wheels to: 255, 38
+Location: -9.18, 0.16
+Destination: -11.78, 0.00
+Distance: 2.60 m
+X Distance: -2.60 Y Distance: -0.16
+Bearing: 266.51
+BHD: 266.51 186.72 79.80
+Set wheels to: 255, 29
+Location: -9.22, 0.15
+Destination: -11.78, 0.00
+Distance: 2.57 m
+X Distance: -2.56 Y Distance: -0.15
+Bearing: 266.60
+BHD: 266.60 187.79 78.82
+Set wheels to: 255, 32
+Location: -9.24, 0.15
+Destination: -11.78, 0.00
+Distance: 2.54 m
+X Distance: -2.54 Y Distance: -0.15
+Bearing: 266.61
+BHD: 266.61 183.02 83.59
+Set wheels to: 255, 18
+Location: -9.27, 0.16
+Destination: -11.78, 0.00
+Distance: 2.51 m
+X Distance: -2.51 Y Distance: -0.16
+Bearing: 266.31
+BHD: 266.31 184.82 81.49
+Set wheels to: 255, 24
+Location: -9.29, 0.17
+Destination: -11.78, 0.00
+Distance: 2.50 m
+X Distance: -2.49 Y Distance: -0.17
+Bearing: 266.00
+BHD: 266.00 188.99 77.01
+Set wheels to: 255, 37
+Location: -9.32, 0.18
+Destination: -11.78, 0.00
+Distance: 2.46 m
+X Distance: -2.46 Y Distance: -0.18
+Bearing: 265.81
+BHD: 265.81 190.45 75.36
+Set wheels to: 255, 41
+Location: -9.35, 0.19
+Destination: -11.78, 0.00
+Distance: 2.44 m
+X Distance: -2.43 Y Distance: -0.19
+Bearing: 265.42
+BHD: 265.42 186.94 78.48
+Set wheels to: 255, 33
+Location: -9.37, 0.19
+Destination: -11.78, 0.00
+Distance: 2.41 m
+X Distance: -2.41 Y Distance: -0.19
+Bearing: 265.43
+BHD: 265.43 191.53 73.90
+Set wheels to: 255, 46
+Location: -9.38, 0.20
+Destination: -11.78, 0.00
+Distance: 2.41 m
+X Distance: -2.40 Y Distance: -0.20
+Bearing: 265.22
+BHD: 265.22 186.13 79.09
+Set wheels to: 255, 31
+Location: -9.40, 0.21
+Destination: -11.78, 0.00
+Distance: 2.39 m
+X Distance: -2.38 Y Distance: -0.21
+Bearing: 265.03
+BHD: 265.03 186.60 78.43
+Set wheels to: 255, 33
+Location: -9.42, 0.21
+Destination: -11.78, 0.00
+Distance: 2.37 m
+X Distance: -2.36 Y Distance: -0.21
+Bearing: 264.95
+BHD: 264.95 186.29 78.65
+Set wheels to: 255, 32
+Location: -9.43, 0.20
+Destination: -11.78, 0.00
+Distance: 2.36 m
+X Distance: -2.35 Y Distance: -0.20
+Bearing: 265.06
+BHD: 265.06 191.24 73.82
+Set wheels to: 255, 46
+Location: -9.45, 0.22
+Destination: -11.78, 0.00
+Distance: 2.34 m
+X Distance: -2.33 Y Distance: -0.22
+Bearing: 264.69
+BHD: 264.69 194.20 70.49
+Set wheels to: 255, 55
+Location: -9.46, 0.23
+Destination: -11.78, 0.00
+Distance: 2.33 m
+X Distance: -2.32 Y Distance: -0.23
+Bearing: 264.45
+BHD: 264.45 186.72 77.73
+Set wheels to: 255, 35
+Location: -9.49, 0.24
+Destination: -11.78, 0.00
+Distance: 2.30 m
+X Distance: -2.29 Y Distance: -0.24
+Bearing: 263.98
+BHD: 263.98 186.30 77.69
+Set wheels to: 255, 35
+Location: -9.51, 0.25
+Destination: -11.78, 0.00
+Distance: 2.28 m
+X Distance: -2.27 Y Distance: -0.25
+Bearing: 263.77
+BHD: 263.77 187.94 75.83
+Set wheels to: 255, 40
+Location: -9.52, 0.25
+Destination: -11.78, 0.00
+Distance: 2.27 m
+X Distance: -2.26 Y Distance: -0.25
+Bearing: 263.76
+BHD: 263.76 184.58 79.18
+Set wheels to: 255, 31
+Location: -9.55, 0.26
+Destination: -11.78, 0.00
+Distance: 2.25 m
+X Distance: -2.23 Y Distance: -0.26
+Bearing: 263.48
+BHD: 263.48 184.13 79.35
+Set wheels to: 255, 30
+Location: -9.56, 0.27
+Destination: -11.78, 0.00
+Distance: 2.23 m
+X Distance: -2.22 Y Distance: -0.27
+Bearing: 263.00
+BHD: 263.00 189.82 73.18
+Set wheels to: 255, 48
+Location: -9.59, 0.28
+Destination: -11.78, 0.00
+Distance: 2.21 m
+X Distance: -2.19 Y Distance: -0.28
+Bearing: 262.64
+BHD: 262.64 189.67 72.97
+Set wheels to: 255, 48
+Location: -9.60, 0.30
+Destination: -11.78, 0.00
+Distance: 2.20 m
+X Distance: -2.18 Y Distance: -0.30
+Bearing: 262.19
+BHD: 262.19 187.38 74.81
+Set wheels to: 255, 43
+Location: -9.62, 0.31
+Destination: -11.78, 0.00
+Distance: 2.18 m
+X Distance: -2.16 Y Distance: -0.31
+Bearing: 261.83
+BHD: 261.83 187.03 74.80
+Set wheels to: 255, 43
+Location: -9.64, 0.32
+Destination: -11.78, 0.00
+Distance: 2.16 m
+X Distance: -2.14 Y Distance: -0.32
+Bearing: 261.54
+BHD: 261.54 184.70 76.84
+Set wheels to: 255, 37
+Location: -9.65, 0.32
+Destination: -11.78, 0.00
+Distance: 2.16 m
+X Distance: -2.13 Y Distance: -0.32
+Bearing: 261.55
+BHD: 261.55 188.18 73.37
+Set wheels to: 255, 47
+Location: -9.68, 0.34
+Destination: -11.78, 0.00
+Distance: 2.13 m
+X Distance: -2.10 Y Distance: -0.34
+Bearing: 260.71
+BHD: 260.71 187.43 73.27
+Set wheels to: 255, 47
+Location: -9.69, 0.34
+Destination: -11.78, 0.00
+Distance: 2.12 m
+X Distance: -2.09 Y Distance: -0.34
+Bearing: 260.78
+BHD: 260.78 181.68 79.10
+Set wheels to: 255, 31
+Location: -9.70, 0.34
+Destination: -11.78, 0.00
+Distance: 2.11 m
+X Distance: -2.08 Y Distance: -0.34
+Bearing: 260.64
+BHD: 260.64 189.03 71.61
+Set wheels to: 255, 52
+Location: -9.72, 0.37
+Destination: -11.78, 0.00
+Distance: 2.09 m
+X Distance: -2.06 Y Distance: -0.37
+Bearing: 259.68
+BHD: 259.68 194.55 65.14
+Set wheels to: 255, 70
+Location: -9.73, 0.37
+Destination: -11.78, 0.00
+Distance: 2.08 m
+X Distance: -2.05 Y Distance: -0.37
+Bearing: 259.67
+BHD: 259.67 188.99 70.68
+Set wheels to: 255, 55
+Location: -9.74, 0.37
+Destination: -11.78, 0.00
+Distance: 2.07 m
+X Distance: -2.04 Y Distance: -0.37
+Bearing: 259.67
+BHD: 259.67 183.02 76.64
+Set wheels to: 255, 38
+Location: -9.76, 0.40
+Destination: -11.78, 0.00
+Distance: 2.05 m
+X Distance: -2.02 Y Distance: -0.40
+Bearing: 258.86
+BHD: 258.86 189.34 69.52
+Set wheels to: 255, 58
+Location: -9.77, 0.39
+Destination: -11.78, 0.00
+Distance: 2.05 m
+X Distance: -2.01 Y Distance: -0.39
+Bearing: 258.98
+BHD: 258.98 188.99 69.99
+Set wheels to: 255, 57
+Location: -9.78, 0.40
+Destination: -11.78, 0.00
+Distance: 2.04 m
+X Distance: -2.00 Y Distance: -0.40
+Bearing: 258.57
+BHD: 258.57 183.41 75.16
+Set wheels to: 255, 42
+Location: -9.80, 0.42
+Destination: -11.78, 0.00
+Distance: 2.03 m
+X Distance: -1.98 Y Distance: -0.42
+Bearing: 257.99
+BHD: 257.99 187.12 70.87
+Set wheels to: 255, 54
+Location: -9.80, 0.42
+Destination: -11.78, 0.00
+Distance: 2.03 m
+X Distance: -1.98 Y Distance: -0.42
+Bearing: 258.02
+BHD: 258.02 190.07 67.95
+Set wheels to: 255, 62
+Location: -9.81, 0.44
+Destination: -11.78, 0.00
+Distance: 2.02 m
+X Distance: -1.97 Y Distance: -0.44
+Bearing: 257.55
+BHD: 257.55 192.56 65.00
+Set wheels to: 255, 71
+Location: -9.82, 0.45
+Destination: -11.78, 0.00
+Distance: 2.01 m
+X Distance: -1.96 Y Distance: -0.45
+Bearing: 257.13
+BHD: 257.13 188.16 68.97
+Set wheels to: 255, 60
+Location: -9.82, 0.45
+Destination: -11.78, 0.00
+Distance: 2.01 m
+X Distance: -1.96 Y Distance: -0.45
+Bearing: 257.14
+BHD: 257.14 186.30 70.84
+Set wheels to: 255, 54
+Location: -9.85, 0.47
+Destination: -11.78, 0.00
+Distance: 1.99 m
+X Distance: -1.93 Y Distance: -0.47
+Bearing: 256.34
+BHD: 256.34 184.97 71.37
+Set wheels to: 255, 53
+Location: -9.85, 0.48
+Destination: -11.78, 0.00
+Distance: 1.99 m
+X Distance: -1.93 Y Distance: -0.48
+Bearing: 256.16
+BHD: 256.16 183.83 72.33
+Set wheels to: 255, 50
+Location: -9.86, 0.47
+Destination: -11.78, 0.00
+Distance: 1.98 m
+X Distance: -1.92 Y Distance: -0.47
+Bearing: 256.16
+BHD: 256.16 183.83 72.33
+Set wheels to: 255, 50
+Location: -9.86, 0.49
+Destination: -11.78, 0.00
+Distance: 1.98 m
+X Distance: -1.92 Y Distance: -0.49
+Bearing: 255.54
+BHD: 255.54 188.77 66.78
+Set wheels to: 255, 66
+Location: -9.87, 0.51
+Destination: -11.78, 0.00
+Distance: 1.97 m
+X Distance: -1.91 Y Distance: -0.51
+Bearing: 255.13
+BHD: 255.13 185.79 69.34
+Set wheels to: 255, 59
+Location: -9.89, 0.52
+Destination: -11.78, 0.00
+Distance: 1.96 m
+X Distance: -1.89 Y Distance: -0.52
+Bearing: 254.56
+BHD: 254.56 185.70 68.86
+Set wheels to: 255, 60
+Location: -9.88, 0.53
+Destination: -11.78, 0.00
+Distance: 1.97 m
+X Distance: -1.90 Y Distance: -0.53
+Bearing: 254.46
+BHD: 254.46 188.84 65.62
+Set wheels to: 255, 69
+Location: -9.88, 0.54
+Destination: -11.78, 0.00
+Distance: 1.98 m
+X Distance: -1.90 Y Distance: -0.54
+Bearing: 254.14
+BHD: 254.14 185.84 68.30
+Set wheels to: 255, 61
+Location: -9.87, 0.54
+Destination: -11.78, 0.00
+Distance: 1.98 m
+X Distance: -1.91 Y Distance: -0.54
+Bearing: 254.11
+BHD: 254.11 186.44 67.67
+Set wheels to: 255, 63
+Location: -9.87, 0.57
+Destination: -11.78, 0.00
+Distance: 1.99 m
+X Distance: -1.91 Y Distance: -0.57
+Bearing: 253.29
+BHD: 253.29 188.56 64.73
+Set wheels to: 255, 72
+Location: -9.86, 0.59
+Destination: -11.78, 0.00
+Distance: 2.01 m
+X Distance: -1.92 Y Distance: -0.59
+Bearing: 252.84
+BHD: 252.84 190.70 62.14
+Set wheels to: 255, 79
+Location: -9.86, 0.60
+Destination: -11.78, 0.00
+Distance: 2.01 m
+X Distance: -1.92 Y Distance: -0.60
+Bearing: 252.61
+BHD: 252.61 187.79 64.82
+Set wheels to: 255, 71
+Location: -9.86, 0.62
+Destination: -11.78, 0.00
+Distance: 2.01 m
+X Distance: -1.92 Y Distance: -0.62
+Bearing: 252.06
+BHD: 252.06 186.60 65.46
+Set wheels to: 255, 70
+Location: -9.87, 0.65
+Destination: -11.78, 0.00
+Distance: 2.01 m
+X Distance: -1.91 Y Distance: -0.65
+Bearing: 251.30
+BHD: 251.30 182.57 68.73
+Set wheels to: 255, 60
+Location: -9.87, 0.66
+Destination: -11.78, 0.00
+Distance: 2.02 m
+X Distance: -1.91 Y Distance: -0.66
+Bearing: 250.93
+BHD: 250.93 189.72 61.21
+Set wheels to: 255, 82
+Location: -9.87, 0.67
+Destination: -11.78, 0.00
+Distance: 2.02 m
+X Distance: -1.91 Y Distance: -0.67
+Bearing: 250.69
+BHD: 250.69 185.49 65.19
+Set wheels to: 255, 70
+Location: -9.87, 0.68
+Destination: -11.78, 0.00
+Distance: 2.03 m
+X Distance: -1.91 Y Distance: -0.68
+Bearing: 250.43
+BHD: 250.43 184.70 65.73
+Set wheels to: 255, 69
+Location: -9.87, 0.68
+Destination: -11.78, 0.00
+Distance: 2.03 m
+X Distance: -1.91 Y Distance: -0.68
+Bearing: 250.33
+BHD: 250.33 185.22 65.11
+Set wheels to: 255, 71
+Location: -9.87, 0.70
+Destination: -11.78, 0.00
+Distance: 2.03 m
+X Distance: -1.91 Y Distance: -0.70
+Bearing: 249.92
+BHD: 249.92 183.34 66.58
+Set wheels to: 255, 66
+Location: -9.86, 0.70
+Destination: -11.78, 0.00
+Distance: 2.04 m
+X Distance: -1.92 Y Distance: -0.70
+Bearing: 249.85
+BHD: 249.85 182.38 67.47
+Set wheels to: 255, 64
+Location: -9.86, 0.71
+Destination: -11.78, 0.00
+Distance: 2.05 m
+X Distance: -1.92 Y Distance: -0.71
+Bearing: 249.84
+BHD: 249.84 188.99 60.85
+Set wheels to: 255, 83
+Location: -9.86, 0.71
+Destination: -11.78, 0.00
+Distance: 2.04 m
+X Distance: -1.92 Y Distance: -0.71
+Bearing: 249.69
+BHD: 249.69 188.36 61.34
+Set wheels to: 255, 81
+Location: -9.86, 0.73
+Destination: -11.78, 0.00
+Distance: 2.05 m
+X Distance: -1.92 Y Distance: -0.73
+Bearing: 249.14
+BHD: 249.14 186.41 62.73
+Set wheels to: 255, 77
+Location: -9.86, 0.74
+Destination: -11.78, 0.00
+Distance: 2.05 m
+X Distance: -1.92 Y Distance: -0.74
+Bearing: 248.85
+BHD: 248.85 183.83 65.02
+Set wheels to: 255, 71
+Location: -9.86, 0.75
+Destination: -11.78, 0.00
+Distance: 2.06 m
+X Distance: -1.92 Y Distance: -0.75
+Bearing: 248.70
+BHD: 248.70 188.39 60.32
+Set wheels to: 255, 84
+Location: -9.87, 0.76
+Destination: -11.78, 0.00
+Distance: 2.05 m
+X Distance: -1.91 Y Distance: -0.76
+Bearing: 248.25
+BHD: 248.25 186.30 61.96
+Set wheels to: 255, 79
+Location: -9.88, 0.78
+Destination: -11.78, 0.00
+Distance: 2.05 m
+X Distance: -1.90 Y Distance: -0.78
+Bearing: 247.78
+BHD: 247.78 186.94 60.84
+Set wheels to: 255, 83
+Location: -9.88, 0.80
+Destination: -11.78, 0.00
+Distance: 2.06 m
+X Distance: -1.90 Y Distance: -0.80
+Bearing: 247.25
+BHD: 247.25 184.97 62.27
+Set wheels to: 255, 79
+Location: -9.89, 0.81
+Destination: -11.78, 0.00
+Distance: 2.06 m
+X Distance: -1.89 Y Distance: -0.81
+Bearing: 246.71
+BHD: 246.71 182.95 63.76
+Set wheels to: 255, 74
+Location: -9.90, 0.84
+Destination: -11.78, 0.00
+Distance: 2.06 m
+X Distance: -1.88 Y Distance: -0.84
+Bearing: 246.05
+BHD: 246.05 187.45 58.59
+Set wheels to: 255, 89
+Location: -9.91, 0.85
+Destination: -11.78, 0.00
+Distance: 2.06 m
+X Distance: -1.87 Y Distance: -0.85
+Bearing: 245.65
+BHD: 245.65 190.45 55.20
+Set wheels to: 255, 99
+Location: -9.93, 0.88
+Destination: -11.78, 0.00
+Distance: 2.05 m
+X Distance: -1.85 Y Distance: -0.88
+Bearing: 244.44
+BHD: 244.44 190.97 53.47
+Set wheels to: 255, 104
+Location: -9.94, 0.90
+Destination: -11.78, 0.00
+Distance: 2.05 m
+X Distance: -1.84 Y Distance: -0.90
+Bearing: 243.91
+BHD: 243.91 186.87 57.04
+Set wheels to: 255, 93
+Location: -9.95, 0.93
+Destination: -11.78, 0.00
+Distance: 2.05 m
+X Distance: -1.83 Y Distance: -0.93
+Bearing: 243.06
+BHD: 243.06 189.45 53.61
+Set wheels to: 255, 103
+Location: -9.96, 0.95
+Destination: -11.78, 0.00
+Distance: 2.05 m
+X Distance: -1.82 Y Distance: -0.95
+Bearing: 242.48
+BHD: 242.48 180.35 62.14
+Set wheels to: 255, 79
+Location: -9.99, 0.99
+Destination: -11.78, 0.00
+Distance: 2.05 m
+X Distance: -1.79 Y Distance: -0.99
+Bearing: 241.03
+BHD: 241.03 182.32 58.71
+Set wheels to: 255, 89
+Location: -10.00, 1.00
+Destination: -11.78, 0.00
+Distance: 2.05 m
+X Distance: -1.78 Y Distance: -1.00
+Bearing: 240.61
+BHD: 240.61 187.63 52.97
+Set wheels to: 255, 105
+Location: -10.01, 1.01
+Destination: -11.78, 0.00
+Distance: 2.04 m
+X Distance: -1.77 Y Distance: -1.01
+Bearing: 240.19
+BHD: 240.19 183.74 56.45
+Set wheels to: 255, 95
+Location: -10.03, 1.02
+Destination: -11.78, 0.00
+Distance: 2.02 m
+X Distance: -1.75 Y Distance: -1.02
+Bearing: 239.87
+BHD: 239.87 182.44 57.43
+Set wheels to: 255, 92
+Location: -10.04, 1.05
+Destination: -11.78, 0.00
+Distance: 2.03 m
+X Distance: -1.74 Y Distance: -1.05
+Bearing: 239.01
+BHD: 239.01 184.97 54.04
+Set wheels to: 255, 102
+Location: -10.05, 1.06
+Destination: -11.78, 0.00
+Distance: 2.03 m
+X Distance: -1.73 Y Distance: -1.06
+Bearing: 238.62
+BHD: 238.62 188.56 50.06
+Set wheels to: 255, 113
+Location: -10.05, 1.07
+Destination: -11.78, 0.00
+Distance: 2.04 m
+X Distance: -1.73 Y Distance: -1.07
+Bearing: 238.42
+BHD: 238.42 184.17 54.25
+Set wheels to: 255, 101
+Location: -10.05, 1.08
+Destination: -11.78, 0.00
+Distance: 2.04 m
+X Distance: -1.73 Y Distance: -1.08
+Bearing: 238.03
+BHD: 238.03 190.95 47.08
+Set wheels to: 255, 122
+Location: -10.05, 1.10
+Destination: -11.78, 0.00
+Distance: 2.06 m
+X Distance: -1.73 Y Distance: -1.10
+Bearing: 237.50
+BHD: 237.50 189.12 48.37
+Set wheels to: 255, 118
+Location: -10.05, 1.10
+Destination: -11.78, 0.00
+Distance: 2.06 m
+X Distance: -1.73 Y Distance: -1.10
+Bearing: 237.50
+BHD: 237.50 189.12 48.38
+Set wheels to: 255, 118
+Location: -10.05, 1.13
+Destination: -11.78, 0.00
+Distance: 2.07 m
+X Distance: -1.73 Y Distance: -1.13
+Bearing: 236.98
+BHD: 236.98 186.14 50.84
+Set wheels to: 255, 111
+Location: -10.05, 1.15
+Destination: -11.78, 0.00
+Distance: 2.07 m
+X Distance: -1.73 Y Distance: -1.15
+Bearing: 236.42
+BHD: 236.42 187.12 49.30
+Set wheels to: 255, 115
+Location: -10.05, 1.16
+Destination: -11.78, 0.00
+Distance: 2.08 m
+X Distance: -1.73 Y Distance: -1.16
+Bearing: 236.16
+BHD: 236.16 181.72 54.44
+Set wheels to: 255, 101
+Location: -10.05, 1.18
+Destination: -11.78, 0.00
+Distance: 2.09 m
+X Distance: -1.73 Y Distance: -1.18
+Bearing: 235.67
+BHD: 235.67 183.02 52.65
+Set wheels to: 255, 106
+Location: -10.05, 1.17
+Destination: -11.78, 0.00
+Distance: 2.09 m
+X Distance: -1.73 Y Distance: -1.17
+Bearing: 235.78
+BHD: 235.78 186.40 49.38
+Set wheels to: 255, 115
+Location: -10.07, 1.22
+Destination: -11.78, 0.00
+Distance: 2.10 m
+X Distance: -1.71 Y Distance: -1.22
+Bearing: 234.57
+BHD: 234.57 186.44 48.12
+Set wheels to: 255, 119
+Location: -10.05, 1.24
+Destination: -11.78, 0.00
+Distance: 2.12 m
+X Distance: -1.73 Y Distance: -1.24
+Bearing: 234.35
+BHD: 234.35 187.38 46.97
+Set wheels to: 255, 122
+Location: -10.05, 1.23
+Destination: -11.78, 0.00
+Distance: 2.12 m
+X Distance: -1.73 Y Distance: -1.23
+Bearing: 234.53
+BHD: 234.53 188.36 46.17
+Set wheels to: 255, 124
+Location: -10.06, 1.24
+Destination: -11.78, 0.00
+Distance: 2.12 m
+X Distance: -1.72 Y Distance: -1.24
+Bearing: 234.17
+BHD: 234.17 186.01 48.16
+Set wheels to: 255, 119
+Location: -10.06, 1.23
+Destination: -11.78, 0.00
+Distance: 2.11 m
+X Distance: -1.72 Y Distance: -1.23
+Bearing: 234.35
+BHD: 234.35 216.93 17.42
+Set wheels to: 255, 206
+Location: -10.08, 1.14
+Destination: -11.78, 0.00
+Distance: 2.04 m
+X Distance: -1.70 Y Distance: -1.14
+Bearing: 236.27
+BHD: 236.27 239.48 -3.21
+Set wheels to: 247, 255
+Location: -10.11, 1.11
+Destination: -11.78, 0.00
+Distance: 2.00 m
+X Distance: -1.67 Y Distance: -1.11
+Bearing: 236.38
+BHD: 236.38 255.53 -19.15
+Set wheels to: 202, 255
+Location: -10.15, 1.08
+Destination: -11.78, 0.00
+Distance: 1.95 m
+X Distance: -1.63 Y Distance: -1.08
+Bearing: 236.32
+BHD: 236.32 256.76 -20.44
+Set wheels to: 198, 255
+Location: -10.18, 1.11
+Destination: -11.78, 0.00
+Distance: 1.95 m
+X Distance: -1.60 Y Distance: -1.11
+Bearing: 235.32
+BHD: 235.32 254.95 -19.63
+Set wheels to: 200, 255
+Location: -10.17, 1.07
+Destination: -11.78, 0.00
+Distance: 1.93 m
+X Distance: -1.61 Y Distance: -1.07
+Bearing: 236.28
+BHD: 236.28 256.09 -19.81
+Set wheels to: 200, 255
+Location: -10.10, 1.07
+Destination: -11.78, 0.00
+Distance: 1.99 m
+X Distance: -1.68 Y Distance: -1.07
+Bearing: 237.39
+BHD: 237.39 253.59 -16.21
+Set wheels to: 210, 255
+Location: -10.02, 1.09
+Destination: -11.78, 0.00
+Distance: 2.07 m
+X Distance: -1.76 Y Distance: -1.09
+Bearing: 238.31
+BHD: 238.31 252.01 -13.70
+Set wheels to: 217, 255
+Location: -9.99, 1.13
+Destination: -11.78, 0.00
+Distance: 2.12 m
+X Distance: -1.79 Y Distance: -1.13
+Bearing: 237.69
+BHD: 237.69 255.96 -18.26
+Set wheels to: 204, 255
+Location: -10.13, 1.24
+Destination: -11.78, 0.00
+Distance: 2.07 m
+X Distance: -1.65 Y Distance: -1.24
+Bearing: 233.05
+BHD: 233.05 255.85 -22.80
+Set wheels to: 191, 255
+Location: -10.22, 1.26
+Destination: -11.78, 0.00
+Distance: 2.01 m
+X Distance: -1.56 Y Distance: -1.26
+Bearing: 231.04
+BHD: 231.04 257.42 -26.38
+Set wheels to: 181, 255
+Location: -10.21, 1.32
+Destination: -11.78, 0.00
+Distance: 2.05 m
+X Distance: -1.57 Y Distance: -1.32
+Bearing: 230.00
+BHD: 230.00 256.38 -26.39
+Set wheels to: 181, 255
+Location: -10.22, 1.37
+Destination: -11.78, 0.00
+Distance: 2.08 m
+X Distance: -1.56 Y Distance: -1.37
+Bearing: 228.62
+BHD: 228.62 253.48 -24.86
+Set wheels to: 186, 255
+Location: -10.13, 1.39
+Destination: -11.78, 0.00
+Distance: 2.16 m
+X Distance: -1.65 Y Distance: -1.39
+Bearing: 229.82
+BHD: 229.82 255.51 -25.70
+Set wheels to: 183, 255
+Location: -10.00, 1.42
+Destination: -11.78, 0.00
+Distance: 2.28 m
+X Distance: -1.78 Y Distance: -1.42
+Bearing: 231.38
+BHD: 231.38 258.79 -27.41
+Set wheels to: 178, 255
+Location: -10.05, 1.42
+Destination: -11.78, 0.00
+Distance: 2.23 m
+X Distance: -1.73 Y Distance: -1.42
+Bearing: 230.54
+BHD: 230.54 255.04 -24.50
+Set wheels to: 187, 255
+Location: -10.01, 1.42
+Destination: -11.78, 0.00
+Distance: 2.27 m
+X Distance: -1.77 Y Distance: -1.42
+Bearing: 231.17
+BHD: 231.17 257.11 -25.94
+Set wheels to: 182, 255
+Location: -10.06, 1.40
+Destination: -11.78, 0.00
+Distance: 2.22 m
+X Distance: -1.72 Y Distance: -1.40
+Bearing: 230.74
+BHD: 230.74 258.41 -27.67
+Set wheels to: 178, 255
+Location: -9.99, 1.39
+Destination: -11.78, 0.00
+Distance: 2.27 m
+X Distance: -1.79 Y Distance: -1.39
+Bearing: 232.22
+BHD: 232.22 257.54 -25.32
+Set wheels to: 184, 255
+Location: -9.86, 1.20
+Destination: -11.78, 0.00
+Distance: 2.26 m
+X Distance: -1.92 Y Distance: -1.20
+Bearing: 237.99
+BHD: 237.99 257.47 -19.48
+Set wheels to: 201, 255
+Location: -9.92, 1.25
+Destination: -11.78, 0.00
+Distance: 2.24 m
+X Distance: -1.86 Y Distance: -1.25
+Bearing: 236.16
+BHD: 236.16 255.97 -19.81
+Set wheels to: 200, 255
+Location: -9.91, 1.23
+Destination: -11.78, 0.00
+Distance: 2.24 m
+X Distance: -1.87 Y Distance: -1.23
+Bearing: 236.79
+BHD: 236.79 254.54 -17.74
+Set wheels to: 206, 255
+Location: -10.05, 1.14
+Destination: -11.78, 0.00
+Distance: 2.07 m
+X Distance: -1.73 Y Distance: -1.14
+Bearing: 236.68
+BHD: 236.68 257.32 -20.63
+Set wheels to: 198, 255
+Location: -10.10, 1.10
+Destination: -11.78, 0.00
+Distance: 2.00 m
+X Distance: -1.68 Y Distance: -1.10
+Bearing: 236.75
+BHD: 236.75 257.67 -20.92
+Set wheels to: 197, 255
+Location: -10.08, 1.09
+Destination: -11.78, 0.00
+Distance: 2.02 m
+X Distance: -1.70 Y Distance: -1.09
+Bearing: 237.26
+BHD: 237.26 256.19 -18.93
+Set wheels to: 202, 255
+Location: -10.04, 1.03
+Destination: -11.78, 0.00
+Distance: 2.02 m
+X Distance: -1.74 Y Distance: -1.03
+Bearing: 239.49
+BHD: 239.49 258.21 -18.73
+Set wheels to: 203, 255
+Location: -10.10, 1.02
+Destination: -11.78, 0.00
+Distance: 1.97 m
+X Distance: -1.68 Y Distance: -1.02
+Bearing: 238.86
+BHD: 238.86 254.86 -15.99
+Set wheels to: 211, 255
+Location: -10.20, 1.05
+Destination: -11.78, 0.00
+Distance: 1.90 m
+X Distance: -1.58 Y Distance: -1.05
+Bearing: 236.45
+BHD: 236.45 256.68 -20.23
+Set wheels to: 199, 255
+Location: -10.16, 1.04
+Destination: -11.78, 0.00
+Distance: 1.92 m
+X Distance: -1.62 Y Distance: -1.04
+Bearing: 237.37
+BHD: 237.37 254.45 -17.08
+Set wheels to: 208, 255
+Location: -10.25, 1.04
+Destination: -11.78, 0.00
+Distance: 1.85 m
+X Distance: -1.53 Y Distance: -1.04
+Bearing: 235.83
+BHD: 235.83 254.88 -19.05
+Set wheels to: 202, 255
+Location: -10.15, 0.96
+Destination: -11.78, 0.00
+Distance: 1.89 m
+X Distance: -1.63 Y Distance: -0.96
+Bearing: 239.45
+BHD: 239.45 256.54 -17.09
+Set wheels to: 208, 255
+Location: -10.14, 1.01
+Destination: -11.78, 0.00
+Distance: 1.93 m
+X Distance: -1.64 Y Distance: -1.01
+Bearing: 238.49
+BHD: 238.49 255.61 -17.12
+Set wheels to: 207, 255
+Location: -10.05, 1.02
+Destination: -11.78, 0.00
+Distance: 2.00 m
+X Distance: -1.73 Y Distance: -1.02
+Bearing: 239.49
+BHD: 239.49 256.32 -16.83
+Set wheels to: 208, 255
+Location: -9.99, 0.97
+Destination: -11.78, 0.00
+Distance: 2.04 m
+X Distance: -1.79 Y Distance: -0.97
+Bearing: 241.53
+BHD: 241.53 256.76 -15.23
+Set wheels to: 213, 255
+Location: -9.85, 0.99
+Destination: -11.78, 0.00
+Distance: 2.17 m
+X Distance: -1.93 Y Distance: -0.99
+Bearing: 242.78
+BHD: 242.78 251.72 -8.94
+Set wheels to: 231, 255
+Location: -9.79, 0.95
+Destination: -11.78, 0.00
+Distance: 2.20 m
+X Distance: -1.99 Y Distance: -0.95
+Bearing: 244.61
+BHD: 244.61 256.62 -12.01
+Set wheels to: 222, 255
+Location: -9.73, 0.89
+Destination: -11.78, 0.00
+Distance: 2.24 m
+X Distance: -2.05 Y Distance: -0.89
+Bearing: 246.44
+BHD: 246.44 254.84 -8.39
+Set wheels to: 232, 255
+Location: -9.66, 0.78
+Destination: -11.78, 0.00
+Distance: 2.26 m
+X Distance: -2.12 Y Distance: -0.78
+Bearing: 249.65
+BHD: 249.65 255.74 -6.09
+Set wheels to: 239, 255
+Location: -9.69, 0.73
+Destination: -11.78, 0.00
+Distance: 2.21 m
+X Distance: -2.09 Y Distance: -0.73
+Bearing: 250.73
+BHD: 250.73 257.22 -6.49
+Set wheels to: 238, 255
+Location: -9.71, 0.81
+Destination: -11.78, 0.00
+Distance: 2.23 m
+X Distance: -2.07 Y Distance: -0.81
+Bearing: 248.71
+BHD: 248.71 256.83 -8.12
+Set wheels to: 233, 255
+Location: -9.65, 0.78
+Destination: -11.78, 0.00
+Distance: 2.27 m
+X Distance: -2.13 Y Distance: -0.78
+Bearing: 249.88
+BHD: 249.88 255.96 -6.08
+Set wheels to: 239, 255
+Location: -9.55, 0.82
+Destination: -11.78, 0.00
+Distance: 2.38 m
+X Distance: -2.23 Y Distance: -0.82
+Bearing: 249.80
+BHD: 249.80 256.97 -7.16
+Set wheels to: 236, 255
+Location: -9.46, 0.77
+Destination: -11.78, 0.00
+Distance: 2.44 m
+X Distance: -2.32 Y Distance: -0.77
+Bearing: 251.55
+BHD: 251.55 258.59 -7.05
+Set wheels to: 236, 255
+Location: -9.46, 0.80
+Destination: -11.78, 0.00
+Distance: 2.45 m
+X Distance: -2.32 Y Distance: -0.80
+Bearing: 250.91
+BHD: 250.91 253.52 -2.61
+Set wheels to: 249, 255
+Location: -9.41, 0.81
+Destination: -11.78, 0.00
+Distance: 2.51 m
+X Distance: -2.37 Y Distance: -0.81
+Bearing: 251.13
+BHD: 251.13 255.62 -4.49
+Set wheels to: 243, 255
+Location: -9.26, 0.80
+Destination: -11.78, 0.00
+Distance: 2.64 m
+X Distance: -2.52 Y Distance: -0.80
+Bearing: 252.50
+BHD: 252.50 259.32 -6.82
+Set wheels to: 237, 255
+Location: -9.09, 0.77
+Destination: -11.78, 0.00
+Distance: 2.80 m
+X Distance: -2.69 Y Distance: -0.77
+Bearing: 254.05
+BHD: 254.05 259.74 -5.69
+Set wheels to: 240, 255
+Location: -9.03, 0.79
+Destination: -11.78, 0.00
+Distance: 2.86 m
+X Distance: -2.75 Y Distance: -0.79
+Bearing: 253.94
+BHD: 253.94 257.87 -3.93
+Set wheels to: 245, 255
+Location: -9.11, 0.86
+Destination: -11.78, 0.00
+Distance: 2.81 m
+X Distance: -2.67 Y Distance: -0.86
+Bearing: 252.09
+BHD: 252.09 257.51 -5.43
+Set wheels to: 241, 255
+Location: -9.21, 0.94
+Destination: -11.78, 0.00
+Distance: 2.74 m
+X Distance: -2.57 Y Distance: -0.94
+Bearing: 249.95
+BHD: 249.95 251.73 -1.78
+Set wheels to: 251, 255
+Location: -9.36, 1.03
+Destination: -11.78, 0.00
+Distance: 2.63 m
+X Distance: -2.42 Y Distance: -1.03
+Bearing: 246.91
+BHD: 246.91 260.76 -13.85
+Set wheels to: 217, 255
+Location: -9.52, 1.14
+Destination: -11.78, 0.00
+Distance: 2.53 m
+X Distance: -2.26 Y Distance: -1.14
+Bearing: 243.29
+BHD: 243.29 258.24 -14.95
+Set wheels to: 214, 255
+Location: -9.69, 1.24
+Destination: -11.78, 0.00
+Distance: 2.43 m
+X Distance: -2.09 Y Distance: -1.24
+Bearing: 239.43
+BHD: 239.43 255.52 -16.10
+Set wheels to: 210, 255
+Location: -9.80, 1.32
+Destination: -11.78, 0.00
+Distance: 2.38 m
+X Distance: -1.98 Y Distance: -1.32
+Bearing: 236.39
+BHD: 236.39 254.54 -18.15
+Set wheels to: 205, 255
+Location: -9.98, 1.44
+Destination: -11.78, 0.00
+Distance: 2.31 m
+X Distance: -1.80 Y Distance: -1.44
+Bearing: 231.35
+BHD: 231.35 255.85 -24.50
+Set wheels to: 187, 255
+Location: -10.15, 1.56
+Destination: -11.78, 0.00
+Distance: 2.26 m
+X Distance: -1.63 Y Distance: -1.56
+Bearing: 226.10
+BHD: 226.10 253.80 -27.70
+Set wheels to: 178, 255
+Location: -10.35, 1.67
+Destination: -11.78, 0.00
+Distance: 2.20 m
+X Distance: -1.43 Y Distance: -1.67
+Bearing: 220.65
+BHD: 220.65 257.71 -37.06
+Set wheels to: 151, 255
+Location: -10.46, 1.76
+Destination: -11.78, 0.00
+Distance: 2.20 m
+X Distance: -1.32 Y Distance: -1.76
+Bearing: 216.86
+BHD: 216.86 259.15 -42.29
+Set wheels to: 136, 255
+Location: -10.69, 1.88
+Destination: -11.78, 0.00
+Distance: 2.17 m
+X Distance: -1.09 Y Distance: -1.88
+Bearing: 210.21
+BHD: 210.21 254.12 -43.91
+Set wheels to: 132, 255
+Location: -10.82, 1.92
+Destination: -11.78, 0.00
+Distance: 2.15 m
+X Distance: -0.96 Y Distance: -1.92
+Bearing: 206.57
+BHD: 206.57 252.86 -46.29
+Set wheels to: 125, 255
+Location: -11.02, 2.03
+Destination: -11.78, 0.00
+Distance: 2.16 m
+X Distance: -0.76 Y Distance: -2.03
+Bearing: 200.62
+BHD: 200.62 257.51 -56.89
+Set wheels to: 95, 255
+Location: -11.34, 2.16
+Destination: -11.78, 0.00
+Distance: 2.20 m
+X Distance: -0.44 Y Distance: -2.16
+Bearing: 191.49
+BHD: 191.49 255.71 -64.22
+Set wheels to: 74, 255
+Location: -11.54, 2.30
+Destination: -11.78, 0.00
+Distance: 2.32 m
+X Distance: -0.24 Y Distance: -2.30
+Bearing: 185.93
+BHD: 185.93 255.73 -69.80
+Set wheels to: 58, 255
+Location: -11.59, 2.28
+Destination: -11.78, 0.00
+Distance: 2.29 m
+X Distance: -0.19 Y Distance: -2.28
+Bearing: 184.75
+BHD: 184.75 268.29 -83.55
+Set wheels to: 19, 255
+Location: -11.53, 2.30
+Destination: -11.78, 0.00
+Distance: 2.31 m
+X Distance: -0.25 Y Distance: -2.30
+Bearing: 186.15
+BHD: 186.15 298.81 -112.66
+Set wheels to: -63, 255
+Location: -11.55, 2.46
+Destination: -11.78, 0.00
+Distance: 2.47 m
+X Distance: -0.23 Y Distance: -2.46
+Bearing: 185.38
+BHD: 185.38 326.71 -141.34
+Set wheels to: -144, 255
+Location: -11.78, 2.63
+Destination: -11.78, 0.00
+Distance: 2.63 m
+X Distance: 0.00 Y Distance: -2.63
+Bearing: 179.97
+BHD: 179.97 334.34 -154.37
+Set wheels to: -181, 255
+Location: -11.75, 2.68
+Destination: -11.78, 0.00
+Distance: 2.68 m
+X Distance: -0.03 Y Distance: -2.68
+Bearing: 180.68
+BHD: 180.68 344.70 -164.02
+Set wheels to: -209, 255
+Location: -11.72, 2.73
+Destination: -11.78, 0.00
+Distance: 2.73 m
+X Distance: -0.06 Y Distance: -2.73
+Bearing: 181.19
+BHD: 181.19 349.27 -168.08
+Set wheels to: -220, 255
+Location: -11.72, 2.72
+Destination: -11.78, 0.00
+Distance: 2.72 m
+X Distance: -0.06 Y Distance: -2.72
+Bearing: 181.37
+BHD: 181.37 345.08 -163.71
+Set wheels to: -208, 255
+Location: -11.67, 2.65
+Destination: -11.78, 0.00
+Distance: 2.65 m
+X Distance: -0.11 Y Distance: -2.65
+Bearing: 182.48
+BHD: 182.48 339.24 -156.76
+Set wheels to: -188, 255
+Location: -11.60, 2.44
+Destination: -11.78, 0.00
+Distance: 2.45 m
+X Distance: -0.18 Y Distance: -2.44
+Bearing: 184.24
+BHD: 184.24 342.30 -158.05
+Set wheels to: -192, 255
+Location: -11.55, 2.42
+Destination: -11.78, 0.00
+Distance: 2.44 m
+X Distance: -0.23 Y Distance: -2.42
+Bearing: 185.44
+BHD: 185.44 338.62 -153.18
+Set wheels to: -178, 255
+Location: -11.48, 2.28
+Destination: -11.78, 0.00
+Distance: 2.30 m
+X Distance: -0.30 Y Distance: -2.28
+Bearing: 187.45
+BHD: 187.45 336.59 -149.14
+Set wheels to: -167, 255
+Location: -11.40, 2.12
+Destination: -11.78, 0.00
+Distance: 2.16 m
+X Distance: -0.38 Y Distance: -2.12
+Bearing: 190.16
+BHD: 190.16 335.61 -145.45
+Set wheels to: -156, 255
+Location: -11.35, 2.02
+Destination: -11.78, 0.00
+Distance: 2.06 m
+X Distance: -0.43 Y Distance: -2.02
+Bearing: 192.03
+BHD: 192.03 340.52 -148.49
+Set wheels to: -165, 255
+Location: -11.37, 2.05
+Destination: -11.78, 0.00
+Distance: 2.09 m
+X Distance: -0.41 Y Distance: -2.05
+Bearing: 191.19
+BHD: 191.19 338.83 -147.64
+Set wheels to: -162, 255
+Location: -11.39, 2.07
+Destination: -11.78, 0.00
+Distance: 2.11 m
+X Distance: -0.39 Y Distance: -2.07
+Bearing: 190.64
+BHD: 190.64 339.82 -149.19
+Set wheels to: -167, 255
+Location: -11.39, 2.09
+Destination: -11.78, 0.00
+Distance: 2.12 m
+X Distance: -0.39 Y Distance: -2.09
+Bearing: 190.55
+BHD: 190.55 343.38 -152.83
+Set wheels to: -177, 255
+Location: -11.37, 2.12
+Destination: -11.78, 0.00
+Distance: 2.16 m
+X Distance: -0.41 Y Distance: -2.12
+Bearing: 190.81
+BHD: 190.81 340.75 -149.94
+Set wheels to: -169, 255
+Location: -11.37, 2.13
+Destination: -11.78, 0.00
+Distance: 2.17 m
+X Distance: -0.41 Y Distance: -2.13
+Bearing: 191.02
+BHD: 191.02 334.67 -143.65
+Set wheels to: -151, 255
+Location: -11.33, 2.11
+Destination: -11.78, 0.00
+Distance: 2.16 m
+X Distance: -0.45 Y Distance: -2.11
+Bearing: 191.96
+BHD: 191.96 340.57 -148.60
+Set wheels to: -165, 255
+Location: -11.35, 2.12
+Destination: -11.78, 0.00
+Distance: 2.16 m
+X Distance: -0.43 Y Distance: -2.12
+Bearing: 191.47
+BHD: 191.47 334.67 -143.20
+Set wheels to: -150, 255
+Location: -11.27, 2.09
+Destination: -11.78, 0.00
+Distance: 2.15 m
+X Distance: -0.51 Y Distance: -2.09
+Bearing: 193.56
+BHD: 193.56 343.28 -149.72
+Set wheels to: -168, 255
+Location: -11.20, 2.07
+Destination: -11.78, 0.00
+Distance: 2.15 m
+X Distance: -0.58 Y Distance: -2.07
+Bearing: 195.66
+BHD: 195.66 341.08 -145.42
+Set wheels to: -156, 255
+Location: -11.13, 2.04
+Destination: -11.78, 0.00
+Distance: 2.15 m
+X Distance: -0.65 Y Distance: -2.04
+Bearing: 197.75
+BHD: 197.75 342.73 -144.97
+Set wheels to: -155, 255
+Location: -11.07, 2.03
+Destination: -11.78, 0.00
+Distance: 2.15 m
+X Distance: -0.71 Y Distance: -2.03
+Bearing: 199.32
+BHD: 199.32 339.22 -139.91
+Set wheels to: -140, 255
+Location: -10.95, 2.01
+Destination: -11.78, 0.00
+Distance: 2.18 m
+X Distance: -0.83 Y Distance: -2.01
+Bearing: 202.40
+BHD: 202.40 341.42 -139.02
+Set wheels to: -138, 255
+Location: -10.83, 2.00
+Destination: -11.78, 0.00
+Distance: 2.21 m
+X Distance: -0.95 Y Distance: -2.00
+Bearing: 205.33
+BHD: 205.33 342.07 -136.74
+Set wheels to: -131, 255
+Location: -10.76, 2.03
+Destination: -11.78, 0.00
+Distance: 2.27 m
+X Distance: -1.02 Y Distance: -2.03
+Bearing: 206.70
+BHD: 206.70 345.18 -138.48
+Set wheels to: -136, 255
+Location: -10.70, 2.06
+Destination: -11.78, 0.00
+Distance: 2.32 m
+X Distance: -1.08 Y Distance: -2.06
+Bearing: 207.66
+BHD: 207.66 337.34 -129.68
+Set wheels to: -111, 255
+Location: -10.57, 2.08
+Destination: -11.78, 0.00
+Distance: 2.40 m
+X Distance: -1.21 Y Distance: -2.08
+Bearing: 210.24
+BHD: 210.24 340.61 -130.37
+Set wheels to: -113, 255
+Location: -10.50, 2.10
+Destination: -11.78, 0.00
+Distance: 2.46 m
+X Distance: -1.28 Y Distance: -2.10
+Bearing: 211.34
+BHD: 211.34 340.21 -128.87
+Set wheels to: -109, 255
+Location: -10.43, 2.14
+Destination: -11.78, 0.00
+Distance: 2.53 m
+X Distance: -1.35 Y Distance: -2.14
+Bearing: 212.31
+BHD: 212.31 338.98 -126.67
+Set wheels to: -103, 255
+Location: -10.39, 2.17
+Destination: -11.78, 0.00
+Distance: 2.58 m
+X Distance: -1.39 Y Distance: -2.17
+Bearing: 212.70
+BHD: 212.70 338.50 -125.80
+Set wheels to: -100, 255
+Location: -10.32, 2.22
+Destination: -11.78, 0.00
+Distance: 2.65 m
+X Distance: -1.46 Y Distance: -2.22
+Bearing: 213.37
+BHD: 213.37 340.65 -127.28
+Set wheels to: -105, 255
+Location: -10.25, 2.25
+Destination: -11.78, 0.00
+Distance: 2.72 m
+X Distance: -1.53 Y Distance: -2.25
+Bearing: 214.20
+BHD: 214.20 338.26 -124.06
+Set wheels to: -96, 255
+Location: -10.18, 2.26
+Destination: -11.78, 0.00
+Distance: 2.77 m
+X Distance: -1.60 Y Distance: -2.26
+Bearing: 215.31
+BHD: 215.31 339.08 -123.78
+Set wheels to: -95, 255
+Location: -10.11, 2.27
+Destination: -11.78, 0.00
+Distance: 2.82 m
+X Distance: -1.67 Y Distance: -2.27
+Bearing: 216.29
+BHD: 216.29 341.05 -124.76
+Set wheels to: -97, 255
+Location: -10.05, 2.27
+Destination: -11.78, 0.00
+Distance: 2.86 m
+X Distance: -1.73 Y Distance: -2.27
+Bearing: 217.33
+BHD: 217.33 338.26 -120.93
+Set wheels to: -87, 255
+Location: -9.97, 2.27
+Destination: -11.78, 0.00
+Distance: 2.90 m
+X Distance: -1.81 Y Distance: -2.27
+Bearing: 218.51
+BHD: 218.51 340.52 -122.01
+Set wheels to: -90, 255
+Location: -9.89, 2.28
+Destination: -11.78, 0.00
+Distance: 2.96 m
+X Distance: -1.89 Y Distance: -2.28
+Bearing: 219.71
+BHD: 219.71 345.06 -125.35
+Set wheels to: -99, 255
+Location: -9.81, 2.28
+Destination: -11.78, 0.00
+Distance: 3.01 m
+X Distance: -1.97 Y Distance: -2.28
+Bearing: 220.75
+BHD: 220.75 346.13 -125.38
+Set wheels to: -99, 255
+Location: -9.77, 2.28
+Destination: -11.78, 0.00
+Distance: 3.04 m
+X Distance: -2.01 Y Distance: -2.28
+Bearing: 221.41
+BHD: 221.41 343.22 -121.82
+Set wheels to: -89, 255
+Location: -9.69, 2.27
+Destination: -11.78, 0.00
+Distance: 3.08 m
+X Distance: -2.09 Y Distance: -2.27
+Bearing: 222.67
+BHD: 222.67 334.34 -111.66
+Set wheels to: -60, 255
+Location: -9.63, 2.25
+Destination: -11.78, 0.00
+Distance: 3.11 m
+X Distance: -2.15 Y Distance: -2.25
+Bearing: 223.74
+BHD: 223.74 333.38 -109.63
+Set wheels to: -55, 255
+Location: -9.55, 2.24
+Destination: -11.78, 0.00
+Distance: 3.16 m
+X Distance: -2.23 Y Distance: -2.24
+Bearing: 224.95
+BHD: 224.95 343.93 -118.97
+Set wheels to: -81, 255
+Location: -9.51, 2.22
+Destination: -11.78, 0.00
+Distance: 3.18 m
+X Distance: -2.27 Y Distance: -2.22
+Bearing: 225.67
+BHD: 225.67 335.12 -109.45
+Set wheels to: -54, 255
+Location: -9.41, 2.20
+Destination: -11.78, 0.00
+Distance: 3.23 m
+X Distance: -2.37 Y Distance: -2.20
+Bearing: 227.19
+BHD: 227.19 338.77 -111.57
+Set wheels to: -60, 255
+Location: -9.26, 2.18
+Destination: -11.78, 0.00
+Distance: 3.33 m
+X Distance: -2.52 Y Distance: -2.18
+Bearing: 229.17
+BHD: 229.17 336.59 -107.42
+Set wheels to: -48, 255
+Location: -9.12, 2.17
+Destination: -11.78, 0.00
+Distance: 3.44 m
+X Distance: -2.66 Y Distance: -2.17
+Bearing: 230.84
+BHD: 230.84 338.88 -108.03
+Set wheels to: -50, 255
+Location: -9.03, 2.16
+Destination: -11.78, 0.00
+Distance: 3.50 m
+X Distance: -2.75 Y Distance: -2.16
+Bearing: 231.77
+BHD: 231.77 338.62 -106.85
+Set wheels to: -47, 255
+Location: -8.94, 2.14
+Destination: -11.78, 0.00
+Distance: 3.55 m
+X Distance: -2.84 Y Distance: -2.14
+Bearing: 232.97
+BHD: 232.97 335.19 -102.22
+Set wheels to: -34, 255
+Location: -8.88, 2.11
+Destination: -11.78, 0.00
+Distance: 3.59 m
+X Distance: -2.90 Y Distance: -2.11
+Bearing: 233.95
+BHD: 233.95 339.98 -106.04
+Set wheels to: -44, 255
+Location: -8.87, 2.11
+Destination: -11.78, 0.00
+Distance: 3.60 m
+X Distance: -2.91 Y Distance: -2.11
+Bearing: 234.10
+BHD: 234.10 338.98 -104.88
+Set wheels to: -41, 255
+Location: -8.82, 2.09
+Destination: -11.78, 0.00
+Distance: 3.62 m
+X Distance: -2.96 Y Distance: -2.09
+Bearing: 234.86
+BHD: 234.86 336.91 -102.05
+Set wheels to: -33, 255
+Location: -8.78, 2.03
+Destination: -11.78, 0.00
+Distance: 3.62 m
+X Distance: -3.00 Y Distance: -2.03
+Bearing: 235.85
+BHD: 235.85 345.05 -109.20
+Set wheels to: -53, 255
+Location: -8.74, 2.07
+Destination: -11.78, 0.00
+Distance: 3.68 m
+X Distance: -3.04 Y Distance: -2.07
+Bearing: 235.68
+BHD: 235.68 20.59 -144.91
+Set wheels to: -155, 255
+Location: -8.80, 2.15
+Destination: -11.78, 0.00
+Distance: 3.68 m
+X Distance: -2.98 Y Distance: -2.15
+Bearing: 234.13
+BHD: 234.13 50.36 -176.22
+Set wheels to: -243, 255
+Location: -8.79, 2.19
+Destination: -11.78, 0.00
+Distance: 3.71 m
+X Distance: -2.99 Y Distance: -2.19
+Bearing: 233.71
+BHD: 233.71 92.85 140.85
+Set wheels to: 255, -144
+Location: -8.83, 2.21
+Destination: -11.78, 0.00
+Distance: 3.68 m
+X Distance: -2.95 Y Distance: -2.21
+Bearing: 233.09
+BHD: 233.09 92.41 140.68
+Set wheels to: 255, -144
+Location: -8.84, 2.23
+Destination: -11.78, 0.00
+Distance: 3.69 m
+X Distance: -2.94 Y Distance: -2.23
+Bearing: 232.79
+BHD: 232.79 86.77 146.01
+Set wheels to: 255, -159
+Location: -8.86, 2.23
+Destination: -11.78, 0.00
+Distance: 3.68 m
+X Distance: -2.92 Y Distance: -2.23
+Bearing: 232.59
+BHD: 232.59 87.68 144.91
+Set wheels to: 255, -156
+Location: -8.92, 2.25
+Destination: -11.78, 0.00
+Distance: 3.64 m
+X Distance: -2.86 Y Distance: -2.25
+Bearing: 231.85
+BHD: 231.85 90.01 141.84
+Set wheels to: 255, -147
+Location: -8.96, 2.27
+Destination: -11.78, 0.00
+Distance: 3.62 m
+X Distance: -2.82 Y Distance: -2.27
+Bearing: 231.22
+BHD: 231.22 90.18 141.04
+Set wheels to: 255, -145
+Location: -9.06, 2.24
+Destination: -11.78, 0.00
+Distance: 3.52 m
+X Distance: -2.72 Y Distance: -2.24
+Bearing: 230.60
+BHD: 230.60 90.01 140.59
+Set wheels to: 255, -143
+Location: -9.11, 2.15
+Destination: -11.78, 0.00
+Distance: 3.43 m
+X Distance: -2.67 Y Distance: -2.15
+Bearing: 231.15
+BHD: 231.15 90.67 140.48
+Set wheels to: 255, -143
+Location: -9.15, 2.07
+Destination: -11.78, 0.00
+Distance: 3.35 m
+X Distance: -2.63 Y Distance: -2.07
+Bearing: 231.75
+BHD: 231.75 91.63 140.12
+Set wheels to: 255, -142
+Location: -9.15, 2.02
+Destination: -11.78, 0.00
+Distance: 3.31 m
+X Distance: -2.63 Y Distance: -2.02
+Bearing: 232.53
+BHD: 232.53 86.58 145.95
+Set wheels to: 255, -159
+Location: -9.17, 1.94
+Destination: -11.78, 0.00
+Distance: 3.25 m
+X Distance: -2.61 Y Distance: -1.94
+Bearing: 233.32
+BHD: 233.32 87.85 145.47
+Set wheels to: 255, -157
+Location: -9.20, 1.88
+Destination: -11.78, 0.00
+Distance: 3.19 m
+X Distance: -2.58 Y Distance: -1.88
+Bearing: 233.98
+BHD: 233.98 83.55 150.43
+Set wheels to: 255, -171
+Location: -9.20, 1.81
+Destination: -11.78, 0.00
+Distance: 3.15 m
+X Distance: -2.58 Y Distance: -1.81
+Bearing: 234.92
+BHD: 234.92 96.66 138.27
+Set wheels to: 255, -137
+Location: -9.18, 1.77
+Destination: -11.78, 0.00
+Distance: 3.14 m
+X Distance: -2.60 Y Distance: -1.77
+Bearing: 235.79
+BHD: 235.79 89.21 146.58
+Set wheels to: 255, -160
+Location: -9.16, 1.70
+Destination: -11.78, 0.00
+Distance: 3.12 m
+X Distance: -2.62 Y Distance: -1.70
+Bearing: 237.06
+BHD: 237.06 87.27 149.79
+Set wheels to: 255, -169
+Location: -9.15, 1.62
+Destination: -11.78, 0.00
+Distance: 3.09 m
+X Distance: -2.63 Y Distance: -1.62
+Bearing: 238.36
+BHD: 238.36 93.16 145.19
+Set wheels to: 255, -156
+Location: -9.13, 1.56
+Destination: -11.78, 0.00
+Distance: 3.07 m
+X Distance: -2.65 Y Distance: -1.56
+Bearing: 239.54
+BHD: 239.54 89.23 150.31
+Set wheels to: 255, -171
+Location: -9.12, 1.51
+Destination: -11.78, 0.00
+Distance: 3.06 m
+X Distance: -2.66 Y Distance: -1.51
+Bearing: 240.36
+BHD: 240.36 86.86 153.50
+Set wheels to: 255, -180
+Location: -9.15, 1.21
+Destination: -11.78, 0.00
+Distance: 2.90 m
+X Distance: -2.63 Y Distance: -1.21
+Bearing: 245.29
+BHD: 245.29 90.84 154.46
+Set wheels to: 255, -183
+Location: -9.07, 0.96
+Destination: -11.78, 0.00
+Distance: 2.87 m
+X Distance: -2.71 Y Distance: -0.96
+Bearing: 250.40
+BHD: 250.40 84.43 165.96
+Set wheels to: 255, -215
+Location: -9.00, 0.77
+Destination: -11.78, 0.00
+Distance: 2.89 m
+X Distance: -2.78 Y Distance: -0.77
+Bearing: 254.49
+BHD: 254.49 84.87 169.62
+Set wheels to: 255, -226
+Location: -8.96, 0.67
+Destination: -11.78, 0.00
+Distance: 2.90 m
+X Distance: -2.82 Y Distance: -0.67
+Bearing: 256.60
+BHD: 256.60 90.01 166.59
+Set wheels to: 255, -217
+Location: -8.93, 0.55
+Destination: -11.78, 0.00
+Distance: 2.91 m
+X Distance: -2.85 Y Distance: -0.55
+Bearing: 259.15
+BHD: 259.15 89.25 169.89
+Set wheels to: 255, -226
+Location: -8.88, 0.43
+Destination: -11.78, 0.00
+Distance: 2.93 m
+X Distance: -2.90 Y Distance: -0.43
+Bearing: 261.50
+BHD: 261.50 86.77 174.72
+Set wheels to: 255, -240
+Location: -8.85, 0.34
+Destination: -11.78, 0.00
+Distance: 2.95 m
+X Distance: -2.93 Y Distance: -0.34
+Bearing: 263.35
+BHD: 263.35 90.79 172.56
+Set wheels to: 255, -234
+Location: -8.83, 0.28
+Destination: -11.78, 0.00
+Distance: 2.96 m
+X Distance: -2.95 Y Distance: -0.28
+Bearing: 264.48
+BHD: 264.48 82.21 -177.73
+Set wheels to: -248, 255
+Location: -8.82, 0.24
+Destination: -11.78, 0.00
+Distance: 2.97 m
+X Distance: -2.96 Y Distance: -0.24
+Bearing: 265.38
+BHD: 265.38 91.55 173.84
+Set wheels to: 255, -238
+Location: -8.80, 0.17
+Destination: -11.78, 0.00
+Distance: 2.98 m
+X Distance: -2.98 Y Distance: -0.17
+Bearing: 266.75
+BHD: 266.75 89.14 177.61
+Set wheels to: 255, -248
+Location: -8.78, 0.11
+Destination: -11.78, 0.00
+Distance: 3.00 m
+X Distance: -3.00 Y Distance: -0.11
+Bearing: 267.81
+BHD: 267.81 88.19 179.62
+Set wheels to: 255, -254
+Location: -8.78, 0.12
+Destination: -11.78, 0.00
+Distance: 3.00 m
+X Distance: -3.00 Y Distance: -0.12
+Bearing: 267.75
+BHD: 267.75 90.77 176.98
+Set wheels to: 255, -246
+Location: -8.78, 0.11
+Destination: -11.78, 0.00
+Distance: 3.00 m
+X Distance: -3.00 Y Distance: -0.11
+Bearing: 267.91
+BHD: 267.91 90.01 177.90
+Set wheels to: 255, -249
+Location: -8.78, 0.08
+Destination: -11.78, 0.00
+Distance: 3.01 m
+X Distance: -3.00 Y Distance: -0.08
+Bearing: 268.52
+BHD: 268.52 94.24 174.28
+Set wheels to: 255, -239
+Location: -8.78, 0.07
+Destination: -11.78, 0.00
+Distance: 3.00 m
+X Distance: -3.00 Y Distance: -0.07
+Bearing: 268.63
+BHD: 268.63 97.81 170.81
+Set wheels to: 255, -229
+Location: -8.77, 0.07
+Destination: -11.78, 0.00
+Distance: 3.01 m
+X Distance: -3.01 Y Distance: -0.07
+Bearing: 268.64
+BHD: 268.64 90.01 178.63
+Set wheels to: 255, -251
+Location: -8.76, 0.06
+Destination: -11.78, 0.00
+Distance: 3.02 m
+X Distance: -3.02 Y Distance: -0.06
+Bearing: 268.90
+BHD: 268.90 87.68 -178.78
+Set wheels to: -251, 255
+Location: -8.76, 0.06
+Destination: -11.78, 0.00
+Distance: 3.02 m
+X Distance: -3.02 Y Distance: -0.06
+Bearing: 268.83
+BHD: 268.83 90.01 178.82
+Set wheels to: 255, -252
+Location: -8.75, -0.00
+Destination: -11.78, 0.00
+Distance: 3.03 m
+X Distance: -3.03 Y Distance: 0.00
+Bearing: 270.07
+BHD: 270.07 94.61 175.46
+Set wheels to: 255, -242
+Location: -8.74, -0.06
+Destination: -11.78, 0.00
+Distance: 3.04 m
+X Distance: -3.04 Y Distance: 0.06
+Bearing: 271.12
+BHD: 271.12 87.48 -176.35
+Set wheels to: -244, 255
+Location: -8.74, -0.06
+Destination: -11.78, 0.00
+Distance: 3.04 m
+X Distance: -3.04 Y Distance: 0.06
+Bearing: 271.08
+BHD: 271.08 89.27 -178.19
+Set wheels to: -249, 255
+Location: -8.74, -0.06
+Destination: -11.78, 0.00
+Distance: 3.04 m
+X Distance: -3.04 Y Distance: 0.06
+Bearing: 271.07
+BHD: 271.07 91.18 179.89
+Set wheels to: 255, -255
+Location: -8.74, -0.13
+Destination: -11.78, 0.00
+Distance: 3.04 m
+X Distance: -3.04 Y Distance: 0.13
+Bearing: 272.48
+BHD: 272.48 84.58 -172.10
+Set wheels to: -232, 255
+Location: -8.74, -0.18
+Destination: -11.78, 0.00
+Distance: 3.04 m
+X Distance: -3.04 Y Distance: 0.18
+Bearing: 273.32
+BHD: 273.32 90.79 -177.47
+Set wheels to: -247, 255
+Location: -8.74, -0.18
+Destination: -11.78, 0.00
+Distance: 3.04 m
+X Distance: -3.04 Y Distance: 0.18
+Bearing: 273.33
+BHD: 273.33 83.55 -170.23
+Set wheels to: -226, 255
+Location: -8.74, -0.19
+Destination: -11.78, 0.00
+Distance: 3.04 m
+X Distance: -3.04 Y Distance: 0.19
+Bearing: 273.66
+BHD: 273.66 91.59 -177.93
+Set wheels to: -248, 255
+Location: -8.74, -0.24
+Destination: -11.78, 0.00
+Distance: 3.05 m
+X Distance: -3.04 Y Distance: 0.24
+Bearing: 274.49
+BHD: 274.49 90.01 -175.53
+Set wheels to: -241, 255
+Location: -8.73, -0.23
+Destination: -11.78, 0.00
+Distance: 3.05 m
+X Distance: -3.05 Y Distance: 0.23
+Bearing: 274.40
+BHD: 274.40 93.16 -178.77
+Set wheels to: -251, 255
+Location: -8.73, -0.23
+Destination: -11.78, 0.00
+Distance: 3.06 m
+X Distance: -3.05 Y Distance: 0.23
+Bearing: 274.37
+BHD: 274.37 86.33 -171.96
+Set wheels to: -231, 255
+Location: -8.73, -0.29
+Destination: -11.78, 0.00
+Distance: 3.06 m
+X Distance: -3.05 Y Distance: 0.29
+Bearing: 275.37
+BHD: 275.37 95.44 179.93
+Set wheels to: 255, -255
+Location: -8.73, -0.34
+Destination: -11.78, 0.00
+Distance: 3.07 m
+X Distance: -3.05 Y Distance: 0.34
+Bearing: 276.40
+BHD: 276.40 89.36 -172.96
+Set wheels to: -234, 255
+Location: -8.74, -0.37
+Destination: -11.78, 0.00
+Distance: 3.06 m
+X Distance: -3.04 Y Distance: 0.37
+Bearing: 276.94
+BHD: 276.94 83.73 -166.79
+Set wheels to: -217, 255
+Location: -8.73, -0.37
+Destination: -11.78, 0.00
+Distance: 3.07 m
+X Distance: -3.05 Y Distance: 0.37
+Bearing: 276.94
+BHD: 276.94 89.29 -172.36
+Set wheels to: -232, 255
+Location: -8.73, -0.41
+Destination: -11.78, 0.00
+Distance: 3.07 m
+X Distance: -3.05 Y Distance: 0.41
+Bearing: 277.71
+BHD: 277.71 94.00 -176.30
+Set wheels to: -244, 255
+Location: -8.73, -0.41
+Destination: -11.78, 0.00
+Distance: 3.07 m
+X Distance: -3.05 Y Distance: 0.41
+Bearing: 277.71
+BHD: 277.71 96.80 -179.09
+Set wheels to: -251, 255
+Location: -8.73, -0.40
+Destination: -11.78, 0.00
+Distance: 3.07 m
+X Distance: -3.05 Y Distance: 0.40
+Bearing: 277.53
+BHD: 277.53 91.63 -174.11
+Set wheels to: -237, 255
+Location: -8.73, -0.40
+Destination: -11.78, 0.00
+Distance: 3.07 m
+X Distance: -3.05 Y Distance: 0.40
+Bearing: 277.50
+BHD: 277.50 92.79 -175.29
+Set wheels to: -241, 255
+Location: -8.73, -0.40
+Destination: -11.78, 0.00
+Distance: 3.07 m
+X Distance: -3.05 Y Distance: 0.40
+Bearing: 277.46
+BHD: 277.46 89.69 -172.24
+Set wheels to: -232, 255
+Location: -8.74, -0.40
+Destination: -11.78, 0.00
+Distance: 3.06 m
+X Distance: -3.04 Y Distance: 0.40
+Bearing: 277.42
+BHD: 277.42 90.01 -172.59
+Set wheels to: -233, 255
+Location: -8.74, -0.40
+Destination: -11.78, 0.00
+Distance: 3.06 m
+X Distance: -3.04 Y Distance: 0.40
+Bearing: 277.45
+BHD: 277.45 82.42 -164.97
+Set wheels to: -211, 255
+Location: -8.73, -0.40
+Destination: -11.78, 0.00
+Distance: 3.07 m
+X Distance: -3.05 Y Distance: 0.40
+Bearing: 277.48
+BHD: 277.48 90.01 -172.53
+Set wheels to: -233, 255
+Location: -8.73, -0.39
+Destination: -11.78, 0.00
+Distance: 3.07 m
+X Distance: -3.05 Y Distance: 0.39
+Bearing: 277.23
+BHD: 277.23 92.28 -175.06
+Set wheels to: -240, 255
+Location: -8.73, -0.39
+Destination: -11.78, 0.00
+Distance: 3.08 m
+X Distance: -3.05 Y Distance: 0.39
+Bearing: 277.33
+BHD: 277.33 90.79 -173.46
+Set wheels to: -235, 255
+Location: -8.73, -0.39
+Destination: -11.78, 0.00
+Distance: 3.08 m
+X Distance: -3.05 Y Distance: 0.39
+Bearing: 277.33
+BHD: 277.33 88.24 -170.91
+Set wheels to: -228, 255
+Location: -8.73, -0.39
+Destination: -11.78, 0.00
+Distance: 3.08 m
+X Distance: -3.05 Y Distance: 0.39
+Bearing: 277.25
+BHD: 277.25 92.48 -175.22
+Set wheels to: -240, 255
+Location: -8.72, -0.38
+Destination: -11.78, 0.00
+Distance: 3.09 m
+X Distance: -3.06 Y Distance: 0.38
+Bearing: 277.14
+BHD: 277.14 82.33 -165.18
+Set wheels to: -212, 255
+Location: -8.72, -0.39
+Destination: -11.78, 0.00
+Distance: 3.09 m
+X Distance: -3.06 Y Distance: 0.39
+Bearing: 277.25
+BHD: 277.25 93.85 -176.60
+Set wheels to: -244, 255
+Location: -8.72, -0.39
+Destination: -11.78, 0.00
+Distance: 3.09 m
+X Distance: -3.06 Y Distance: 0.39
+Bearing: 277.26
+BHD: 277.26 93.08 -175.83
+Set wheels to: -242, 255
+Location: -8.72, -0.40
+Destination: -11.78, 0.00
+Distance: 3.09 m
+X Distance: -3.06 Y Distance: 0.40
+Bearing: 277.39
+BHD: 277.39 85.46 -168.06
+Set wheels to: -220, 255
+Location: -8.72, -0.40
+Destination: -11.78, 0.00
+Distance: 3.09 m
+X Distance: -3.06 Y Distance: 0.40
+Bearing: 277.40
+BHD: 277.40 91.73 -174.33
+Set wheels to: -238, 255
+Location: -8.72, -0.40
+Destination: -11.78, 0.00
+Distance: 3.09 m
+X Distance: -3.06 Y Distance: 0.40
+Bearing: 277.35
+BHD: 277.35 96.30 -178.95
+Set wheels to: -251, 255
+Location: -8.72, -0.40
+Destination: -11.78, 0.00
+Distance: 3.09 m
+X Distance: -3.06 Y Distance: 0.40
+Bearing: 277.47
+BHD: 277.47 90.84 -173.36
+Set wheels to: -235, 255
+Location: -8.72, -0.40
+Destination: -11.78, 0.00
+Distance: 3.09 m
+X Distance: -3.06 Y Distance: 0.40
+Bearing: 277.47
+BHD: 277.47 92.71 -175.24
+Set wheels to: -241, 255
+Location: -8.73, -0.40
+Destination: -11.78, 0.00
+Distance: 3.08 m
+X Distance: -3.05 Y Distance: 0.40
+Bearing: 277.53
+BHD: 277.53 90.01 -172.48
+Set wheels to: -233, 255
+Location: -8.73, -0.41
+Destination: -11.78, 0.00
+Distance: 3.08 m
+X Distance: -3.05 Y Distance: 0.41
+Bearing: 277.59
+BHD: 277.59 90.81 -173.23
+Set wheels to: -235, 255
+Location: -8.72, -0.41
+Destination: -11.78, 0.00
+Distance: 3.09 m
+X Distance: -3.06 Y Distance: 0.41
+Bearing: 277.71
+BHD: 277.71 89.17 -171.46
+Set wheels to: -230, 255
+Location: -8.72, -0.43
+Destination: -11.78, 0.00
+Distance: 3.09 m
+X Distance: -3.06 Y Distance: 0.43
+Bearing: 277.98
+BHD: 277.98 86.77 -168.79
+Set wheels to: -222, 255
+Location: -8.72, -0.42
+Destination: -11.78, 0.00
+Distance: 3.09 m
+X Distance: -3.06 Y Distance: 0.42
+Bearing: 277.83
+BHD: 277.83 94.80 -176.96
+Set wheels to: -245, 255
+Location: -8.71, -0.42
+Destination: -11.78, 0.00
+Distance: 3.10 m
+X Distance: -3.07 Y Distance: 0.42
+Bearing: 277.87
+BHD: 277.87 84.58 -166.71
+Set wheels to: -216, 255
+Location: -8.71, -0.43
+Destination: -11.78, 0.00
+Distance: 3.10 m
+X Distance: -3.07 Y Distance: 0.43
+Bearing: 278.05
+BHD: 278.05 90.01 -171.96
+Set wheels to: -231, 255
+Location: -8.70, -0.45
+Destination: -11.78, 0.00
+Distance: 3.11 m
+X Distance: -3.08 Y Distance: 0.45
+Bearing: 278.24
+BHD: 278.24 90.01 -171.78
+Set wheels to: -231, 255
+Location: -8.69, -0.46
+Destination: -11.78, 0.00
+Distance: 3.12 m
+X Distance: -3.09 Y Distance: 0.46
+Bearing: 278.42
+BHD: 278.42 87.14 -168.73
+Set wheels to: -222, 255
+Location: -8.69, -0.45
+Destination: -11.78, 0.00
+Distance: 3.12 m
+X Distance: -3.09 Y Distance: 0.45
+Bearing: 278.36
+BHD: 278.36 89.31 -170.95
+Set wheels to: -228, 255
+Location: -8.69, -0.46
+Destination: -11.78, 0.00
+Distance: 3.12 m
+X Distance: -3.09 Y Distance: 0.46
+Bearing: 278.48
+BHD: 278.48 91.55 -173.07
+Set wheels to: -234, 255
+Location: -8.69, -0.46
+Destination: -11.78, 0.00
+Distance: 3.12 m
+X Distance: -3.09 Y Distance: 0.46
+Bearing: 278.51
+BHD: 278.51 90.01 -171.50
+Set wheels to: -230, 255
+Location: -8.68, -0.46
+Destination: -11.78, 0.00
+Distance: 3.13 m
+X Distance: -3.10 Y Distance: 0.46
+Bearing: 278.50
+BHD: 278.50 89.29 -170.79
+Set wheels to: -228, 255
+Location: -8.68, -0.47
+Destination: -11.78, 0.00
+Distance: 3.13 m
+X Distance: -3.10 Y Distance: 0.47
+Bearing: 278.67
+BHD: 278.67 85.41 -166.74
+Set wheels to: -216, 255
+Location: -8.68, -0.46
+Destination: -11.78, 0.00
+Distance: 3.13 m
+X Distance: -3.10 Y Distance: 0.46
+Bearing: 278.43
+BHD: 278.43 86.68 -168.25
+Set wheels to: -221, 255
+Location: -8.68, -0.48
+Destination: -11.78, 0.00
+Distance: 3.14 m
+X Distance: -3.10 Y Distance: 0.48
+Bearing: 278.74
+BHD: 278.74 90.86 -172.12
+Set wheels to: -232, 255
+Location: -8.67, -0.48
+Destination: -11.78, 0.00
+Distance: 3.15 m
+X Distance: -3.11 Y Distance: 0.48
+Bearing: 278.72
+BHD: 278.72 91.63 -172.91
+Set wheels to: -234, 255
+Location: -8.65, -0.49
+Destination: -11.78, 0.00
+Distance: 3.17 m
+X Distance: -3.13 Y Distance: 0.49
+Bearing: 278.93
+BHD: 278.93 86.32 -167.39
+Set wheels to: -218, 255
+Location: -8.64, -0.50
+Destination: -11.78, 0.00
+Distance: 3.18 m
+X Distance: -3.14 Y Distance: 0.50
+Bearing: 279.13
+BHD: 279.13 89.57 -170.44
+Set wheels to: -227, 255
+Location: -8.64, -0.50
+Destination: -11.78, 0.00
+Distance: 3.18 m
+X Distance: -3.14 Y Distance: 0.50
+Bearing: 279.03
+BHD: 279.03 92.80 -173.76
+Set wheels to: -236, 255
+Location: -8.63, -0.51
+Destination: -11.78, 0.00
+Distance: 3.19 m
+X Distance: -3.15 Y Distance: 0.51
+Bearing: 279.13
+BHD: 279.13 87.97 -168.84
+Set wheels to: -222, 255
+Location: -8.63, -0.50
+Destination: -11.78, 0.00
+Distance: 3.19 m
+X Distance: -3.15 Y Distance: 0.50
+Bearing: 279.09
+BHD: 279.09 92.35 -173.26
+Set wheels to: -235, 255
+Location: -8.62, -0.51
+Destination: -11.78, 0.00
+Distance: 3.20 m
+X Distance: -3.16 Y Distance: 0.51
+Bearing: 279.11
+BHD: 279.11 95.15 -176.05
+Set wheels to: -243, 255
+Location: -8.60, -0.51
+Destination: -11.78, 0.00
+Distance: 3.22 m
+X Distance: -3.18 Y Distance: 0.51
+Bearing: 279.09
+BHD: 279.09 96.30 -177.21
+Set wheels to: -246, 255
+Location: -8.60, -0.50
+Destination: -11.78, 0.00
+Distance: 3.22 m
+X Distance: -3.18 Y Distance: 0.50
+Bearing: 278.93
+BHD: 278.93 88.43 -169.51
+Set wheels to: -224, 255
+Location: -8.59, -0.50
+Destination: -11.78, 0.00
+Distance: 3.23 m
+X Distance: -3.19 Y Distance: 0.50
+Bearing: 278.89
+BHD: 278.89 87.48 -168.59
+Set wheels to: -222, 255
+Location: -8.58, -0.50
+Destination: -11.78, 0.00
+Distance: 3.23 m
+X Distance: -3.20 Y Distance: 0.50
+Bearing: 278.90
+BHD: 278.90 87.61 -168.72
+Set wheels to: -222, 255
+Location: -8.58, -0.50
+Destination: -11.78, 0.00
+Distance: 3.24 m
+X Distance: -3.20 Y Distance: 0.50
+Bearing: 278.86
+BHD: 278.86 87.48 -168.61
+Set wheels to: -222, 255
+Location: -8.57, -0.50
+Destination: -11.78, 0.00
+Distance: 3.25 m
+X Distance: -3.21 Y Distance: 0.50
+Bearing: 278.80
+BHD: 278.80 89.32 -170.53
+Set wheels to: -227, 255
+Location: -8.56, -0.50
+Destination: -11.78, 0.00
+Distance: 3.26 m
+X Distance: -3.22 Y Distance: 0.50
+Bearing: 278.85
+BHD: 278.85 90.66 -171.81
+Set wheels to: -231, 255
+Location: -8.55, -0.50
+Destination: -11.78, 0.00
+Distance: 3.27 m
+X Distance: -3.23 Y Distance: 0.50
+Bearing: 278.79
+BHD: 278.79 99.65 179.14
+Set wheels to: 255, -253
+Location: -8.54, -0.50
+Destination: -11.78, 0.00
+Distance: 3.28 m
+X Distance: -3.24 Y Distance: 0.50
+Bearing: 278.75
+BHD: 278.75 85.41 -166.67
+Set wheels to: -216, 255
+Location: -8.54, -0.50
+Destination: -11.78, 0.00
+Distance: 3.28 m
+X Distance: -3.24 Y Distance: 0.50
+Bearing: 278.73
+BHD: 278.73 92.80 -174.06
+Set wheels to: -237, 255
+Location: -8.53, -0.50
+Destination: -11.78, 0.00
+Distance: 3.29 m
+X Distance: -3.25 Y Distance: 0.50
+Bearing: 278.81
+BHD: 278.81 88.30 -169.49
+Set wheels to: -224, 255
+Location: -8.52, -0.50
+Destination: -11.78, 0.00
+Distance: 3.30 m
+X Distance: -3.26 Y Distance: 0.50
+Bearing: 278.69
+BHD: 278.69 90.01 -171.32
+Set wheels to: -229, 255
+Location: -8.51, -0.49
+Destination: -11.78, 0.00
+Distance: 3.31 m
+X Distance: -3.27 Y Distance: 0.49
+Bearing: 278.56
+BHD: 278.56 95.01 -176.45
+Set wheels to: -244, 255
+Location: -8.50, -0.50
+Destination: -11.78, 0.00
+Distance: 3.32 m
+X Distance: -3.28 Y Distance: 0.50
+Bearing: 278.70
+BHD: 278.70 86.37 -167.67
+Set wheels to: -219, 255
+Location: -8.49, -0.49
+Destination: -11.78, 0.00
+Distance: 3.33 m
+X Distance: -3.29 Y Distance: 0.49
+Bearing: 278.53
+BHD: 278.53 92.48 -173.95
+Set wheels to: -237, 255
+Location: -8.49, -0.49
+Destination: -11.78, 0.00
+Distance: 3.33 m
+X Distance: -3.29 Y Distance: 0.49
+Bearing: 278.42
+BHD: 278.42 89.59 -171.16
+Set wheels to: -229, 255
+Location: -8.48, -0.48
+Destination: -11.78, 0.00
+Distance: 3.34 m
+X Distance: -3.30 Y Distance: 0.48
+Bearing: 278.24
+BHD: 278.24 86.58 -168.34
+Set wheels to: -221, 255
+Location: -8.46, -0.47
+Destination: -11.78, 0.00
+Distance: 3.35 m
+X Distance: -3.32 Y Distance: 0.47
+Bearing: 278.13
+BHD: 278.13 94.00 -175.88
+Set wheels to: -242, 255
+Location: -8.44, -0.47
+Destination: -11.78, 0.00
+Distance: 3.37 m
+X Distance: -3.34 Y Distance: 0.47
+Bearing: 278.01
+BHD: 278.01 89.17 -171.16
+Set wheels to: -229, 255
+Location: -8.44, -0.46
+Destination: -11.78, 0.00
+Distance: 3.37 m
+X Distance: -3.34 Y Distance: 0.46
+Bearing: 277.82
+BHD: 277.82 87.68 -169.86
+Set wheels to: -225, 255
+Location: -8.44, -0.46
+Destination: -11.78, 0.00
+Distance: 3.38 m
+X Distance: -3.34 Y Distance: 0.46
+Bearing: 277.86
+BHD: 277.86 92.23 -174.37
+Set wheels to: -238, 255
+Location: -8.41, -0.47
+Destination: -11.78, 0.00
+Distance: 3.40 m
+X Distance: -3.37 Y Distance: 0.47
+Bearing: 277.91
+BHD: 277.91 90.01 -172.10
+Set wheels to: -232, 255
+Location: -8.39, -0.48
+Destination: -11.78, 0.00
+Distance: 3.42 m
+X Distance: -3.39 Y Distance: 0.48
+Bearing: 278.04
+BHD: 278.04 87.01 -168.97
+Set wheels to: -223, 255
+Location: -8.38, -0.49
+Destination: -11.78, 0.00
+Distance: 3.44 m
+X Distance: -3.40 Y Distance: 0.49
+Bearing: 278.13
+BHD: 278.13 93.90 -175.77
+Set wheels to: -242, 255
+Location: -8.35, -0.50
+Destination: -11.78, 0.00
+Distance: 3.46 m
+X Distance: -3.43 Y Distance: 0.50
+Bearing: 278.25
+BHD: 278.25 90.01 -171.76
+Set wheels to: -231, 255
+Location: -8.33, -0.52
+Destination: -11.78, 0.00
+Distance: 3.49 m
+X Distance: -3.45 Y Distance: 0.52
+Bearing: 278.53
+BHD: 278.53 92.41 -173.88
+Set wheels to: -237, 255
+Location: -8.31, -0.52
+Destination: -11.78, 0.00
+Distance: 3.51 m
+X Distance: -3.47 Y Distance: 0.52
+Bearing: 278.60
+BHD: 278.60 89.19 -170.59
+Set wheels to: -227, 255
+Location: -8.30, -0.53
+Destination: -11.78, 0.00
+Distance: 3.52 m
+X Distance: -3.48 Y Distance: 0.53
+Bearing: 278.71
+BHD: 278.71 86.86 -168.15
+Set wheels to: -220, 255
+Location: -8.28, -0.53
+Destination: -11.78, 0.00
+Distance: 3.54 m
+X Distance: -3.50 Y Distance: 0.53
+Bearing: 278.60
+BHD: 278.60 90.01 -171.41
+Set wheels to: -230, 255
+Location: -8.27, -0.53
+Destination: -11.78, 0.00
+Distance: 3.55 m
+X Distance: -3.51 Y Distance: 0.53
+Bearing: 278.61
+BHD: 278.61 88.65 -170.03
+Set wheels to: -226, 255
+Location: -8.25, -0.55
+Destination: -11.78, 0.00
+Distance: 3.57 m
+X Distance: -3.53 Y Distance: 0.55
+Bearing: 278.79
+BHD: 278.79 94.00 -175.21
+Set wheels to: -240, 255
+Location: -8.24, -0.55
+Destination: -11.78, 0.00
+Distance: 3.59 m
+X Distance: -3.54 Y Distance: 0.55
+Bearing: 278.78
+BHD: 278.78 94.87 -176.09
+Set wheels to: -243, 255
+Location: -8.22, -0.56
+Destination: -11.78, 0.00
+Distance: 3.60 m
+X Distance: -3.56 Y Distance: 0.56
+Bearing: 278.90
+BHD: 278.90 92.48 -173.58
+Set wheels to: -236, 255
+Location: -8.20, -0.57
+Destination: -11.78, 0.00
+Distance: 3.62 m
+X Distance: -3.58 Y Distance: 0.57
+Bearing: 279.05
+BHD: 279.05 88.48 -169.42
+Set wheels to: -224, 255
+Location: -8.19, -0.58
+Destination: -11.78, 0.00
+Distance: 3.64 m
+X Distance: -3.59 Y Distance: 0.58
+Bearing: 279.11
+BHD: 279.11 93.90 -174.78
+Set wheels to: -239, 255
+Location: -8.17, -0.60
+Destination: -11.78, 0.00
+Distance: 3.66 m
+X Distance: -3.61 Y Distance: 0.60
+Bearing: 279.41
+BHD: 279.41 87.40 -167.99
+Set wheels to: -220, 255
+Location: -8.14, -0.61
+Destination: -11.78, 0.00
+Distance: 3.69 m
+X Distance: -3.64 Y Distance: 0.61
+Bearing: 279.54
+BHD: 279.54 97.65 -178.11
+Set wheels to: -249, 255
+Location: -8.14, -0.62
+Destination: -11.78, 0.00
+Distance: 3.70 m
+X Distance: -3.64 Y Distance: 0.62
+Bearing: 279.60
+BHD: 279.60 93.35 -173.74
+Set wheels to: -236, 255
+Location: -8.12, -0.63
+Destination: -11.78, 0.00
+Distance: 3.71 m
+X Distance: -3.66 Y Distance: 0.63
+Bearing: 279.75
+BHD: 279.75 86.86 -167.11
+Set wheels to: -217, 255
+Location: -8.10, -0.64
+Destination: -11.78, 0.00
+Distance: 3.73 m
+X Distance: -3.68 Y Distance: 0.64
+Bearing: 279.81
+BHD: 279.81 87.48 -167.66
+Set wheels to: -219, 255
+Location: -8.08, -0.66
+Destination: -11.78, 0.00
+Distance: 3.76 m
+X Distance: -3.70 Y Distance: 0.66
+Bearing: 280.05
+BHD: 280.05 89.13 -169.08
+Set wheels to: -223, 255
+Location: -8.06, -0.67
+Destination: -11.78, 0.00
+Distance: 3.78 m
+X Distance: -3.72 Y Distance: 0.67
+Bearing: 280.17
+BHD: 280.17 87.74 -167.57
+Set wheels to: -219, 255
+Location: -8.05, -0.68
+Destination: -11.78, 0.00
+Distance: 3.80 m
+X Distance: -3.73 Y Distance: 0.68
+Bearing: 280.26
+BHD: 280.26 85.22 -164.96
+Set wheels to: -211, 255
+Location: -8.04, -0.69
+Destination: -11.78, 0.00
+Distance: 3.81 m
+X Distance: -3.74 Y Distance: 0.69
+Bearing: 280.38
+BHD: 280.38 92.28 -171.90
+Set wheels to: -231, 255
+Location: -8.00, -0.70
+Destination: -11.78, 0.00
+Distance: 3.84 m
+X Distance: -3.78 Y Distance: 0.70
+Bearing: 280.45
+BHD: 280.45 90.91 -170.46
+Set wheels to: -227, 255
+Location: -7.99, -0.70
+Destination: -11.78, 0.00
+Distance: 3.86 m
+X Distance: -3.79 Y Distance: 0.70
+Bearing: 280.45
+BHD: 280.45 87.02 -166.57
+Set wheels to: -216, 255
+Location: -7.97, -0.71
+Destination: -11.78, 0.00
+Distance: 3.87 m
+X Distance: -3.81 Y Distance: 0.71
+Bearing: 280.55
+BHD: 280.55 85.10 -164.55
+Set wheels to: -210, 255
+Location: -7.95, -0.73
+Destination: -11.78, 0.00
+Distance: 3.90 m
+X Distance: -3.83 Y Distance: 0.73
+Bearing: 280.82
+BHD: 280.82 95.15 -174.33
+Set wheels to: -238, 255
+Location: -7.92, -0.73
+Destination: -11.78, 0.00
+Distance: 3.93 m
+X Distance: -3.86 Y Distance: 0.73
+Bearing: 280.77
+BHD: 280.77 93.45 -172.68
+Set wheels to: -233, 255
+Location: -7.90, -0.75
+Destination: -11.78, 0.00
+Distance: 3.95 m
+X Distance: -3.88 Y Distance: 0.75
+Bearing: 280.94
+BHD: 280.94 94.73 -173.80
+Set wheels to: -236, 255
+Location: -7.88, -0.75
+Destination: -11.78, 0.00
+Distance: 3.97 m
+X Distance: -3.90 Y Distance: 0.75
+Bearing: 280.95
+BHD: 280.95 92.63 -171.68
+Set wheels to: -230, 255
+Location: -7.86, -0.76
+Destination: -11.78, 0.00
+Distance: 3.99 m
+X Distance: -3.92 Y Distance: 0.76
+Bearing: 280.99
+BHD: 280.99 84.72 -163.73
+Set wheels to: -208, 255
+Location: -7.85, -0.77
+Destination: -11.78, 0.00
+Distance: 4.01 m
+X Distance: -3.93 Y Distance: 0.77
+Bearing: 281.08
+BHD: 281.08 84.20 -163.12
+Set wheels to: -206, 255
+Location: -7.83, -0.77
+Destination: -11.78, 0.00
+Distance: 4.02 m
+X Distance: -3.95 Y Distance: 0.77
+Bearing: 280.99
+BHD: 280.99 90.01 -169.03
+Set wheels to: -223, 255
+Location: -7.81, -0.77
+Destination: -11.78, 0.00
+Distance: 4.04 m
+X Distance: -3.97 Y Distance: 0.77
+Bearing: 280.95
+BHD: 280.95 89.14 -168.20
+Set wheels to: -221, 255
+Location: -7.80, -0.76
+Destination: -11.78, 0.00
+Distance: 4.05 m
+X Distance: -3.98 Y Distance: 0.76
+Bearing: 280.89
+BHD: 280.89 95.01 -174.12
+Set wheels to: -237, 255
+Location: -7.80, -0.76
+Destination: -11.78, 0.00
+Distance: 4.06 m
+X Distance: -3.98 Y Distance: 0.76
+Bearing: 280.85
+BHD: 280.85 89.85 -169.00
+Set wheels to: -223, 255
+Location: -7.79, -0.76
+Destination: -11.78, 0.00
+Distance: 4.06 m
+X Distance: -3.99 Y Distance: 0.76
+Bearing: 280.82
+BHD: 280.82 90.01 -169.19
+Set wheels to: -223, 255
+Location: -7.78, -0.76
+Destination: -11.78, 0.00
+Distance: 4.07 m
+X Distance: -4.00 Y Distance: 0.76
+Bearing: 280.82
+BHD: 280.82 88.48 -167.66
+Set wheels to: -219, 255
+Location: -7.77, -0.76
+Destination: -11.78, 0.00
+Distance: 4.08 m
+X Distance: -4.01 Y Distance: 0.76
+Bearing: 280.73
+BHD: 280.73 90.01 -169.29
+Set wheels to: -224, 255
+Location: -7.76, -0.75
+Destination: -11.78, 0.00
+Distance: 4.09 m
+X Distance: -4.02 Y Distance: 0.75
+Bearing: 280.61
+BHD: 280.61 88.43 -167.82
+Set wheels to: -219, 255
+Location: -7.75, -0.76
+Destination: -11.78, 0.00
+Distance: 4.10 m
+X Distance: -4.03 Y Distance: 0.76
+Bearing: 280.67
+BHD: 280.67 91.55 -170.88
+Set wheels to: -228, 255
+Location: -7.75, -0.76
+Destination: -11.78, 0.00
+Distance: 4.10 m
+X Distance: -4.03 Y Distance: 0.76
+Bearing: 280.61
+BHD: 280.61 88.39 -167.78
+Set wheels to: -219, 255
+Location: -7.73, -0.75
+Destination: -11.78, 0.00
+Distance: 4.12 m
+X Distance: -4.05 Y Distance: 0.75
+Bearing: 280.44
+BHD: 280.44 84.39 -163.96
+Set wheels to: -209, 255
+Location: -7.73, -0.74
+Destination: -11.78, 0.00
+Distance: 4.12 m
+X Distance: -4.05 Y Distance: 0.74
+Bearing: 280.41
+BHD: 280.41 88.52 -168.11
+Set wheels to: -220, 255
+Location: -7.72, -0.74
+Destination: -11.78, 0.00
+Distance: 4.13 m
+X Distance: -4.06 Y Distance: 0.74
+Bearing: 280.40
+BHD: 280.40 86.22 -165.82
+Set wheels to: -214, 255
+Location: -7.71, -0.75
+Destination: -11.78, 0.00
+Distance: 4.14 m
+X Distance: -4.07 Y Distance: 0.75
+Bearing: 280.45
+BHD: 280.45 87.10 -166.65
+Set wheels to: -216, 255
+Location: -7.70, -0.75
+Destination: -11.78, 0.00
+Distance: 4.14 m
+X Distance: -4.08 Y Distance: 0.75
+Bearing: 280.41
+BHD: 280.41 87.61 -167.21
+Set wheels to: -218, 255
+Location: -7.70, -0.74
+Destination: -11.78, 0.00
+Distance: 4.14 m
+X Distance: -4.08 Y Distance: 0.74
+Bearing: 280.24
+BHD: 280.24 87.48 -167.24
+Set wheels to: -218, 255
+Location: -7.69, -0.75
+Destination: -11.78, 0.00
+Distance: 4.16 m
+X Distance: -4.09 Y Distance: 0.75
+Bearing: 280.34
+BHD: 280.34 88.59 -168.25
+Set wheels to: -221, 255
+Location: -7.68, -0.74
+Destination: -11.78, 0.00
+Distance: 4.17 m
+X Distance: -4.10 Y Distance: 0.74
+Bearing: 280.29
+BHD: 280.29 80.96 -160.67
+Set wheels to: -199, 255
+Location: -7.68, -0.74
+Destination: -11.78, 0.00
+Distance: 4.17 m
+X Distance: -4.10 Y Distance: 0.74
+Bearing: 280.26
+BHD: 280.26 93.90 -173.63
+Set wheels to: -236, 255
+Location: -7.67, -0.74
+Destination: -11.78, 0.00
+Distance: 4.17 m
+X Distance: -4.11 Y Distance: 0.74
+Bearing: 280.18
+BHD: 280.18 89.14 -168.97
+Set wheels to: -223, 255
+Location: -7.66, -0.75
+Destination: -11.78, 0.00
+Distance: 4.19 m
+X Distance: -4.12 Y Distance: 0.75
+Bearing: 280.26
+BHD: 280.26 90.01 -169.75
+Set wheels to: -225, 255
+Location: -7.65, -0.74
+Destination: -11.78, 0.00
+Distance: 4.20 m
+X Distance: -4.13 Y Distance: 0.74
+Bearing: 280.14
+BHD: 280.14 89.55 -169.41
+Set wheels to: -224, 255
+Location: -7.63, -0.75
+Destination: -11.78, 0.00
+Distance: 4.22 m
+X Distance: -4.15 Y Distance: 0.75
+Bearing: 280.20
+BHD: 280.20 91.68 -171.48
+Set wheels to: -230, 255
+Location: -7.62, -0.74
+Destination: -11.78, 0.00
+Distance: 4.22 m
+X Distance: -4.16 Y Distance: 0.74
+Bearing: 280.09
+BHD: 280.09 97.17 -177.08
+Set wheels to: -246, 255
+Location: -7.61, -0.74
+Destination: -11.78, 0.00
+Distance: 4.24 m
+X Distance: -4.17 Y Distance: 0.74
+Bearing: 280.09
+BHD: 280.09 88.39 -168.30
+Set wheels to: -221, 255
+Location: -7.59, -0.74
+Destination: -11.78, 0.00
+Distance: 4.26 m
+X Distance: -4.19 Y Distance: 0.74
+Bearing: 280.07
+BHD: 280.07 95.30 -175.23
+Set wheels to: -240, 255
+Location: -7.57, -0.74
+Destination: -11.78, 0.00
+Distance: 4.27 m
+X Distance: -4.21 Y Distance: 0.74
+Bearing: 279.96
+BHD: 279.96 94.38 -174.42
+Set wheels to: -238, 255
+Location: -7.56, -0.73
+Destination: -11.78, 0.00
+Distance: 4.28 m
+X Distance: -4.22 Y Distance: 0.73
+Bearing: 279.89
+BHD: 279.89 82.97 -163.08
+Set wheels to: -206, 255
+Location: -7.56, -0.73
+Destination: -11.78, 0.00
+Distance: 4.29 m
+X Distance: -4.22 Y Distance: 0.73
+Bearing: 279.82
+BHD: 279.82 90.25 -170.43
+Set wheels to: -227, 255
+Location: -7.55, -0.73
+Destination: -11.78, 0.00
+Distance: 4.30 m
+X Distance: -4.23 Y Distance: 0.73
+Bearing: 279.77
+BHD: 279.77 86.86 -167.09
+Set wheels to: -217, 255
+Location: -7.53, -0.73
+Destination: -11.78, 0.00
+Distance: 4.31 m
+X Distance: -4.25 Y Distance: 0.73
+Bearing: 279.72
+BHD: 279.72 93.25 -173.54
+Set wheels to: -236, 255
+Location: -7.52, -0.72
+Destination: -11.78, 0.00
+Distance: 4.32 m
+X Distance: -4.26 Y Distance: 0.72
+Bearing: 279.57
+BHD: 279.57 86.13 -166.55
+Set wheels to: -216, 255
+Location: -7.52, -0.72
+Destination: -11.78, 0.00
+Distance: 4.32 m
+X Distance: -4.26 Y Distance: 0.72
+Bearing: 279.56
+BHD: 279.56 95.15 -175.60
+Set wheels to: -242, 255
+Location: -7.51, -0.72
+Destination: -11.78, 0.00
+Distance: 4.33 m
+X Distance: -4.27 Y Distance: 0.72
+Bearing: 279.56
+BHD: 279.56 86.32 -166.76
+Set wheels to: -216, 255
+Location: -7.49, -0.72
+Destination: -11.78, 0.00
+Distance: 4.35 m
+X Distance: -4.29 Y Distance: 0.72
+Bearing: 279.48
+BHD: 279.48 93.35 -173.87
+Set wheels to: -237, 255
+Location: -7.49, -0.72
+Destination: -11.78, 0.00
+Distance: 4.35 m
+X Distance: -4.29 Y Distance: 0.72
+Bearing: 279.54
+BHD: 279.54 86.32 -166.79
+Set wheels to: -217, 255
+Location: -7.47, -0.72
+Destination: -11.78, 0.00
+Distance: 4.37 m
+X Distance: -4.31 Y Distance: 0.72
+Bearing: 279.45
+BHD: 279.45 90.86 -171.41
+Set wheels to: -230, 255
+Location: -7.46, -0.72
+Destination: -11.78, 0.00
+Distance: 4.38 m
+X Distance: -4.32 Y Distance: 0.72
+Bearing: 279.47
+BHD: 279.47 88.33 -168.86
+Set wheels to: -222, 255
+Location: -7.46, -0.73
+Destination: -11.78, 0.00
+Distance: 4.38 m
+X Distance: -4.32 Y Distance: 0.73
+Bearing: 279.52
+BHD: 279.52 89.14 -169.62
+Set wheels to: -225, 255
+Location: -7.45, -0.72
+Destination: -11.78, 0.00
+Distance: 4.39 m
+X Distance: -4.33 Y Distance: 0.72
+Bearing: 279.37
+BHD: 279.37 87.74 -168.37
+Set wheels to: -221, 255
+Location: -7.45, -0.72
+Destination: -11.78, 0.00
+Distance: 4.39 m
+X Distance: -4.33 Y Distance: 0.72
+Bearing: 279.48
+BHD: 279.48 92.28 -172.80
+Set wheels to: -234, 255
+Location: -7.43, -0.72
+Destination: -11.78, 0.00
+Distance: 4.41 m
+X Distance: -4.35 Y Distance: 0.72
+Bearing: 279.39
+BHD: 279.39 92.79 -173.40
+Set wheels to: -235, 255
+Location: -7.42, -0.72
+Destination: -11.78, 0.00
+Distance: 4.42 m
+X Distance: -4.36 Y Distance: 0.72
+Bearing: 279.38
+BHD: 279.38 88.39 -169.01
+Set wheels to: -223, 255
+Location: -7.42, -0.72
+Destination: -11.78, 0.00
+Distance: 4.42 m
+X Distance: -4.36 Y Distance: 0.72
+Bearing: 279.36
+BHD: 279.36 87.40 -168.04
+Set wheels to: -220, 255
+Location: -7.41, -0.71
+Destination: -11.78, 0.00
+Distance: 4.42 m
+X Distance: -4.37 Y Distance: 0.71
+Bearing: 279.28
+BHD: 279.28 87.80 -168.52
+Set wheels to: -221, 255
+Location: -7.41, -0.71
+Destination: -11.78, 0.00
+Distance: 4.43 m
+X Distance: -4.37 Y Distance: 0.71
+Bearing: 279.22
+BHD: 279.22 88.30 -169.08
+Set wheels to: -223, 255
+Location: -7.40, -0.72
+Destination: -11.78, 0.00
+Distance: 4.44 m
+X Distance: -4.38 Y Distance: 0.72
+Bearing: 279.34
+BHD: 279.34 88.42 -169.08
+Set wheels to: -223, 255
+Location: -7.40, -0.72
+Destination: -11.78, 0.00
+Distance: 4.44 m
+X Distance: -4.38 Y Distance: 0.72
+Bearing: 279.30
+BHD: 279.30 93.90 -174.60
+Set wheels to: -239, 255
+Location: -7.39, -0.71
+Destination: -11.78, 0.00
+Distance: 4.45 m
+X Distance: -4.39 Y Distance: 0.71
+Bearing: 279.21
+BHD: 279.21 90.81 -171.60
+Set wheels to: -230, 255
+Location: -7.38, -0.71
+Destination: -11.78, 0.00
+Distance: 4.46 m
+X Distance: -4.40 Y Distance: 0.71
+Bearing: 279.17
+BHD: 279.17 89.17 -169.99
+Set wheels to: -226, 255
+Location: -7.38, -0.71
+Destination: -11.78, 0.00
+Distance: 4.46 m
+X Distance: -4.40 Y Distance: 0.71
+Bearing: 279.12
+BHD: 279.12 91.59 -172.47
+Set wheels to: -233, 255
+Location: -7.38, -0.70
+Destination: -11.78, 0.00
+Distance: 4.45 m
+X Distance: -4.40 Y Distance: 0.70
+Bearing: 279.09
+BHD: 279.09 92.35 -173.26
+Set wheels to: -235, 255
+Location: -7.36, -0.70
+Destination: -11.78, 0.00
+Distance: 4.47 m
+X Distance: -4.42 Y Distance: 0.70
+Bearing: 278.96
+BHD: 278.96 89.25 -170.29
+Set wheels to: -226, 255
+Location: -7.36, -0.70
+Destination: -11.78, 0.00
+Distance: 4.47 m
+X Distance: -4.42 Y Distance: 0.70
+Bearing: 278.95
+BHD: 278.95 93.80 -174.84
+Set wheels to: -239, 255
+Location: -7.36, -0.70
+Destination: -11.78, 0.00
+Distance: 4.48 m
+X Distance: -4.42 Y Distance: 0.70
+Bearing: 278.95
+BHD: 278.95 91.59 -172.64
+Set wheels to: -233, 255
+Location: -7.35, -0.69
+Destination: -11.78, 0.00
+Distance: 4.49 m
+X Distance: -4.43 Y Distance: 0.69
+Bearing: 278.83
+BHD: 278.83 88.26 -169.43
+Set wheels to: -224, 255
+Location: -7.35, -0.69
+Destination: -11.78, 0.00
+Distance: 4.49 m
+X Distance: -4.43 Y Distance: 0.69
+Bearing: 278.84
+BHD: 278.84 90.01 -171.17
+Set wheels to: -229, 255
+Location: -7.35, -0.69
+Destination: -11.78, 0.00
+Distance: 4.49 m
+X Distance: -4.43 Y Distance: 0.69
+Bearing: 278.88
+BHD: 278.88 91.43 -172.55
+Set wheels to: -233, 255
+Location: -7.34, -0.69
+Destination: -11.78, 0.00
+Distance: 4.49 m
+X Distance: -4.44 Y Distance: 0.69
+Bearing: 278.80
+BHD: 278.80 88.34 -169.55
+Set wheels to: -224, 255
+Location: -7.33, -0.69
+Destination: -11.78, 0.00
+Distance: 4.50 m
+X Distance: -4.45 Y Distance: 0.69
+Bearing: 278.78
+BHD: 278.78 90.86 -172.08
+Set wheels to: -232, 255
+Location: -7.32, -0.68
+Destination: -11.78, 0.00
+Distance: 4.51 m
+X Distance: -4.46 Y Distance: 0.68
+Bearing: 278.70
+BHD: 278.70 87.32 -168.62
+Set wheels to: -222, 255
+Location: -7.32, -0.68
+Destination: -11.78, 0.00
+Distance: 4.51 m
+X Distance: -4.46 Y Distance: 0.68
+Bearing: 278.64
+BHD: 278.64 95.31 -176.67
+Set wheels to: -245, 255
+Location: -7.32, -0.68
+Destination: -11.78, 0.00
+Distance: 4.51 m
+X Distance: -4.46 Y Distance: 0.68
+Bearing: 278.62
+BHD: 278.62 87.62 -168.99
+Set wheels to: -223, 255
+Location: -7.31, -0.67
+Destination: -11.78, 0.00
+Distance: 4.52 m
+X Distance: -4.47 Y Distance: 0.67
+Bearing: 278.52
+BHD: 278.52 81.49 -162.96
+Set wheels to: -206, 255
+Location: -7.31, -0.66
+Destination: -11.78, 0.00
+Distance: 4.51 m
+X Distance: -4.47 Y Distance: 0.66
+Bearing: 278.43
+BHD: 278.43 91.21 -172.78
+Set wheels to: -234, 255
+Location: -7.31, -0.66
+Destination: -11.78, 0.00
+Distance: 4.52 m
+X Distance: -4.47 Y Distance: 0.66
+Bearing: 278.38
+BHD: 278.38 85.95 -167.57
+Set wheels to: -219, 255
+Location: -7.31, -0.65
+Destination: -11.78, 0.00
+Distance: 4.52 m
+X Distance: -4.47 Y Distance: 0.65
+Bearing: 278.31
+BHD: 278.31 86.41 -168.11
+Set wheels to: -220, 255
+Location: -7.31, -0.64
+Destination: -11.78, 0.00
+Distance: 4.52 m
+X Distance: -4.47 Y Distance: 0.64
+Bearing: 278.19
+BHD: 278.19 87.61 -169.42
+Set wheels to: -224, 255
+Location: -7.30, -0.63
+Destination: -11.78, 0.00
+Distance: 4.53 m
+X Distance: -4.48 Y Distance: 0.63
+Bearing: 278.05
+BHD: 278.05 94.73 -176.68
+Set wheels to: -245, 255
+Location: -7.29, -0.64
+Destination: -11.78, 0.00
+Distance: 4.54 m
+X Distance: -4.49 Y Distance: 0.64
+Bearing: 278.06
+BHD: 278.06 90.01 -171.96
+Set wheels to: -231, 255
+Location: -7.28, -0.63
+Destination: -11.78, 0.00
+Distance: 4.54 m
+X Distance: -4.50 Y Distance: 0.63
+Bearing: 277.96
+BHD: 277.96 85.41 -167.45
+Set wheels to: -218, 255
+Location: -7.28, -0.62
+Destination: -11.78, 0.00
+Distance: 4.54 m
+X Distance: -4.50 Y Distance: 0.62
+Bearing: 277.90
+BHD: 277.90 90.53 -172.63
+Set wheels to: -233, 255
+Location: -7.27, -0.61
+Destination: -11.78, 0.00
+Distance: 4.55 m
+X Distance: -4.51 Y Distance: 0.61
+Bearing: 277.74
+BHD: 277.74 89.19 -171.45
+Set wheels to: -230, 255
+Location: -7.28, -0.61
+Destination: -11.78, 0.00
+Distance: 4.54 m
+X Distance: -4.50 Y Distance: 0.61
+Bearing: 277.71
+BHD: 277.71 90.01 -172.30
+Set wheels to: -232, 255
+Location: -7.27, -0.60
+Destination: -11.78, 0.00
+Distance: 4.55 m
+X Distance: -4.51 Y Distance: 0.60
+Bearing: 277.62
+BHD: 277.62 92.23 -174.61
+Set wheels to: -239, 255
+Location: -7.27, -0.59
+Destination: -11.78, 0.00
+Distance: 4.55 m
+X Distance: -4.51 Y Distance: 0.59
+Bearing: 277.52
+BHD: 277.52 89.17 -171.65
+Set wheels to: -230, 255
+Location: -7.26, -0.58
+Destination: -11.78, 0.00
+Distance: 4.55 m
+X Distance: -4.52 Y Distance: 0.58
+Bearing: 277.37
+BHD: 277.37 92.48 -175.11
+Set wheels to: -240, 255
+Location: -7.27, -0.58
+Destination: -11.78, 0.00
+Distance: 4.54 m
+X Distance: -4.51 Y Distance: 0.58
+Bearing: 277.35
+BHD: 277.35 94.49 -177.14
+Set wheels to: -246, 255
+Location: -7.27, -0.57
+Destination: -11.78, 0.00
+Distance: 4.54 m
+X Distance: -4.51 Y Distance: 0.57
+Bearing: 277.23
+BHD: 277.23 92.29 -175.06
+Set wheels to: -240, 255
+Location: -7.27, -0.56
+Destination: -11.78, 0.00
+Distance: 4.54 m
+X Distance: -4.51 Y Distance: 0.56
+Bearing: 277.10
+BHD: 277.10 85.29 -168.19
+Set wheels to: -221, 255
+Location: -7.27, -0.55
+Destination: -11.78, 0.00
+Distance: 4.54 m
+X Distance: -4.51 Y Distance: 0.55
+Bearing: 276.97
+BHD: 276.97 88.75 -171.78
+Set wheels to: -231, 255
+Location: -7.27, -0.55
+Destination: -11.78, 0.00
+Distance: 4.54 m
+X Distance: -4.51 Y Distance: 0.55
+Bearing: 276.90
+BHD: 276.90 85.91 -169.01
+Set wheels to: -223, 255
+Location: -7.28, -0.53
+Destination: -11.78, 0.00
+Distance: 4.53 m
+X Distance: -4.50 Y Distance: 0.53
+Bearing: 276.78
+BHD: 276.78 81.04 -164.26
+Set wheels to: -209, 255
+Location: -7.27, -0.53
+Destination: -11.78, 0.00
+Distance: 4.54 m
+X Distance: -4.51 Y Distance: 0.53
+Bearing: 276.67
+BHD: 276.67 91.68 -175.01
+Set wheels to: -240, 255
+Location: -7.28, -0.52
+Destination: -11.78, 0.00
+Distance: 4.53 m
+X Distance: -4.50 Y Distance: 0.52
+Bearing: 276.53
+BHD: 276.53 86.58 -170.05
+Set wheels to: -226, 255
+Location: -7.28, -0.51
+Destination: -11.78, 0.00
+Distance: 4.53 m
+X Distance: -4.50 Y Distance: 0.51
+Bearing: 276.49
+BHD: 276.49 83.55 -167.07
+Set wheels to: -217, 255
+Location: -7.28, -0.50
+Destination: -11.78, 0.00
+Distance: 4.53 m
+X Distance: -4.50 Y Distance: 0.50
+Bearing: 276.40
+BHD: 276.40 89.17 -172.76
+Set wheels to: -234, 255
+Location: -7.28, -0.50
+Destination: -11.78, 0.00
+Distance: 4.53 m
+X Distance: -4.50 Y Distance: 0.50
+Bearing: 276.30
+BHD: 276.30 90.01 -173.72
+Set wheels to: -236, 255
+Location: -7.28, -0.48
+Destination: -11.78, 0.00
+Distance: 4.52 m
+X Distance: -4.50 Y Distance: 0.48
+Bearing: 276.13
+BHD: 276.13 98.08 178.04
+Set wheels to: 255, -249
+Location: -7.29, -0.48
+Destination: -11.78, 0.00
+Distance: 4.52 m
+X Distance: -4.49 Y Distance: 0.48
+Bearing: 276.04
+BHD: 276.04 88.24 -172.20
+Set wheels to: -232, 255
+Location: -7.29, -0.46
+Destination: -11.78, 0.00
+Distance: 4.51 m
+X Distance: -4.49 Y Distance: 0.46
+Bearing: 275.85
+BHD: 275.85 90.01 -174.16
+Set wheels to: -237, 255
+Location: -7.30, -0.45
+Destination: -11.78, 0.00
+Distance: 4.50 m
+X Distance: -4.48 Y Distance: 0.45
+Bearing: 275.70
+BHD: 275.70 83.89 -168.19
+Set wheels to: -221, 255
+Location: -7.30, -0.43
+Destination: -11.78, 0.00
+Distance: 4.50 m
+X Distance: -4.48 Y Distance: 0.43
+Bearing: 275.52
+BHD: 275.52 86.94 -171.42
+Set wheels to: -230, 255
+Location: -7.31, -0.42
+Destination: -11.78, 0.00
+Distance: 4.49 m
+X Distance: -4.47 Y Distance: 0.42
+Bearing: 275.36
+BHD: 275.36 86.86 -171.50
+Set wheels to: -230, 255
+Location: -7.31, -0.41
+Destination: -11.78, 0.00
+Distance: 4.49 m
+X Distance: -4.47 Y Distance: 0.41
+Bearing: 275.27
+BHD: 275.27 90.01 -174.74
+Set wheels to: -239, 255
+Location: -7.31, -0.40
+Destination: -11.78, 0.00
+Distance: 4.48 m
+X Distance: -4.47 Y Distance: 0.40
+Bearing: 275.15
+BHD: 275.15 88.48 -173.33
+Set wheels to: -235, 255
+Location: -7.32, -0.38
+Destination: -11.78, 0.00
+Distance: 4.47 m
+X Distance: -4.46 Y Distance: 0.38
+Bearing: 274.93
+BHD: 274.93 88.34 -173.40
+Set wheels to: -235, 255
+Location: -7.32, -0.38
+Destination: -11.78, 0.00
+Distance: 4.47 m
+X Distance: -4.46 Y Distance: 0.38
+Bearing: 274.83
+BHD: 274.83 89.29 -174.46
+Set wheels to: -238, 255
+Location: -7.33, -0.36
+Destination: -11.78, 0.00
+Distance: 4.46 m
+X Distance: -4.45 Y Distance: 0.36
+Bearing: 274.67
+BHD: 274.67 93.08 -178.41
+Set wheels to: -250, 255
+Location: -7.36, -0.34
+Destination: -11.78, 0.00
+Distance: 4.44 m
+X Distance: -4.42 Y Distance: 0.34
+Bearing: 274.41
+BHD: 274.41 92.17 -177.76
+Set wheels to: -248, 255
+Location: -7.38, -0.32
+Destination: -11.78, 0.00
+Distance: 4.41 m
+X Distance: -4.40 Y Distance: 0.32
+Bearing: 274.10
+BHD: 274.10 91.55 -177.44
+Set wheels to: -247, 255
+Location: -7.42, -0.29
+Destination: -11.78, 0.00
+Distance: 4.37 m
+X Distance: -4.36 Y Distance: 0.29
+Bearing: 273.78
+BHD: 273.78 93.55 -179.77
+Set wheels to: -253, 255
+Location: -7.44, -0.27
+Destination: -11.78, 0.00
+Distance: 4.35 m
+X Distance: -4.34 Y Distance: 0.27
+Bearing: 273.57
+BHD: 273.57 93.90 179.67
+Set wheels to: 255, -254
+Location: -7.47, -0.25
+Destination: -11.78, 0.00
+Distance: 4.31 m
+X Distance: -4.31 Y Distance: 0.25
+Bearing: 273.26
+BHD: 273.26 88.19 -174.92
+Set wheels to: -240, 255
+Location: -7.50, -0.22
+Destination: -11.78, 0.00
+Distance: 4.29 m
+X Distance: -4.28 Y Distance: 0.22
+Bearing: 272.97
+BHD: 272.97 89.21 -176.24
+Set wheels to: -243, 255
+Location: -7.53, -0.19
+Destination: -11.78, 0.00
+Distance: 4.25 m
+X Distance: -4.25 Y Distance: 0.19
+Bearing: 272.56
+BHD: 272.56 91.10 -178.54
+Set wheels to: -250, 255
+Location: -7.55, -0.17
+Destination: -11.78, 0.00
+Distance: 4.24 m
+X Distance: -4.23 Y Distance: 0.17
+Bearing: 272.25
+BHD: 272.25 87.55 -175.30
+Set wheels to: -241, 255
+Location: -7.59, -0.14
+Destination: -11.78, 0.00
+Distance: 4.19 m
+X Distance: -4.19 Y Distance: 0.14
+Bearing: 271.86
+BHD: 271.86 95.15 176.71
+Set wheels to: 255, -246
+Location: -7.61, -0.11
+Destination: -11.78, 0.00
+Distance: 4.17 m
+X Distance: -4.17 Y Distance: 0.11
+Bearing: 271.45
+BHD: 271.45 97.17 174.28
+Set wheels to: 255, -239
+Location: -7.65, -0.08
+Destination: -11.78, 0.00
+Distance: 4.13 m
+X Distance: -4.13 Y Distance: 0.08
+Bearing: 271.08
+BHD: 271.08 84.87 -173.79
+Set wheels to: -236, 255
+Location: -7.67, -0.06
+Destination: -11.78, 0.00
+Distance: 4.11 m
+X Distance: -4.11 Y Distance: 0.06
+Bearing: 270.81
+BHD: 270.81 90.01 -179.21
+Set wheels to: -252, 255
+Location: -7.70, -0.03
+Destination: -11.78, 0.00
+Distance: 4.08 m
+X Distance: -4.08 Y Distance: 0.03
+Bearing: 270.40
+BHD: 270.40 90.01 -179.61
+Set wheels to: -253, 255
+Location: -7.74, 0.01
+Destination: -11.78, 0.00
+Distance: 4.04 m
+X Distance: -4.04 Y Distance: -0.01
+Bearing: 269.83
+BHD: 269.83 90.76 179.07
+Set wheels to: 255, -252
+Location: -7.77, 0.04
+Destination: -11.78, 0.00
+Distance: 4.01 m
+X Distance: -4.01 Y Distance: -0.04
+Bearing: 269.41
+BHD: 269.41 90.79 178.62
+Set wheels to: 255, -251
+Location: -7.80, 0.06
+Destination: -11.78, 0.00
+Distance: 3.98 m
+X Distance: -3.98 Y Distance: -0.06
+Bearing: 269.08
+BHD: 269.08 83.95 -174.88
+Set wheels to: -239, 255
+Location: -7.82, 0.08
+Destination: -11.78, 0.00
+Distance: 3.96 m
+X Distance: -3.96 Y Distance: -0.08
+Bearing: 268.79
+BHD: 268.79 91.63 177.16
+Set wheels to: 255, -247
+Location: -7.86, 0.11
+Destination: -11.78, 0.00
+Distance: 3.92 m
+X Distance: -3.92 Y Distance: -0.11
+Bearing: 268.35
+BHD: 268.35 90.89 177.46
+Set wheels to: 255, -248
+Location: -7.89, 0.13
+Destination: -11.78, 0.00
+Distance: 3.89 m
+X Distance: -3.89 Y Distance: -0.13
+Bearing: 268.06
+BHD: 268.06 94.12 173.94
+Set wheels to: 255, -238
+Location: -7.91, 0.16
+Destination: -11.78, 0.00
+Distance: 3.87 m
+X Distance: -3.87 Y Distance: -0.16
+Bearing: 267.61
+BHD: 267.61 94.00 173.61
+Set wheels to: 255, -237
+Location: -7.94, 0.18
+Destination: -11.78, 0.00
+Distance: 3.85 m
+X Distance: -3.84 Y Distance: -0.18
+Bearing: 267.29
+BHD: 267.29 85.41 -178.12
+Set wheels to: -249, 255
+Location: -7.97, 0.20
+Destination: -11.78, 0.00
+Distance: 3.81 m
+X Distance: -3.81 Y Distance: -0.20
+Bearing: 267.00
+BHD: 267.00 94.64 172.35
+Set wheels to: 255, -233
+Location: -7.99, 0.23
+Destination: -11.78, 0.00
+Distance: 3.80 m
+X Distance: -3.79 Y Distance: -0.23
+Bearing: 266.59
+BHD: 266.59 92.48 174.11
+Set wheels to: 255, -238
+Location: -8.02, 0.25
+Destination: -11.78, 0.00
+Distance: 3.77 m
+X Distance: -3.76 Y Distance: -0.25
+Bearing: 266.18
+BHD: 266.18 85.41 -179.23
+Set wheels to: -252, 255
+Location: -8.04, 0.27
+Destination: -11.78, 0.00
+Distance: 3.75 m
+X Distance: -3.74 Y Distance: -0.27
+Bearing: 265.93
+BHD: 265.93 91.80 174.13
+Set wheels to: 255, -238
+Location: -8.06, 0.29
+Destination: -11.78, 0.00
+Distance: 3.73 m
+X Distance: -3.72 Y Distance: -0.29
+Bearing: 265.59
+BHD: 265.59 94.12 171.47
+Set wheels to: 255, -231
+Location: -8.10, 0.31
+Destination: -11.78, 0.00
+Distance: 3.70 m
+X Distance: -3.68 Y Distance: -0.31
+Bearing: 265.20
+BHD: 265.20 86.02 179.18
+Set wheels to: 255, -253
+Location: -8.12, 0.33
+Destination: -11.78, 0.00
+Distance: 3.68 m
+X Distance: -3.66 Y Distance: -0.33
+Bearing: 264.80
+BHD: 264.80 93.80 171.00
+Set wheels to: 255, -230
+Location: -8.14, 0.35
+Destination: -11.78, 0.00
+Distance: 3.65 m
+X Distance: -3.64 Y Distance: -0.35
+Bearing: 264.48
+BHD: 264.48 90.01 174.47
+Set wheels to: 255, -239
+Location: -8.17, 0.38
+Destination: -11.78, 0.00
+Distance: 3.63 m
+X Distance: -3.61 Y Distance: -0.38
+Bearing: 263.95
+BHD: 263.95 92.55 171.40
+Set wheels to: 255, -231
+Location: -8.20, 0.40
+Destination: -11.78, 0.00
+Distance: 3.60 m
+X Distance: -3.58 Y Distance: -0.40
+Bearing: 263.58
+BHD: 263.58 97.81 165.77
+Set wheels to: 255, -215
+Location: -8.23, 0.44
+Destination: -11.78, 0.00
+Distance: 3.58 m
+X Distance: -3.55 Y Distance: -0.44
+Bearing: 262.94
+BHD: 262.94 84.67 178.28
+Set wheels to: 255, -250
+Location: -8.24, 0.46
+Destination: -11.78, 0.00
+Distance: 3.56 m
+X Distance: -3.54 Y Distance: -0.46
+Bearing: 262.64
+BHD: 262.64 89.27 173.37
+Set wheels to: 255, -236
+Location: -8.26, 0.48
+Destination: -11.78, 0.00
+Distance: 3.55 m
+X Distance: -3.52 Y Distance: -0.48
+Bearing: 262.22
+BHD: 262.22 95.31 166.91
+Set wheels to: 255, -218
+Location: -8.29, 0.51
+Destination: -11.78, 0.00
+Distance: 3.53 m
+X Distance: -3.49 Y Distance: -0.51
+Bearing: 261.75
+BHD: 261.75 92.35 169.40
+Set wheels to: 255, -225
+Location: -8.29, 0.53
+Destination: -11.78, 0.00
+Distance: 3.53 m
+X Distance: -3.49 Y Distance: -0.53
+Bearing: 261.33
+BHD: 261.33 85.02 176.31
+Set wheels to: 255, -245
+Location: -8.31, 0.56
+Destination: -11.78, 0.00
+Distance: 3.51 m
+X Distance: -3.47 Y Distance: -0.56
+Bearing: 260.89
+BHD: 260.89 87.61 173.27
+Set wheels to: 255, -236
+Location: -8.33, 0.58
+Destination: -11.78, 0.00
+Distance: 3.50 m
+X Distance: -3.45 Y Distance: -0.58
+Bearing: 260.49
+BHD: 260.49 80.87 179.62
+Set wheels to: 255, -254
+Location: -8.34, 0.60
+Destination: -11.78, 0.00
+Distance: 3.49 m
+X Distance: -3.44 Y Distance: -0.60
+Bearing: 260.09
+BHD: 260.09 95.38 164.71
+Set wheels to: 255, -212
+Location: -8.37, 0.62
+Destination: -11.78, 0.00
+Distance: 3.47 m
+X Distance: -3.41 Y Distance: -0.62
+Bearing: 259.66
+BHD: 259.66 93.16 166.50
+Set wheels to: 255, -217
+Location: -8.37, 0.64
+Destination: -11.78, 0.00
+Distance: 3.47 m
+X Distance: -3.41 Y Distance: -0.64
+Bearing: 259.35
+BHD: 259.35 88.44 170.91
+Set wheels to: 255, -229
+Location: -8.39, 0.67
+Destination: -11.78, 0.00
+Distance: 3.45 m
+X Distance: -3.39 Y Distance: -0.67
+Bearing: 258.78
+BHD: 258.78 87.80 170.99
+Set wheels to: 255, -229
+Location: -8.39, 0.69
+Destination: -11.78, 0.00
+Distance: 3.46 m
+X Distance: -3.39 Y Distance: -0.69
+Bearing: 258.51
+BHD: 258.51 92.55 165.96
+Set wheels to: 255, -215
+Location: -8.41, 0.71
+Destination: -11.78, 0.00
+Distance: 3.44 m
+X Distance: -3.37 Y Distance: -0.71
+Bearing: 258.14
+BHD: 258.14 86.77 171.37
+Set wheels to: 255, -231
+Location: -8.43, 0.72
+Destination: -11.78, 0.00
+Distance: 3.43 m
+X Distance: -3.35 Y Distance: -0.72
+Bearing: 257.80
+BHD: 257.80 86.86 170.94
+Set wheels to: 255, -229
+Location: -8.44, 0.74
+Destination: -11.78, 0.00
+Distance: 3.42 m
+X Distance: -3.34 Y Distance: -0.74
+Bearing: 257.60
+BHD: 257.60 90.89 166.71
+Set wheels to: 255, -217
+Location: -8.45, 0.76
+Destination: -11.78, 0.00
+Distance: 3.41 m
+X Distance: -3.33 Y Distance: -0.76
+Bearing: 257.16
+BHD: 257.16 88.34 168.82
+Set wheels to: 255, -223
+Location: -8.47, 0.77
+Destination: -11.78, 0.00
+Distance: 3.40 m
+X Distance: -3.31 Y Distance: -0.77
+Bearing: 256.93
+BHD: 256.93 87.90 169.03
+Set wheels to: 255, -224
+Location: -8.49, 0.79
+Destination: -11.78, 0.00
+Distance: 3.38 m
+X Distance: -3.29 Y Distance: -0.79
+Bearing: 256.43
+BHD: 256.43 90.01 166.42
+Set wheels to: 255, -217
+Location: -8.50, 0.81
+Destination: -11.78, 0.00
+Distance: 3.38 m
+X Distance: -3.28 Y Distance: -0.81
+Bearing: 256.10
+BHD: 256.10 90.32 165.78
+Set wheels to: 255, -215
+Location: -8.53, 0.84
+Destination: -11.78, 0.00
+Distance: 3.36 m
+X Distance: -3.25 Y Distance: -0.84
+Bearing: 255.59
+BHD: 255.59 91.59 164.00
+Set wheels to: 255, -210
+Location: -8.54, 0.86
+Destination: -11.78, 0.00
+Distance: 3.35 m
+X Distance: -3.24 Y Distance: -0.86
+Bearing: 255.05
+BHD: 255.05 91.14 163.91
+Set wheels to: 255, -209
+Location: -8.55, 0.88
+Destination: -11.78, 0.00
+Distance: 3.35 m
+X Distance: -3.23 Y Distance: -0.88
+Bearing: 254.69
+BHD: 254.69 90.01 164.68
+Set wheels to: 255, -212
+Location: -8.56, 0.89
+Destination: -11.78, 0.00
+Distance: 3.34 m
+X Distance: -3.22 Y Distance: -0.89
+Bearing: 254.49
+BHD: 254.49 94.64 159.84
+Set wheels to: 255, -198
+Location: -8.58, 0.91
+Destination: -11.78, 0.00
+Distance: 3.33 m
+X Distance: -3.20 Y Distance: -0.91
+Bearing: 254.15
+BHD: 254.15 93.16 160.99
+Set wheels to: 255, -201
+Location: -8.61, 0.94
+Destination: -11.78, 0.00
+Distance: 3.31 m
+X Distance: -3.17 Y Distance: -0.94
+Bearing: 253.53
+BHD: 253.53 94.73 158.80
+Set wheels to: 255, -195
+Location: -8.63, 0.95
+Destination: -11.78, 0.00
+Distance: 3.29 m
+X Distance: -3.15 Y Distance: -0.95
+Bearing: 253.22
+BHD: 253.22 89.21 164.01
+Set wheels to: 255, -210
+Location: -8.65, 0.96
+Destination: -11.78, 0.00
+Distance: 3.27 m
+X Distance: -3.13 Y Distance: -0.96
+Bearing: 252.93
+BHD: 252.93 90.89 162.05
+Set wheels to: 255, -204
+Location: -8.68, 0.98
+Destination: -11.78, 0.00
+Distance: 3.26 m
+X Distance: -3.10 Y Distance: -0.98
+Bearing: 252.45
+BHD: 252.45 90.55 161.90
+Set wheels to: 255, -204
+Location: -8.71, 1.00
+Destination: -11.78, 0.00
+Distance: 3.23 m
+X Distance: -3.07 Y Distance: -1.00
+Bearing: 251.95
+BHD: 251.95 89.23 162.72
+Set wheels to: 255, -206
+Location: -8.73, 1.02
+Destination: -11.78, 0.00
+Distance: 3.21 m
+X Distance: -3.05 Y Distance: -1.02
+Bearing: 251.55
+BHD: 251.55 80.22 171.33
+Set wheels to: 255, -230
+Location: -8.75, 1.03
+Destination: -11.78, 0.00
+Distance: 3.20 m
+X Distance: -3.03 Y Distance: -1.03
+Bearing: 251.27
+BHD: 251.27 86.23 165.05
+Set wheels to: 255, -213
+Location: -8.78, 1.04
+Destination: -11.78, 0.00
+Distance: 3.18 m
+X Distance: -3.00 Y Distance: -1.04
+Bearing: 250.89
+BHD: 250.89 83.55 167.33
+Set wheels to: 255, -219
+Location: -8.82, 1.05
+Destination: -11.78, 0.00
+Distance: 3.14 m
+X Distance: -2.96 Y Distance: -1.05
+Bearing: 250.48
+BHD: 250.48 90.75 159.73
+Set wheels to: 255, -198
+Location: -8.85, 1.07
+Destination: -11.78, 0.00
+Distance: 3.12 m
+X Distance: -2.93 Y Distance: -1.07
+Bearing: 250.01
+BHD: 250.01 85.41 164.60
+Set wheels to: 255, -211
+Location: -8.88, 1.06
+Destination: -11.78, 0.00
+Distance: 3.09 m
+X Distance: -2.90 Y Distance: -1.06
+Bearing: 249.89
+BHD: 249.89 93.53 156.36
+Set wheels to: 255, -188
+Location: -8.90, 1.08
+Destination: -11.78, 0.00
+Distance: 3.07 m
+X Distance: -2.88 Y Distance: -1.08
+Bearing: 249.53
+BHD: 249.53 88.30 161.23
+Set wheels to: 255, -202
+Location: -8.93, 1.09
+Destination: -11.78, 0.00
+Distance: 3.05 m
+X Distance: -2.85 Y Distance: -1.09
+Bearing: 249.06
+BHD: 249.06 86.02 163.04
+Set wheels to: 255, -207
+Location: -8.97, 1.10
+Destination: -11.78, 0.00
+Distance: 3.02 m
+X Distance: -2.81 Y Distance: -1.10
+Bearing: 248.66
+BHD: 248.66 92.93 155.73
+Set wheels to: 255, -186
+Location: -9.00, 1.11
+Destination: -11.78, 0.00
+Distance: 2.99 m
+X Distance: -2.78 Y Distance: -1.11
+Bearing: 248.20
+BHD: 248.20 90.01 158.19
+Set wheels to: 255, -193
+Location: -9.03, 1.12
+Destination: -11.78, 0.00
+Distance: 2.97 m
+X Distance: -2.75 Y Distance: -1.12
+Bearing: 247.83
+BHD: 247.83 93.80 154.04
+Set wheels to: 255, -181
+Location: -9.07, 1.13
+Destination: -11.78, 0.00
+Distance: 2.93 m
+X Distance: -2.71 Y Distance: -1.13
+Bearing: 247.37
+BHD: 247.37 90.01 157.36
+Set wheels to: 255, -191
+Location: -9.11, 1.13
+Destination: -11.78, 0.00
+Distance: 2.90 m
+X Distance: -2.67 Y Distance: -1.13
+Bearing: 247.06
+BHD: 247.06 86.13 160.94
+Set wheels to: 255, -201
+Location: -9.14, 1.15
+Destination: -11.78, 0.00
+Distance: 2.88 m
+X Distance: -2.64 Y Distance: -1.15
+Bearing: 246.53
+BHD: 246.53 84.98 161.55
+Set wheels to: 255, -203
+Location: -9.17, 1.14
+Destination: -11.78, 0.00
+Distance: 2.85 m
+X Distance: -2.61 Y Distance: -1.14
+Bearing: 246.35
+BHD: 246.35 88.39 157.96
+Set wheels to: 255, -193
+Location: -9.20, 1.15
+Destination: -11.78, 0.00
+Distance: 2.83 m
+X Distance: -2.58 Y Distance: -1.15
+Bearing: 245.94
+BHD: 245.94 87.80 158.15
+Set wheels to: 255, -193
+Location: -9.24, 1.16
+Destination: -11.78, 0.00
+Distance: 2.79 m
+X Distance: -2.54 Y Distance: -1.16
+Bearing: 245.46
+BHD: 245.46 87.60 157.86
+Set wheels to: 255, -192
+Location: -9.27, 1.16
+Destination: -11.78, 0.00
+Distance: 2.76 m
+X Distance: -2.51 Y Distance: -1.16
+Bearing: 245.13
+BHD: 245.13 90.01 155.11
+Set wheels to: 255, -184
+Location: -9.30, 1.17
+Destination: -11.78, 0.00
+Distance: 2.74 m
+X Distance: -2.48 Y Distance: -1.17
+Bearing: 244.77
+BHD: 244.77 93.70 151.07
+Set wheels to: 255, -173
+Location: -9.33, 1.18
+Destination: -11.78, 0.00
+Distance: 2.72 m
+X Distance: -2.45 Y Distance: -1.18
+Bearing: 244.34
+BHD: 244.34 89.19 155.15
+Set wheels to: 255, -185
+Location: -9.37, 1.18
+Destination: -11.78, 0.00
+Distance: 2.69 m
+X Distance: -2.41 Y Distance: -1.18
+Bearing: 243.87
+BHD: 243.87 86.32 157.54
+Set wheels to: 255, -191
+Location: -9.42, 1.19
+Destination: -11.78, 0.00
+Distance: 2.65 m
+X Distance: -2.36 Y Distance: -1.19
+Bearing: 243.32
+BHD: 243.32 89.17 154.15
+Set wheels to: 255, -182
+Location: -9.43, 1.19
+Destination: -11.78, 0.00
+Distance: 2.63 m
+X Distance: -2.35 Y Distance: -1.19
+Bearing: 243.07
+BHD: 243.07 85.16 157.91
+Set wheels to: 255, -192
+Location: -9.49, 1.22
+Destination: -11.78, 0.00
+Distance: 2.59 m
+X Distance: -2.29 Y Distance: -1.22
+Bearing: 241.99
+BHD: 241.99 95.92 146.06
+Set wheels to: 255, -159
+Location: -9.53, 1.21
+Destination: -11.78, 0.00
+Distance: 2.55 m
+X Distance: -2.25 Y Distance: -1.21
+Bearing: 241.72
+BHD: 241.72 93.08 148.64
+Set wheels to: 255, -166
+Location: -9.57, 1.22
+Destination: -11.78, 0.00
+Distance: 2.52 m
+X Distance: -2.21 Y Distance: -1.22
+Bearing: 241.15
+BHD: 241.15 90.80 150.35
+Set wheels to: 255, -171
+Location: -9.61, 1.23
+Destination: -11.78, 0.00
+Distance: 2.50 m
+X Distance: -2.17 Y Distance: -1.23
+Bearing: 240.56
+BHD: 240.56 87.61 152.95
+Set wheels to: 255, -178
+Location: -9.66, 1.24
+Destination: -11.78, 0.00
+Distance: 2.46 m
+X Distance: -2.12 Y Distance: -1.24
+Bearing: 239.73
+BHD: 239.73 91.55 148.18
+Set wheels to: 255, -165
+Location: -9.70, 1.24
+Destination: -11.78, 0.00
+Distance: 2.43 m
+X Distance: -2.08 Y Distance: -1.24
+Bearing: 239.13
+BHD: 239.13 88.43 150.70
+Set wheels to: 255, -172
+Location: -9.75, 1.25
+Destination: -11.78, 0.00
+Distance: 2.39 m
+X Distance: -2.03 Y Distance: -1.25
+Bearing: 238.36
+BHD: 238.36 89.21 149.15
+Set wheels to: 255, -168
+Location: -9.76, 1.26
+Destination: -11.78, 0.00
+Distance: 2.38 m
+X Distance: -2.02 Y Distance: -1.26
+Bearing: 237.92
+BHD: 237.92 89.90 148.02
+Set wheels to: 255, -164
+Location: -9.81, 1.27
+Destination: -11.78, 0.00
+Distance: 2.35 m
+X Distance: -1.97 Y Distance: -1.27
+Bearing: 237.28
+BHD: 237.28 92.48 144.81
+Set wheels to: 255, -155
+Location: -9.86, 1.28
+Destination: -11.78, 0.00
+Distance: 2.31 m
+X Distance: -1.92 Y Distance: -1.28
+Bearing: 236.41
+BHD: 236.41 87.08 149.34
+Set wheels to: 255, -168
+Location: -9.90, 1.29
+Destination: -11.78, 0.00
+Distance: 2.28 m
+X Distance: -1.88 Y Distance: -1.29
+Bearing: 235.67
+BHD: 235.67 84.58 151.09
+Set wheels to: 255, -173
+Location: -9.93, 1.29
+Destination: -11.78, 0.00
+Distance: 2.25 m
+X Distance: -1.85 Y Distance: -1.29
+Bearing: 235.20
+BHD: 235.20 94.00 141.20
+Set wheels to: 255, -145
+Location: -9.96, 1.29
+Destination: -11.78, 0.00
+Distance: 2.23 m
+X Distance: -1.82 Y Distance: -1.29
+Bearing: 234.66
+BHD: 234.66 91.73 142.93
+Set wheels to: 255, -150
+Location: -10.01, 1.29
+Destination: -11.78, 0.00
+Distance: 2.19 m
+X Distance: -1.77 Y Distance: -1.29
+Bearing: 233.79
+BHD: 233.79 90.81 142.98
+Set wheels to: 255, -150
+Location: -10.05, 1.30
+Destination: -11.78, 0.00
+Distance: 2.16 m
+X Distance: -1.73 Y Distance: -1.30
+Bearing: 233.04
+BHD: 233.04 91.63 141.41
+Set wheels to: 255, -146
+Location: -10.08, 1.31
+Destination: -11.78, 0.00
+Distance: 2.15 m
+X Distance: -1.70 Y Distance: -1.31
+Bearing: 232.44
+BHD: 232.44 86.50 145.94
+Set wheels to: 255, -158
+Location: -10.12, 1.31
+Destination: -11.78, 0.00
+Distance: 2.12 m
+X Distance: -1.66 Y Distance: -1.31
+Bearing: 231.62
+BHD: 231.62 88.55 143.07
+Set wheels to: 255, -150
+Location: -10.15, 1.32
+Destination: -11.78, 0.00
+Distance: 2.10 m
+X Distance: -1.63 Y Distance: -1.32
+Bearing: 231.07
+BHD: 231.07 86.58 144.49
+Set wheels to: 255, -154
+Location: -10.20, 1.32
+Destination: -11.78, 0.00
+Distance: 2.06 m
+X Distance: -1.58 Y Distance: -1.32
+Bearing: 230.15
+BHD: 230.15 92.78 137.37
+Set wheels to: 255, -134
+Location: -10.22, 1.32
+Destination: -11.78, 0.00
+Distance: 2.04 m
+X Distance: -1.56 Y Distance: -1.32
+Bearing: 229.72
+BHD: 229.72 90.01 139.71
+Set wheels to: 255, -141
+Location: -10.25, 1.33
+Destination: -11.78, 0.00
+Distance: 2.03 m
+X Distance: -1.53 Y Distance: -1.33
+Bearing: 229.08
+BHD: 229.08 96.93 132.15
+Set wheels to: 255, -119
+Location: -10.29, 1.32
+Destination: -11.78, 0.00
+Distance: 1.99 m
+X Distance: -1.49 Y Distance: -1.32
+Bearing: 228.52
+BHD: 228.52 88.52 140.01
+Set wheels to: 255, -142
+Location: -10.32, 1.32
+Destination: -11.78, 0.00
+Distance: 1.97 m
+X Distance: -1.46 Y Distance: -1.32
+Bearing: 227.78
+BHD: 227.78 83.22 144.56
+Set wheels to: 255, -155
+Location: -10.35, 1.33
+Destination: -11.78, 0.00
+Distance: 1.95 m
+X Distance: -1.43 Y Distance: -1.33
+Bearing: 227.11
+BHD: 227.11 88.39 138.72
+Set wheels to: 255, -138
+Location: -10.39, 1.33
+Destination: -11.78, 0.00
+Distance: 1.93 m
+X Distance: -1.39 Y Distance: -1.33
+Bearing: 226.33
+BHD: 226.33 89.23 137.10
+Set wheels to: 255, -133
+Location: -10.41, 1.33
+Destination: -11.78, 0.00
+Distance: 1.91 m
+X Distance: -1.37 Y Distance: -1.33
+Bearing: 225.84
+BHD: 225.84 90.01 135.83
+Set wheels to: 255, -130
+Location: -10.46, 1.33
+Destination: -11.78, 0.00
+Distance: 1.87 m
+X Distance: -1.32 Y Distance: -1.33
+Bearing: 224.81
+BHD: 224.81 87.55 137.26
+Set wheels to: 255, -134
+Location: -10.49, 1.33
+Destination: -11.78, 0.00
+Distance: 1.85 m
+X Distance: -1.29 Y Distance: -1.33
+Bearing: 223.99
+BHD: 223.99 92.45 131.55
+Set wheels to: 255, -118
+Location: -10.51, 1.32
+Destination: -11.78, 0.00
+Distance: 1.83 m
+X Distance: -1.27 Y Distance: -1.32
+Bearing: 223.77
+BHD: 223.77 93.25 130.52
+Set wheels to: 255, -115
+Location: -10.54, 1.33
+Destination: -11.78, 0.00
+Distance: 1.81 m
+X Distance: -1.24 Y Distance: -1.33
+Bearing: 222.95
+BHD: 222.95 85.02 137.93
+Set wheels to: 255, -136
+Location: -10.58, 1.31
+Destination: -11.78, 0.00
+Distance: 1.78 m
+X Distance: -1.20 Y Distance: -1.31
+Bearing: 222.47
+BHD: 222.47 94.73 127.74
+Set wheels to: 255, -107
+Location: -10.60, 1.31
+Destination: -11.78, 0.00
+Distance: 1.76 m
+X Distance: -1.18 Y Distance: -1.31
+Bearing: 222.06
+BHD: 222.06 92.71 129.35
+Set wheels to: 255, -111
+Location: -10.62, 1.30
+Destination: -11.78, 0.00
+Distance: 1.74 m
+X Distance: -1.16 Y Distance: -1.30
+Bearing: 221.87
+BHD: 221.87 90.81 131.05
+Set wheels to: 255, -116
+Location: -10.65, 1.29
+Destination: -11.78, 0.00
+Distance: 1.71 m
+X Distance: -1.13 Y Distance: -1.29
+Bearing: 221.27
+BHD: 221.27 90.73 130.54
+Set wheels to: 255, -115
+Location: -10.69, 1.29
+Destination: -11.78, 0.00
+Distance: 1.69 m
+X Distance: -1.09 Y Distance: -1.29
+Bearing: 220.41
+BHD: 220.41 95.41 125.00
+Set wheels to: 255, -99
+Location: -10.74, 1.28
+Destination: -11.78, 0.00
+Distance: 1.66 m
+X Distance: -1.04 Y Distance: -1.28
+Bearing: 219.11
+BHD: 219.11 89.23 129.88
+Set wheels to: 255, -113
+Location: -10.76, 1.29
+Destination: -11.78, 0.00
+Distance: 1.64 m
+X Distance: -1.02 Y Distance: -1.29
+Bearing: 218.41
+BHD: 218.41 92.48 125.94
+Set wheels to: 255, -102
+Location: -10.79, 1.29
+Destination: -11.78, 0.00
+Distance: 1.62 m
+X Distance: -0.99 Y Distance: -1.29
+Bearing: 217.46
+BHD: 217.46 90.81 126.65
+Set wheels to: 255, -104
+Location: -10.82, 1.28
+Destination: -11.78, 0.00
+Distance: 1.60 m
+X Distance: -0.96 Y Distance: -1.28
+Bearing: 216.85
+BHD: 216.85 93.92 122.93
+Set wheels to: 255, -93
+Location: -10.84, 1.28
+Destination: -11.78, 0.00
+Distance: 1.58 m
+X Distance: -0.94 Y Distance: -1.28
+Bearing: 216.29
+BHD: 216.29 95.01 121.28
+Set wheels to: 255, -89
+Location: -10.87, 1.27
+Destination: -11.78, 0.00
+Distance: 1.56 m
+X Distance: -0.91 Y Distance: -1.27
+Bearing: 215.67
+BHD: 215.67 89.29 126.38
+Set wheels to: 255, -103
+Location: -10.90, 1.26
+Destination: -11.78, 0.00
+Distance: 1.54 m
+X Distance: -0.88 Y Distance: -1.26
+Bearing: 214.81
+BHD: 214.81 95.30 119.50
+Set wheels to: 255, -84
+Location: -10.93, 1.26
+Destination: -11.78, 0.00
+Distance: 1.52 m
+X Distance: -0.85 Y Distance: -1.26
+Bearing: 213.89
+BHD: 213.89 91.63 122.26
+Set wheels to: 255, -91
+Location: -10.97, 1.27
+Destination: -11.78, 0.00
+Distance: 1.51 m
+X Distance: -0.81 Y Distance: -1.27
+Bearing: 212.56
+BHD: 212.56 87.10 125.47
+Set wheels to: 255, -100
+Location: -11.03, 1.27
+Destination: -11.78, 0.00
+Distance: 1.48 m
+X Distance: -0.75 Y Distance: -1.27
+Bearing: 210.67
+BHD: 210.67 92.41 118.26
+Set wheels to: 255, -80
+Location: -11.05, 1.28
+Destination: -11.78, 0.00
+Distance: 1.47 m
+X Distance: -0.73 Y Distance: -1.28
+Bearing: 209.70
+BHD: 209.70 91.19 118.51
+Set wheels to: 255, -81
+Location: -11.08, 1.29
+Destination: -11.78, 0.00
+Distance: 1.47 m
+X Distance: -0.70 Y Distance: -1.29
+Bearing: 208.69
+BHD: 208.69 90.01 118.68
+Set wheels to: 255, -81
+Location: -11.13, 1.29
+Destination: -11.78, 0.00
+Distance: 1.44 m
+X Distance: -0.65 Y Distance: -1.29
+Bearing: 206.98
+BHD: 206.98 84.58 122.40
+Set wheels to: 255, -92
+Location: -11.17, 1.29
+Destination: -11.78, 0.00
+Distance: 1.43 m
+X Distance: -0.61 Y Distance: -1.29
+Bearing: 205.42
+BHD: 205.42 92.41 113.01
+Set wheels to: 255, -65
+Location: -11.19, 1.29
+Destination: -11.78, 0.00
+Distance: 1.42 m
+X Distance: -0.59 Y Distance: -1.29
+Bearing: 204.55
+BHD: 204.55 84.87 119.67
+Set wheels to: 255, -84
+Location: -11.23, 1.30
+Destination: -11.78, 0.00
+Distance: 1.41 m
+X Distance: -0.55 Y Distance: -1.30
+Bearing: 202.81
+BHD: 202.81 84.05 118.76
+Set wheels to: 255, -81
+Location: -11.27, 1.30
+Destination: -11.78, 0.00
+Distance: 1.40 m
+X Distance: -0.51 Y Distance: -1.30
+Bearing: 201.17
+BHD: 201.17 90.84 110.34
+Set wheels to: 255, -58
+Location: -11.32, 1.31
+Destination: -11.78, 0.00
+Distance: 1.39 m
+X Distance: -0.46 Y Distance: -1.31
+Bearing: 199.47
+BHD: 199.47 86.02 113.45
+Set wheels to: 255, -66
+Location: -11.34, 1.31
+Destination: -11.78, 0.00
+Distance: 1.38 m
+X Distance: -0.44 Y Distance: -1.31
+Bearing: 198.53
+BHD: 198.53 92.41 106.12
+Set wheels to: 255, -46
+Location: -11.40, 1.31
+Destination: -11.78, 0.00
+Distance: 1.37 m
+X Distance: -0.38 Y Distance: -1.31
+Bearing: 196.17
+BHD: 196.17 88.34 107.84
+Set wheels to: 255, -51
+Location: -11.43, 1.33
+Destination: -11.78, 0.00
+Distance: 1.37 m
+X Distance: -0.35 Y Distance: -1.33
+Bearing: 194.68
+BHD: 194.68 90.01 104.67
+Set wheels to: 255, -42
+Location: -11.47, 1.33
+Destination: -11.78, 0.00
+Distance: 1.36 m
+X Distance: -0.31 Y Distance: -1.33
+Bearing: 192.97
+BHD: 192.97 87.85 105.12
+Set wheels to: 255, -43
+Location: -11.50, 1.33
+Destination: -11.78, 0.00
+Distance: 1.36 m
+X Distance: -0.28 Y Distance: -1.33
+Bearing: 191.90
+BHD: 191.90 85.02 106.88
+Set wheels to: 255, -48
+Location: -11.53, 1.33
+Destination: -11.78, 0.00
+Distance: 1.35 m
+X Distance: -0.25 Y Distance: -1.33
+Bearing: 190.55
+BHD: 190.55 93.90 96.65
+Set wheels to: 255, -19
+Location: -11.57, 1.34
+Destination: -11.78, 0.00
+Distance: 1.35 m
+X Distance: -0.21 Y Distance: -1.34
+Bearing: 188.77
+BHD: 188.77 83.10 105.67
+Set wheels to: 255, -44
+Location: -11.60, 1.34
+Destination: -11.78, 0.00
+Distance: 1.35 m
+X Distance: -0.18 Y Distance: -1.34
+Bearing: 187.71
+BHD: 187.71 91.63 96.08
+Set wheels to: 255, -17
+Location: -11.63, 1.35
+Destination: -11.78, 0.00
+Distance: 1.36 m
+X Distance: -0.15 Y Distance: -1.35
+Bearing: 186.26
+BHD: 186.26 90.81 95.45
+Set wheels to: 255, -15
+Location: -11.67, 1.34
+Destination: -11.78, 0.00
+Distance: 1.35 m
+X Distance: -0.11 Y Distance: -1.34
+Bearing: 184.89
+BHD: 184.89 86.32 98.56
+Set wheels to: 255, -24
+Location: -11.69, 1.35
+Destination: -11.78, 0.00
+Distance: 1.35 m
+X Distance: -0.09 Y Distance: -1.35
+Bearing: 183.81
+BHD: 183.81 89.04 94.77
+Set wheels to: 255, -14
+Location: -11.72, 1.35
+Destination: -11.78, 0.00
+Distance: 1.35 m
+X Distance: -0.06 Y Distance: -1.35
+Bearing: 182.40
+BHD: 182.40 98.54 83.86
+Set wheels to: 255, 17
+Location: -11.74, 1.36
+Destination: -11.78, 0.00
+Distance: 1.36 m
+X Distance: -0.04 Y Distance: -1.36
+Bearing: 181.69
+BHD: 181.69 86.32 95.37
+Set wheels to: 255, -15
+Location: -11.77, 1.36
+Destination: -11.78, 0.00
+Distance: 1.36 m
+X Distance: -0.01 Y Distance: -1.36
+Bearing: 180.29
+BHD: 180.29 86.94 93.35
+Set wheels to: 255, -9
+Location: -11.81, 1.36
+Destination: -11.78, 0.00
+Distance: 1.36 m
+X Distance: 0.03 Y Distance: -1.36
+Bearing: 178.89
+BHD: 178.89 91.59 87.30
+Set wheels to: 255, 8
+Location: -11.83, 1.37
+Destination: -11.78, 0.00
+Distance: 1.37 m
+X Distance: 0.05 Y Distance: -1.37
+Bearing: 177.85
+BHD: 177.85 88.43 89.42
+Set wheels to: 255, 2
+Location: -11.86, 1.36
+Destination: -11.78, 0.00
+Distance: 1.36 m
+X Distance: 0.08 Y Distance: -1.36
+Bearing: 176.80
+BHD: 176.80 94.12 82.68
+Set wheels to: 255, 21
+Location: -11.88, 1.37
+Destination: -11.78, 0.00
+Distance: 1.37 m
+X Distance: 0.10 Y Distance: -1.37
+Bearing: 175.77
+BHD: 175.77 91.65 84.12
+Set wheels to: 255, 17
+Location: -11.92, 1.37
+Destination: -11.78, 0.00
+Distance: 1.38 m
+X Distance: 0.14 Y Distance: -1.37
+Bearing: 174.06
+BHD: 174.06 90.01 84.05
+Set wheels to: 255, 17
+Location: -11.95, 1.38
+Destination: -11.78, 0.00
+Distance: 1.39 m
+X Distance: 0.17 Y Distance: -1.38
+Bearing: 173.07
+BHD: 173.07 89.28 83.79
+Set wheels to: 255, 18
+Location: -11.98, 1.37
+Destination: -11.78, 0.00
+Distance: 1.38 m
+X Distance: 0.20 Y Distance: -1.37
+Bearing: 171.66
+BHD: 171.66 92.63 79.03
+Set wheels to: 255, 31
+Location: -12.00, 1.38
+Destination: -11.78, 0.00
+Distance: 1.39 m
+X Distance: 0.22 Y Distance: -1.38
+Bearing: 171.02
+BHD: 171.02 91.78 79.24
+Set wheels to: 255, 30
+Location: -12.03, 1.38
+Destination: -11.78, 0.00
+Distance: 1.40 m
+X Distance: 0.25 Y Distance: -1.38
+Bearing: 169.72
+BHD: 169.72 95.75 73.97
+Set wheels to: 255, 45
+Location: -12.07, 1.39
+Destination: -11.78, 0.00
+Distance: 1.42 m
+X Distance: 0.29 Y Distance: -1.39
+Bearing: 168.14
+BHD: 168.14 94.73 73.40
+Set wheels to: 255, 47
+Location: -12.11, 1.39
+Destination: -11.78, 0.00
+Distance: 1.43 m
+X Distance: 0.33 Y Distance: -1.39
+Bearing: 166.87
+BHD: 166.87 87.74 79.13
+Set wheels to: 255, 31
+Location: -12.13, 1.40
+Destination: -11.78, 0.00
+Distance: 1.44 m
+X Distance: 0.35 Y Distance: -1.40
+Bearing: 165.94
+BHD: 165.94 87.85 78.09
+Set wheels to: 255, 34
+Location: -12.16, 1.39
+Destination: -11.78, 0.00
+Distance: 1.44 m
+X Distance: 0.38 Y Distance: -1.39
+Bearing: 164.95
+BHD: 164.95 91.33 73.62
+Set wheels to: 255, 46
+Location: -12.19, 1.39
+Destination: -11.78, 0.00
+Distance: 1.45 m
+X Distance: 0.41 Y Distance: -1.39
+Bearing: 163.67
+BHD: 163.67 93.16 70.51
+Set wheels to: 255, 55
+Location: -12.22, 1.40
+Destination: -11.78, 0.00
+Distance: 1.47 m
+X Distance: 0.44 Y Distance: -1.40
+Bearing: 162.49
+BHD: 162.49 89.17 73.32
+Set wheels to: 255, 47
+Location: -12.24, 1.39
+Destination: -11.78, 0.00
+Distance: 1.46 m
+X Distance: 0.46 Y Distance: -1.39
+Bearing: 161.77
+BHD: 161.77 95.01 66.76
+Set wheels to: 255, 66
+Location: -12.26, 1.39
+Destination: -11.78, 0.00
+Distance: 1.48 m
+X Distance: 0.48 Y Distance: -1.39
+Bearing: 160.89
+BHD: 160.89 90.01 70.88
+Set wheels to: 255, 54
+Location: -12.30, 1.39
+Destination: -11.78, 0.00
+Distance: 1.49 m
+X Distance: 0.52 Y Distance: -1.39
+Bearing: 159.32
+BHD: 159.32 87.32 72.00
+Set wheels to: 255, 51
+Location: -12.34, 1.39
+Destination: -11.78, 0.00
+Distance: 1.50 m
+X Distance: 0.56 Y Distance: -1.39
+Bearing: 158.15
+BHD: 158.15 85.53 72.62
+Set wheels to: 255, 49
+Location: -12.36, 1.40
+Destination: -11.78, 0.00
+Distance: 1.51 m
+X Distance: 0.58 Y Distance: -1.40
+Bearing: 157.37
+BHD: 157.37 90.42 66.95
+Set wheels to: 255, 65
+Location: -12.39, 1.40
+Destination: -11.78, 0.00
+Distance: 1.52 m
+X Distance: 0.61 Y Distance: -1.40
+Bearing: 156.48
+BHD: 156.48 86.32 70.16
+Set wheels to: 255, 56
+Location: -12.41, 1.40
+Destination: -11.78, 0.00
+Distance: 1.53 m
+X Distance: 0.63 Y Distance: -1.40
+Bearing: 155.62
+BHD: 155.62 96.31 59.31
+Set wheels to: 255, 87
+Location: -12.45, 1.39
+Destination: -11.78, 0.00
+Distance: 1.54 m
+X Distance: 0.67 Y Distance: -1.39
+Bearing: 154.08
+BHD: 154.08 87.85 66.22
+Set wheels to: 255, 67
+Location: -12.47, 1.38
+Destination: -11.78, 0.00
+Distance: 1.55 m
+X Distance: 0.69 Y Distance: -1.38
+Bearing: 153.46
+BHD: 153.46 84.72 68.74
+Set wheels to: 255, 60
+Location: -12.50, 1.38
+Destination: -11.78, 0.00
+Distance: 1.56 m
+X Distance: 0.72 Y Distance: -1.38
+Bearing: 152.67
+BHD: 152.67 93.35 59.33
+Set wheels to: 255, 87
+Location: -12.53, 1.38
+Destination: -11.78, 0.00
+Distance: 1.57 m
+X Distance: 0.75 Y Distance: -1.38
+Bearing: 151.59
+BHD: 151.59 89.17 62.42
+Set wheels to: 255, 78
+Location: -12.55, 1.39
+Destination: -11.78, 0.00
+Distance: 1.59 m
+X Distance: 0.77 Y Distance: -1.39
+Bearing: 150.85
+BHD: 150.85 86.86 63.99
+Set wheels to: 255, 74
+Location: -12.57, 1.38
+Destination: -11.78, 0.00
+Distance: 1.59 m
+X Distance: 0.79 Y Distance: -1.38
+Bearing: 150.20
+BHD: 150.20 99.52 50.68
+Set wheels to: 255, 111
+Location: -12.60, 1.38
+Destination: -11.78, 0.00
+Distance: 1.61 m
+X Distance: 0.82 Y Distance: -1.38
+Bearing: 149.25
+BHD: 149.25 87.61 61.63
+Set wheels to: 255, 80
+Location: -12.62, 1.38
+Destination: -11.78, 0.00
+Distance: 1.62 m
+X Distance: 0.84 Y Distance: -1.38
+Bearing: 148.74
+BHD: 148.74 86.77 61.97
+Set wheels to: 255, 79
+Location: -12.64, 1.38
+Destination: -11.78, 0.00
+Distance: 1.63 m
+X Distance: 0.86 Y Distance: -1.38
+Bearing: 148.21
+BHD: 148.21 90.96 57.25
+Set wheels to: 255, 93
+Location: -12.65, 1.38
+Destination: -11.78, 0.00
+Distance: 1.64 m
+X Distance: 0.87 Y Distance: -1.38
+Bearing: 147.74
+BHD: 147.74 96.66 51.09
+Set wheels to: 255, 110
+Location: -12.69, 1.38
+Destination: -11.78, 0.00
+Distance: 1.65 m
+X Distance: 0.91 Y Distance: -1.38
+Bearing: 146.66
+BHD: 146.66 85.79 60.88
+Set wheels to: 255, 83
+Location: -12.70, 1.38
+Destination: -11.78, 0.00
+Distance: 1.66 m
+X Distance: 0.92 Y Distance: -1.38
+Bearing: 146.24
+BHD: 146.24 90.86 55.38
+Set wheels to: 255, 98
+Location: -12.72, 1.38
+Destination: -11.78, 0.00
+Distance: 1.67 m
+X Distance: 0.94 Y Distance: -1.38
+Bearing: 145.65
+BHD: 145.65 97.17 48.48
+Set wheels to: 255, 118
+Location: -12.74, 1.38
+Destination: -11.78, 0.00
+Distance: 1.68 m
+X Distance: 0.96 Y Distance: -1.38
+Bearing: 145.25
+BHD: 145.25 89.29 55.96
+Set wheels to: 255, 96
+Location: -12.75, 1.38
+Destination: -11.78, 0.00
+Distance: 1.69 m
+X Distance: 0.97 Y Distance: -1.38
+Bearing: 144.77
+BHD: 144.77 87.61 57.16
+Set wheels to: 255, 93
+Location: -12.77, 1.38
+Destination: -11.78, 0.00
+Distance: 1.70 m
+X Distance: 0.99 Y Distance: -1.38
+Bearing: 144.42
+BHD: 144.42 87.63 56.79
+Set wheels to: 255, 94
+Location: -12.79, 1.38
+Destination: -11.78, 0.00
+Distance: 1.71 m
+X Distance: 1.01 Y Distance: -1.38
+Bearing: 143.61
+BHD: 143.61 90.01 53.60
+Set wheels to: 255, 103
+Location: -12.82, 1.37
+Destination: -11.78, 0.00
+Distance: 1.72 m
+X Distance: 1.04 Y Distance: -1.37
+Bearing: 142.75
+BHD: 142.75 90.18 52.56
+Set wheels to: 255, 106
+Location: -12.84, 1.36
+Destination: -11.78, 0.00
+Distance: 1.72 m
+X Distance: 1.06 Y Distance: -1.36
+Bearing: 142.24
+BHD: 142.24 94.73 47.51
+Set wheels to: 255, 120
+Location: -12.86, 1.37
+Destination: -11.78, 0.00
+Distance: 1.74 m
+X Distance: 1.08 Y Distance: -1.37
+Bearing: 141.73
+BHD: 141.73 91.59 50.14
+Set wheels to: 255, 113
+Location: -12.88, 1.37
+Destination: -11.78, 0.00
+Distance: 1.76 m
+X Distance: 1.10 Y Distance: -1.37
+Bearing: 141.40
+BHD: 141.40 89.21 52.19
+Set wheels to: 255, 107
+Location: -12.90, 1.38
+Destination: -11.78, 0.00
+Distance: 1.78 m
+X Distance: 1.12 Y Distance: -1.38
+Bearing: 140.81
+BHD: 140.81 88.24 52.56
+Set wheels to: 255, 106
+Location: -12.92, 1.37
+Destination: -11.78, 0.00
+Distance: 1.78 m
+X Distance: 1.14 Y Distance: -1.37
+Bearing: 140.34
+BHD: 140.34 93.96 46.38
+Set wheels to: 255, 124
+Location: -12.94, 1.38
+Destination: -11.78, 0.00
+Distance: 1.81 m
+X Distance: 1.16 Y Distance: -1.38
+Bearing: 139.87
+BHD: 139.87 90.01 49.86
+Set wheels to: 255, 114
+Location: -12.97, 1.39
+Destination: -11.78, 0.00
+Distance: 1.83 m
+X Distance: 1.19 Y Distance: -1.39
+Bearing: 139.44
+BHD: 139.44 85.62 53.82
+Set wheels to: 255, 103
+Location: -13.00, 1.38
+Destination: -11.78, 0.00
+Distance: 1.84 m
+X Distance: 1.22 Y Distance: -1.38
+Bearing: 138.47
+BHD: 138.47 87.02 51.45
+Set wheels to: 255, 109
+Location: -13.02, 1.39
+Destination: -11.78, 0.00
+Distance: 1.86 m
+X Distance: 1.24 Y Distance: -1.39
+Bearing: 138.30
+BHD: 138.30 97.17 41.13
+Set wheels to: 255, 138
+Location: -13.04, 1.39
+Destination: -11.78, 0.00
+Distance: 1.88 m
+X Distance: 1.26 Y Distance: -1.39
+Bearing: 137.70
+BHD: 137.70 87.61 50.08
+Set wheels to: 255, 113
+Location: -13.07, 1.40
+Destination: -11.78, 0.00
+Distance: 1.90 m
+X Distance: 1.29 Y Distance: -1.40
+Bearing: 137.38
+BHD: 137.38 98.30 39.08
+Set wheels to: 255, 144
+Location: -13.09, 1.40
+Destination: -11.78, 0.00
+Distance: 1.92 m
+X Distance: 1.31 Y Distance: -1.40
+Bearing: 136.81
+BHD: 136.81 90.01 46.80
+Set wheels to: 255, 122
+Location: -13.10, 1.40
+Destination: -11.78, 0.00
+Distance: 1.92 m
+X Distance: 1.32 Y Distance: -1.40
+Bearing: 136.59
+BHD: 136.59 87.48 49.12
+Set wheels to: 255, 116
+Location: -13.12, 1.40
+Destination: -11.78, 0.00
+Distance: 1.94 m
+X Distance: 1.34 Y Distance: -1.40
+Bearing: 136.29
+BHD: 136.29 88.77 47.52
+Set wheels to: 255, 120
+Location: -13.13, 1.40
+Destination: -11.78, 0.00
+Distance: 1.95 m
+X Distance: 1.35 Y Distance: -1.40
+Bearing: 136.02
+BHD: 136.02 90.01 46.01
+Set wheels to: 255, 125
+Location: -13.15, 1.41
+Destination: -11.78, 0.00
+Distance: 1.97 m
+X Distance: 1.37 Y Distance: -1.41
+Bearing: 135.81
+BHD: 135.81 94.47 41.34
+Set wheels to: 255, 138
+Location: -13.17, 1.41
+Destination: -11.78, 0.00
+Distance: 1.98 m
+X Distance: 1.39 Y Distance: -1.41
+Bearing: 135.41
+BHD: 135.41 88.34 47.06
+Set wheels to: 255, 122
+Location: -13.18, 1.41
+Destination: -11.78, 0.00
+Distance: 1.99 m
+X Distance: 1.40 Y Distance: -1.41
+Bearing: 135.31
+BHD: 135.31 85.29 50.02
+Set wheels to: 255, 113
+Location: -13.19, 1.41
+Destination: -11.78, 0.00
+Distance: 2.00 m
+X Distance: 1.41 Y Distance: -1.41
+Bearing: 134.92
+BHD: 134.92 88.39 46.53
+Set wheels to: 255, 123
+Location: -13.20, 1.42
+Destination: -11.78, 0.00
+Distance: 2.01 m
+X Distance: 1.42 Y Distance: -1.42
+Bearing: 134.88
+BHD: 134.88 90.84 44.05
+Set wheels to: 255, 130
+Location: -13.22, 1.42
+Destination: -11.78, 0.00
+Distance: 2.02 m
+X Distance: 1.44 Y Distance: -1.42
+Bearing: 134.69
+BHD: 134.69 86.58 48.11
+Set wheels to: 255, 119
+Location: -13.23, 1.42
+Destination: -11.78, 0.00
+Distance: 2.03 m
+X Distance: 1.45 Y Distance: -1.42
+Bearing: 134.47
+BHD: 134.47 89.27 45.19
+Set wheels to: 255, 127
+Location: -13.24, 1.42
+Destination: -11.78, 0.00
+Distance: 2.04 m
+X Distance: 1.46 Y Distance: -1.42
+Bearing: 134.17
+BHD: 134.17 87.68 46.49
+Set wheels to: 255, 123
+Location: -13.25, 1.42
+Destination: -11.78, 0.00
+Distance: 2.04 m
+X Distance: 1.47 Y Distance: -1.42
+Bearing: 133.97
+BHD: 133.97 93.08 40.89
+Set wheels to: 255, 139
+Location: -13.27, 1.42
+Destination: -11.78, 0.00
+Distance: 2.06 m
+X Distance: 1.49 Y Distance: -1.42
+Bearing: 133.65
+BHD: 133.65 89.93 43.72
+Set wheels to: 255, 131
+Location: -13.28, 1.42
+Destination: -11.78, 0.00
+Distance: 2.07 m
+X Distance: 1.50 Y Distance: -1.42
+Bearing: 133.59
+BHD: 133.59 88.30 45.30
+Set wheels to: 255, 127
+Location: -13.28, 1.42
+Destination: -11.78, 0.00
+Distance: 2.07 m
+X Distance: 1.50 Y Distance: -1.42
+Bearing: 133.35
+BHD: 133.35 92.41 40.94
+Set wheels to: 255, 139
+Location: -13.29, 1.42
+Destination: -11.78, 0.00
+Distance: 2.07 m
+X Distance: 1.51 Y Distance: -1.42
+Bearing: 133.20
+BHD: 133.20 90.01 43.19
+Set wheels to: 255, 133
+Location: -13.31, 1.42
+Destination: -11.78, 0.00
+Distance: 2.09 m
+X Distance: 1.53 Y Distance: -1.42
+Bearing: 132.90
+BHD: 132.90 90.01 42.89
+Set wheels to: 255, 133
+Location: -13.32, 1.41
+Destination: -11.78, 0.00
+Distance: 2.09 m
+X Distance: 1.54 Y Distance: -1.41
+Bearing: 132.62
+BHD: 132.62 86.86 45.76
+Set wheels to: 255, 125
+Location: -13.33, 1.42
+Destination: -11.78, 0.00
+Distance: 2.10 m
+X Distance: 1.55 Y Distance: -1.42
+Bearing: 132.37
+BHD: 132.37 91.78 40.58
+Set wheels to: 255, 140
+Location: -13.34, 1.42
+Destination: -11.78, 0.00
+Distance: 2.11 m
+X Distance: 1.56 Y Distance: -1.42
+Bearing: 132.19
+BHD: 132.19 87.35 44.83
+Set wheels to: 255, 128
+Location: -13.35, 1.42
+Destination: -11.78, 0.00
+Distance: 2.12 m
+X Distance: 1.57 Y Distance: -1.42
+Bearing: 132.11
+BHD: 132.11 87.80 44.31
+Set wheels to: 255, 129
+Location: -13.37, 1.42
+Destination: -11.78, 0.00
+Distance: 2.13 m
+X Distance: 1.59 Y Distance: -1.42
+Bearing: 131.84
+BHD: 131.84 86.58 45.25
+Set wheels to: 255, 127
+Location: -13.38, 1.42
+Destination: -11.78, 0.00
+Distance: 2.14 m
+X Distance: 1.60 Y Distance: -1.42
+Bearing: 131.51
+BHD: 131.51 86.58 44.93
+Set wheels to: 255, 128
+Location: -13.40, 1.42
+Destination: -11.78, 0.00
+Distance: 2.15 m
+X Distance: 1.62 Y Distance: -1.42
+Bearing: 131.13
+BHD: 131.13 87.61 43.51
+Set wheels to: 255, 132
+Location: -13.40, 1.41
+Destination: -11.78, 0.00
+Distance: 2.15 m
+X Distance: 1.62 Y Distance: -1.41
+Bearing: 131.10
+BHD: 131.10 93.00 38.10
+Set wheels to: 255, 147
+Location: -13.41, 1.41
+Destination: -11.78, 0.00
+Distance: 2.15 m
+X Distance: 1.63 Y Distance: -1.41
+Bearing: 130.90
+BHD: 130.90 90.01 40.88
+Set wheels to: 255, 139
+Location: -13.43, 1.40
+Destination: -11.78, 0.00
+Distance: 2.16 m
+X Distance: 1.65 Y Distance: -1.40
+Bearing: 130.46
+BHD: 130.46 90.01 40.44
+Set wheels to: 255, 140
+Location: -13.43, 1.40
+Destination: -11.78, 0.00
+Distance: 2.17 m
+X Distance: 1.65 Y Distance: -1.40
+Bearing: 130.29
+BHD: 130.29 99.65 30.64
+Set wheels to: 255, 168
+Location: -13.43, 1.40
+Destination: -11.78, 0.00
+Distance: 2.17 m
+X Distance: 1.65 Y Distance: -1.40
+Bearing: 130.35
+BHD: 130.35 91.96 38.38
+Set wheels to: 255, 146
+Location: -13.43, 1.41
+Destination: -11.78, 0.00
+Distance: 2.17 m
+X Distance: 1.65 Y Distance: -1.41
+Bearing: 130.45
+BHD: 130.45 89.21 41.24
+Set wheels to: 255, 138
+Location: -13.44, 1.41
+Destination: -11.78, 0.00
+Distance: 2.18 m
+X Distance: 1.66 Y Distance: -1.41
+Bearing: 130.40
+BHD: 130.40 80.63 49.77
+Set wheels to: 255, 114
+Location: -13.44, 1.43
+Destination: -11.78, 0.00
+Distance: 2.19 m
+X Distance: 1.66 Y Distance: -1.43
+Bearing: 130.66
+BHD: 130.66 88.48 42.18
+Set wheels to: 255, 135
+Location: -13.46, 1.44
+Destination: -11.78, 0.00
+Distance: 2.21 m
+X Distance: 1.68 Y Distance: -1.44
+Bearing: 130.63
+BHD: 130.63 90.86 39.77
+Set wheels to: 255, 142
+Location: -13.47, 1.45
+Destination: -11.78, 0.00
+Distance: 2.23 m
+X Distance: 1.69 Y Distance: -1.45
+Bearing: 130.76
+BHD: 130.76 85.29 45.47
+Set wheels to: 255, 126
+Location: -13.48, 1.47
+Destination: -11.78, 0.00
+Distance: 2.24 m
+X Distance: 1.70 Y Distance: -1.47
+Bearing: 130.90
+BHD: 130.90 89.14 41.76
+Set wheels to: 255, 137
+Location: -13.49, 1.49
+Destination: -11.78, 0.00
+Distance: 2.27 m
+X Distance: 1.71 Y Distance: -1.49
+Bearing: 130.97
+BHD: 130.97 90.01 40.96
+Set wheels to: 255, 139
+Location: -13.49, 1.51
+Destination: -11.78, 0.00
+Distance: 2.28 m
+X Distance: 1.71 Y Distance: -1.51
+Bearing: 131.38
+BHD: 131.38 90.01 41.37
+Set wheels to: 255, 138
+Location: -13.51, 1.51
+Destination: -11.78, 0.00
+Distance: 2.30 m
+X Distance: 1.73 Y Distance: -1.51
+Bearing: 131.21
+BHD: 131.21 85.38 45.84
+Set wheels to: 255, 125
+Location: -13.52, 1.53
+Destination: -11.78, 0.00
+Distance: 2.32 m
+X Distance: 1.74 Y Distance: -1.53
+Bearing: 131.43
+BHD: 131.43 93.70 37.73
+Set wheels to: 255, 148
+Location: -13.52, 1.55
+Destination: -11.78, 0.00
+Distance: 2.33 m
+X Distance: 1.74 Y Distance: -1.55
+Bearing: 131.61
+BHD: 131.61 89.37 42.25
+Set wheels to: 255, 135
+Location: -13.53, 1.57
+Destination: -11.78, 0.00
+Distance: 2.35 m
+X Distance: 1.75 Y Distance: -1.57
+Bearing: 131.76
+BHD: 131.76 89.25 42.50
+Set wheels to: 255, 135
+Location: -13.53, 1.57
+Destination: -11.78, 0.00
+Distance: 2.35 m
+X Distance: 1.75 Y Distance: -1.57
+Bearing: 131.86
+BHD: 131.86 87.61 44.25
+Set wheels to: 255, 130
+Location: -13.52, 1.59
+Destination: -11.78, 0.00
+Distance: 2.36 m
+X Distance: 1.74 Y Distance: -1.59
+Bearing: 132.25
+BHD: 132.25 91.90 40.35
+Set wheels to: 255, 141
+Location: -13.54, 1.60
+Destination: -11.78, 0.00
+Distance: 2.38 m
+X Distance: 1.76 Y Distance: -1.60
+Bearing: 132.25
+BHD: 132.25 90.81 41.44
+Set wheels to: 255, 138
+Location: -13.57, 1.60
+Destination: -11.78, 0.00
+Distance: 2.40 m
+X Distance: 1.79 Y Distance: -1.60
+Bearing: 131.85
+BHD: 131.85 85.16 46.69
+Set wheels to: 255, 123
+Location: -13.57, 1.62
+Destination: -11.78, 0.00
+Distance: 2.42 m
+X Distance: 1.79 Y Distance: -1.62
+Bearing: 132.05
+BHD: 132.05 90.79 41.26
+Set wheels to: 255, 138
+Location: -13.57, 1.63
+Destination: -11.78, 0.00
+Distance: 2.42 m
+X Distance: 1.79 Y Distance: -1.63
+Bearing: 132.21
+BHD: 132.21 88.34 43.87
+Set wheels to: 255, 131
+Location: -13.58, 1.63
+Destination: -11.78, 0.00
+Distance: 2.43 m
+X Distance: 1.80 Y Distance: -1.63
+Bearing: 132.16
+BHD: 132.16 97.17 34.99
+Set wheels to: 255, 156
+Location: -13.60, 1.64
+Destination: -11.78, 0.00
+Distance: 2.45 m
+X Distance: 1.82 Y Distance: -1.64
+Bearing: 132.09
+BHD: 132.09 90.01 42.08
+Set wheels to: 255, 136
+Location: -13.61, 1.65
+Destination: -11.78, 0.00
+Distance: 2.46 m
+X Distance: 1.83 Y Distance: -1.65
+Bearing: 132.09
+BHD: 132.09 94.24 37.86
+Set wheels to: 255, 148
+Location: -13.61, 1.66
+Destination: -11.78, 0.00
+Distance: 2.47 m
+X Distance: 1.83 Y Distance: -1.66
+Bearing: 132.27
+BHD: 132.27 81.96 50.32
+Set wheels to: 255, 112
+Location: -13.62, 1.67
+Destination: -11.78, 0.00
+Distance: 2.48 m
+X Distance: 1.84 Y Distance: -1.67
+Bearing: 132.29
+BHD: 132.29 90.84 41.45
+Set wheels to: 255, 138
+Location: -13.63, 1.68
+Destination: -11.78, 0.00
+Distance: 2.50 m
+X Distance: 1.85 Y Distance: -1.68
+Bearing: 132.20
+BHD: 132.20 87.90 44.29
+Set wheels to: 255, 129
+Location: -13.64, 1.68
+Destination: -11.78, 0.00
+Distance: 2.51 m
+X Distance: 1.86 Y Distance: -1.68
+Bearing: 132.12
+BHD: 132.12 92.94 39.19
+Set wheels to: 255, 144
+Location: -13.65, 1.70
+Destination: -11.78, 0.00
+Distance: 2.52 m
+X Distance: 1.87 Y Distance: -1.70
+Bearing: 132.23
+BHD: 132.23 87.61 44.61
+Set wheels to: 255, 129
+Location: -13.66, 1.71
+Destination: -11.78, 0.00
+Distance: 2.54 m
+X Distance: 1.88 Y Distance: -1.71
+Bearing: 132.25
+BHD: 132.25 94.00 38.24
+Set wheels to: 255, 147
+Location: -13.68, 1.71
+Destination: -11.78, 0.00
+Distance: 2.56 m
+X Distance: 1.90 Y Distance: -1.71
+Bearing: 131.97
+BHD: 131.97 88.39 43.58
+Set wheels to: 255, 132
+Location: -13.70, 1.72
+Destination: -11.78, 0.00
+Distance: 2.58 m
+X Distance: 1.92 Y Distance: -1.72
+Bearing: 131.89
+BHD: 131.89 86.50 45.39
+Set wheels to: 255, 126
+Location: -13.71, 1.73
+Destination: -11.78, 0.00
+Distance: 2.59 m
+X Distance: 1.93 Y Distance: -1.73
+Bearing: 131.91
+BHD: 131.91 87.55 44.37
+Set wheels to: 255, 129
+Location: -13.71, 1.75
+Destination: -11.78, 0.00
+Distance: 2.60 m
+X Distance: 1.93 Y Distance: -1.75
+Bearing: 132.20
+BHD: 132.20 91.51 40.70
+Set wheels to: 255, 140
+Location: -13.72, 1.77
+Destination: -11.78, 0.00
+Distance: 2.62 m
+X Distance: 1.94 Y Distance: -1.77
+Bearing: 132.36
+BHD: 132.36 95.55 36.81
+Set wheels to: 255, 151
+Location: -13.72, 1.78
+Destination: -11.78, 0.00
+Distance: 2.64 m
+X Distance: 1.94 Y Distance: -1.78
+Bearing: 132.50
+BHD: 132.50 87.68 44.82
+Set wheels to: 255, 128
+Location: -13.71, 1.80
+Destination: -11.78, 0.00
+Distance: 2.64 m
+X Distance: 1.93 Y Distance: -1.80
+Bearing: 133.02
+BHD: 133.02 87.55 45.47
+Set wheels to: 255, 126
+Location: -13.72, 1.81
+Destination: -11.78, 0.00
+Distance: 2.65 m
+X Distance: 1.94 Y Distance: -1.81
+Bearing: 133.10
+BHD: 133.10 95.44 37.66
+Set wheels to: 255, 148
+Location: -13.71, 1.83
+Destination: -11.78, 0.00
+Distance: 2.66 m
+X Distance: 1.93 Y Distance: -1.83
+Bearing: 133.56
+BHD: 133.56 88.68 44.88
+Set wheels to: 255, 128
+Location: -13.72, 1.84
+Destination: -11.78, 0.00
+Distance: 2.67 m
+X Distance: 1.94 Y Distance: -1.84
+Bearing: 133.51
+BHD: 133.51 88.43 45.07
+Set wheels to: 255, 127
+Location: -13.72, 1.86
+Destination: -11.78, 0.00
+Distance: 2.68 m
+X Distance: 1.94 Y Distance: -1.86
+Bearing: 133.79
+BHD: 133.79 93.78 40.01
+Set wheels to: 255, 142
+Location: -13.72, 1.88
+Destination: -11.78, 0.00
+Distance: 2.70 m
+X Distance: 1.94 Y Distance: -1.88
+Bearing: 134.11
+BHD: 134.11 90.01 44.10
+Set wheels to: 255, 130
+Location: -13.71, 1.90
+Destination: -11.78, 0.00
+Distance: 2.71 m
+X Distance: 1.93 Y Distance: -1.90
+Bearing: 134.63
+BHD: 134.63 90.01 44.62
+Set wheels to: 255, 129
+Location: -13.72, 1.91
+Destination: -11.78, 0.00
+Distance: 2.72 m
+X Distance: 1.94 Y Distance: -1.91
+Bearing: 134.68
+BHD: 134.68 84.87 49.81
+Set wheels to: 255, 114
+Location: -13.72, 1.93
+Destination: -11.78, 0.00
+Distance: 2.73 m
+X Distance: 1.94 Y Distance: -1.93
+Bearing: 134.91
+BHD: 134.91 90.81 44.09
+Set wheels to: 255, 130
+Location: -13.72, 1.95
+Destination: -11.78, 0.00
+Distance: 2.75 m
+X Distance: 1.94 Y Distance: -1.95
+Bearing: 135.05
+BHD: 135.05 92.52 42.53
+Set wheels to: 255, 135
+Location: -13.72, 1.96
+Destination: -11.78, 0.00
+Distance: 2.76 m
+X Distance: 1.94 Y Distance: -1.96
+Bearing: 135.19
+BHD: 135.19 91.63 43.56
+Set wheels to: 255, 132
+Location: -13.72, 1.97
+Destination: -11.78, 0.00
+Distance: 2.76 m
+X Distance: 1.94 Y Distance: -1.97
+Bearing: 135.50
+BHD: 135.50 92.14 43.36
+Set wheels to: 255, 132
+Location: -13.71, 1.99
+Destination: -11.78, 0.00
+Distance: 2.77 m
+X Distance: 1.93 Y Distance: -1.99
+Bearing: 135.96
+BHD: 135.96 88.30 47.67
+Set wheels to: 255, 120
+Location: -13.72, 1.99
+Destination: -11.78, 0.00
+Distance: 2.78 m
+X Distance: 1.94 Y Distance: -1.99
+Bearing: 135.77
+BHD: 135.77 88.55 47.22
+Set wheels to: 255, 121
+Location: -13.71, 2.01
+Destination: -11.78, 0.00
+Distance: 2.78 m
+X Distance: 1.93 Y Distance: -2.01
+Bearing: 136.16
+BHD: 136.16 81.51 54.65
+Set wheels to: 255, 100
+Location: -13.71, 2.02
+Destination: -11.78, 0.00
+Distance: 2.79 m
+X Distance: 1.93 Y Distance: -2.02
+Bearing: 136.32
+BHD: 136.32 86.77 49.55
+Set wheels to: 255, 115
+Location: -13.70, 2.03
+Destination: -11.78, 0.00
+Distance: 2.80 m
+X Distance: 1.92 Y Distance: -2.03
+Bearing: 136.66
+BHD: 136.66 83.73 52.94
+Set wheels to: 255, 105
+Location: -13.70, 2.04
+Destination: -11.78, 0.00
+Distance: 2.80 m
+X Distance: 1.92 Y Distance: -2.04
+Bearing: 136.79
+BHD: 136.79 94.73 42.06
+Set wheels to: 255, 136
+Location: -13.69, 2.06
+Destination: -11.78, 0.00
+Distance: 2.81 m
+X Distance: 1.91 Y Distance: -2.06
+Bearing: 137.19
+BHD: 137.19 88.29 48.90
+Set wheels to: 255, 116
+Location: -13.68, 2.07
+Destination: -11.78, 0.00
+Distance: 2.81 m
+X Distance: 1.90 Y Distance: -2.07
+Bearing: 137.43
+BHD: 137.43 95.01 42.43
+Set wheels to: 255, 135
+Location: -13.67, 2.08
+Destination: -11.78, 0.00
+Distance: 2.82 m
+X Distance: 1.89 Y Distance: -2.08
+Bearing: 137.74
+BHD: 137.74 90.01 47.73
+Set wheels to: 255, 120
+Location: -13.68, 2.09
+Destination: -11.78, 0.00
+Distance: 2.83 m
+X Distance: 1.90 Y Distance: -2.09
+Bearing: 137.69
+BHD: 137.69 89.21 48.48
+Set wheels to: 255, 118
+Location: -13.67, 2.10
+Destination: -11.78, 0.00
+Distance: 2.82 m
+X Distance: 1.89 Y Distance: -2.10
+Bearing: 138.03
+BHD: 138.03 92.41 45.62
+Set wheels to: 255, 126
+Location: -13.67, 2.12
+Destination: -11.78, 0.00
+Distance: 2.84 m
+X Distance: 1.89 Y Distance: -2.12
+Bearing: 138.20
+BHD: 138.20 87.68 50.52
+Set wheels to: 255, 112
+Location: -13.67, 2.12
+Destination: -11.78, 0.00
+Distance: 2.84 m
+X Distance: 1.89 Y Distance: -2.12
+Bearing: 138.38
+BHD: 138.38 84.27 54.11
+Set wheels to: 255, 102
+Location: -13.67, 2.13
+Destination: -11.78, 0.00
+Distance: 2.85 m
+X Distance: 1.89 Y Distance: -2.13
+Bearing: 138.54
+BHD: 138.54 85.30 53.24
+Set wheels to: 255, 104
+Location: -13.67, 2.15
+Destination: -11.78, 0.00
+Distance: 2.86 m
+X Distance: 1.89 Y Distance: -2.15
+Bearing: 138.68
+BHD: 138.68 84.43 54.25
+Set wheels to: 255, 101
+Location: -13.67, 2.16
+Destination: -11.78, 0.00
+Distance: 2.87 m
+X Distance: 1.89 Y Distance: -2.16
+Bearing: 138.86
+BHD: 138.86 93.16 45.69
+Set wheels to: 255, 126
+Location: -13.67, 2.18
+Destination: -11.78, 0.00
+Distance: 2.88 m
+X Distance: 1.89 Y Distance: -2.18
+Bearing: 139.08
+BHD: 139.08 82.97 56.11
+Set wheels to: 255, 96
+Location: -13.67, 2.18
+Destination: -11.78, 0.00
+Distance: 2.88 m
+X Distance: 1.89 Y Distance: -2.18
+Bearing: 139.14
+BHD: 139.14 88.48 50.66
+Set wheels to: 255, 111
+Location: -13.67, 2.19
+Destination: -11.78, 0.00
+Distance: 2.89 m
+X Distance: 1.89 Y Distance: -2.19
+Bearing: 139.22
+BHD: 139.22 86.48 52.74
+Set wheels to: 255, 106
+Location: -13.67, 2.20
+Destination: -11.78, 0.00
+Distance: 2.90 m
+X Distance: 1.89 Y Distance: -2.20
+Bearing: 139.27
+BHD: 139.27 91.51 47.76
+Set wheels to: 255, 120
+Location: -13.66, 2.21
+Destination: -11.78, 0.00
+Distance: 2.90 m
+X Distance: 1.88 Y Distance: -2.21
+Bearing: 139.65
+BHD: 139.65 87.02 52.63
+Set wheels to: 255, 106
+Location: -13.66, 2.22
+Destination: -11.78, 0.00
+Distance: 2.91 m
+X Distance: 1.88 Y Distance: -2.22
+Bearing: 139.75
+BHD: 139.75 93.35 46.41
+Set wheels to: 255, 124
+Location: -13.67, 2.23
+Destination: -11.78, 0.00
+Distance: 2.92 m
+X Distance: 1.89 Y Distance: -2.23
+Bearing: 139.78
+BHD: 139.78 85.20 54.58
+Set wheels to: 255, 100
+Location: -13.66, 2.24
+Destination: -11.78, 0.00
+Distance: 2.93 m
+X Distance: 1.88 Y Distance: -2.24
+Bearing: 140.08
+BHD: 140.08 90.01 50.07
+Set wheels to: 255, 113
+Location: -13.67, 2.25
+Destination: -11.78, 0.00
+Distance: 2.94 m
+X Distance: 1.89 Y Distance: -2.25
+Bearing: 140.06
+BHD: 140.06 87.76 52.30
+Set wheels to: 255, 107
+Location: -13.66, 2.26
+Destination: -11.78, 0.00
+Distance: 2.94 m
+X Distance: 1.88 Y Distance: -2.26
+Bearing: 140.33
+BHD: 140.33 92.80 47.53
+Set wheels to: 255, 120
+Location: -13.65, 2.29
+Destination: -11.78, 0.00
+Distance: 2.96 m
+X Distance: 1.87 Y Distance: -2.29
+Bearing: 140.78
+BHD: 140.78 85.02 55.76
+Set wheels to: 255, 97
+Location: -13.65, 2.30
+Destination: -11.78, 0.00
+Distance: 2.96 m
+X Distance: 1.87 Y Distance: -2.30
+Bearing: 140.90
+BHD: 140.90 88.43 52.46
+Set wheels to: 255, 106
+Location: -13.65, 2.30
+Destination: -11.78, 0.00
+Distance: 2.97 m
+X Distance: 1.87 Y Distance: -2.30
+Bearing: 140.95
+BHD: 140.95 88.43 52.52
+Set wheels to: 255, 106
+Location: -13.64, 2.33
+Destination: -11.78, 0.00
+Distance: 2.98 m
+X Distance: 1.86 Y Distance: -2.33
+Bearing: 141.41
+BHD: 141.41 83.93 57.47
+Set wheels to: 255, 92
+Location: -13.63, 2.32
+Destination: -11.78, 0.00
+Distance: 2.97 m
+X Distance: 1.85 Y Distance: -2.32
+Bearing: 141.39
+BHD: 141.39 92.48 48.91
+Set wheels to: 255, 116
+Location: -13.64, 2.33
+Destination: -11.78, 0.00
+Distance: 2.98 m
+X Distance: 1.86 Y Distance: -2.33
+Bearing: 141.37
+BHD: 141.37 94.00 47.36
+Set wheels to: 255, 121
+Location: -13.62, 2.34
+Destination: -11.78, 0.00
+Distance: 2.98 m
+X Distance: 1.84 Y Distance: -2.34
+Bearing: 141.78
+BHD: 141.78 87.48 54.30
+Set wheels to: 255, 101
+Location: -13.62, 2.35
+Destination: -11.78, 0.00
+Distance: 2.98 m
+X Distance: 1.84 Y Distance: -2.35
+Bearing: 142.00
+BHD: 142.00 90.01 51.99
+Set wheels to: 255, 108
+Location: -13.61, 2.35
+Destination: -11.78, 0.00
+Distance: 2.98 m
+X Distance: 1.83 Y Distance: -2.35
+Bearing: 142.11
+BHD: 142.11 89.27 52.84
+Set wheels to: 255, 105
+Location: -13.61, 2.36
+Destination: -11.78, 0.00
+Distance: 2.99 m
+X Distance: 1.83 Y Distance: -2.36
+Bearing: 142.24
+BHD: 142.24 89.23 53.01
+Set wheels to: 255, 105
+Location: -13.60, 2.39
+Destination: -11.78, 0.00
+Distance: 3.00 m
+X Distance: 1.82 Y Distance: -2.39
+Bearing: 142.71
+BHD: 142.71 97.06 45.65
+Set wheels to: 255, 126
+Location: -13.60, 2.40
+Destination: -11.78, 0.00
+Distance: 3.01 m
+X Distance: 1.82 Y Distance: -2.40
+Bearing: 142.81
+BHD: 142.81 84.43 58.38
+Set wheels to: 255, 90
+Location: -13.59, 2.41
+Destination: -11.78, 0.00
+Distance: 3.01 m
+X Distance: 1.81 Y Distance: -2.41
+Bearing: 143.06
+BHD: 143.06 90.75 52.31
+Set wheels to: 255, 107
+Location: -13.58, 2.42
+Destination: -11.78, 0.00
+Distance: 3.02 m
+X Distance: 1.80 Y Distance: -2.42
+Bearing: 143.29
+BHD: 143.29 94.00 49.28
+Set wheels to: 255, 115
+Location: -13.57, 2.43
+Destination: -11.78, 0.00
+Distance: 3.02 m
+X Distance: 1.79 Y Distance: -2.43
+Bearing: 143.58
+BHD: 143.58 90.21 53.36
+Set wheels to: 255, 104
+Location: -13.57, 2.45
+Destination: -11.78, 0.00
+Distance: 3.03 m
+X Distance: 1.79 Y Distance: -2.45
+Bearing: 143.89
+BHD: 143.89 83.89 60.00
+Set wheels to: 255, 85
+Location: -13.57, 2.45
+Destination: -11.78, 0.00
+Distance: 3.03 m
+X Distance: 1.79 Y Distance: -2.45
+Bearing: 143.88
+BHD: 143.88 94.12 49.76
+Set wheels to: 255, 114
+Location: -13.55, 2.46
+Destination: -11.78, 0.00
+Distance: 3.03 m
+X Distance: 1.77 Y Distance: -2.46
+Bearing: 144.28
+BHD: 144.28 92.41 51.87
+Set wheels to: 255, 108
+Location: -13.54, 2.47
+Destination: -11.78, 0.00
+Distance: 3.03 m
+X Distance: 1.76 Y Distance: -2.47
+Bearing: 144.48
+BHD: 144.48 90.01 54.46
+Set wheels to: 255, 101
+Location: -13.53, 2.47
+Destination: -11.78, 0.00
+Distance: 3.03 m
+X Distance: 1.75 Y Distance: -2.47
+Bearing: 144.65
+BHD: 144.65 94.12 50.54
+Set wheels to: 255, 112
+Location: -13.52, 2.47
+Destination: -11.78, 0.00
+Distance: 3.03 m
+X Distance: 1.74 Y Distance: -2.47
+Bearing: 144.78
+BHD: 144.78 92.48 52.30
+Set wheels to: 255, 107
+Location: -13.52, 2.48
+Destination: -11.78, 0.00
+Distance: 3.02 m
+X Distance: 1.74 Y Distance: -2.48
+Bearing: 144.95
+BHD: 144.95 92.93 52.02
+Set wheels to: 255, 108
+Location: -13.51, 2.49
+Destination: -11.78, 0.00
+Distance: 3.03 m
+X Distance: 1.73 Y Distance: -2.49
+Bearing: 145.19
+BHD: 145.19 87.32 57.87
+Set wheels to: 255, 91
+Location: -13.50, 2.48
+Destination: -11.78, 0.00
+Distance: 3.02 m
+X Distance: 1.72 Y Distance: -2.48
+Bearing: 145.30
+BHD: 145.30 95.92 49.38
+Set wheels to: 255, 115
+Location: -13.50, 2.49
+Destination: -11.78, 0.00
+Distance: 3.03 m
+X Distance: 1.72 Y Distance: -2.49
+Bearing: 145.40
+BHD: 145.40 91.51 53.89
+Set wheels to: 255, 102
+Location: -13.49, 2.49
+Destination: -11.78, 0.00
+Distance: 3.02 m
+X Distance: 1.71 Y Distance: -2.49
+Bearing: 145.53
+BHD: 145.53 92.41 53.12
+Set wheels to: 255, 104
+Location: -13.48, 2.50
+Destination: -11.78, 0.00
+Distance: 3.02 m
+X Distance: 1.70 Y Distance: -2.50
+Bearing: 145.73
+BHD: 145.73 82.21 63.51
+Set wheels to: 255, 75
+Location: -13.48, 2.49
+Destination: -11.78, 0.00
+Distance: 3.01 m
+X Distance: 1.70 Y Distance: -2.49
+Bearing: 145.78
+BHD: 145.78 93.25 52.53
+Set wheels to: 255, 106
+Location: -13.48, 2.50
+Destination: -11.78, 0.00
+Distance: 3.02 m
+X Distance: 1.70 Y Distance: -2.50
+Bearing: 145.85
+BHD: 145.85 89.14 56.71
+Set wheels to: 255, 94
+Location: -13.47, 2.49
+Destination: -11.78, 0.00
+Distance: 3.01 m
+X Distance: 1.69 Y Distance: -2.49
+Bearing: 145.88
+BHD: 145.88 91.63 54.25
+Set wheels to: 255, 101
+Location: -13.45, 2.49
+Destination: -11.78, 0.00
+Distance: 3.00 m
+X Distance: 1.67 Y Distance: -2.49
+Bearing: 146.17
+BHD: 146.17 92.06 54.12
+Set wheels to: 255, 102
+Location: -13.46, 2.49
+Destination: -11.78, 0.00
+Distance: 3.00 m
+X Distance: 1.68 Y Distance: -2.49
+Bearing: 146.01
+BHD: 146.01 91.55 54.46
+Set wheels to: 255, 101
+Location: -13.46, 2.49
+Destination: -11.78, 0.00
+Distance: 3.00 m
+X Distance: 1.68 Y Distance: -2.49
+Bearing: 146.01
+BHD: 146.01 91.63 54.37
+Set wheels to: 255, 101
+Location: -13.45, 2.49
+Destination: -11.78, 0.00
+Distance: 3.00 m
+X Distance: 1.67 Y Distance: -2.49
+Bearing: 146.12
+BHD: 146.12 90.79 55.33
+Set wheels to: 255, 98
+Location: -13.46, 2.48
+Destination: -11.78, 0.00
+Distance: 3.00 m
+X Distance: 1.68 Y Distance: -2.48
+Bearing: 145.96
+BHD: 145.96 96.47 49.49
+Set wheels to: 255, 115
+Location: -13.30, 2.05
+Destination: -11.78, 0.00
+Distance: 2.55 m
+X Distance: 1.52 Y Distance: -2.05
+Bearing: 143.38
+BHD: 143.38 85.41 57.96
+Set wheels to: 255, 91
+Location: -13.29, 2.04
+Destination: -11.78, 0.00
+Distance: 2.54 m
+X Distance: 1.51 Y Distance: -2.04
+Bearing: 143.44
+BHD: 143.44 91.59 51.85
+Set wheels to: 255, 108
+Location: -13.30, 1.87
+Destination: -11.78, 0.00
+Distance: 2.41 m
+X Distance: 1.52 Y Distance: -1.87
+Bearing: 140.87
+BHD: 140.87 88.66 52.21
+Set wheels to: 255, 107
+Location: -13.22, 1.58
+Destination: -11.78, 0.00
+Distance: 2.14 m
+X Distance: 1.44 Y Distance: -1.58
+Bearing: 137.70
+BHD: 137.70 98.30 39.40
+Set wheels to: 255, 143
+Location: -13.11, 1.30
+Destination: -11.78, 0.00
+Distance: 1.86 m
+X Distance: 1.33 Y Distance: -1.30
+Bearing: 134.32
+BHD: 134.32 86.88 47.44
+Set wheels to: 255, 121
+Location: -12.99, 1.05
+Destination: -11.78, 0.00
+Distance: 1.60 m
+X Distance: 1.21 Y Distance: -1.05
+Bearing: 131.10
+BHD: 131.10 92.41 38.69
+Set wheels to: 255, 145
+Location: -12.89, 0.94
+Destination: -11.78, 0.00
+Distance: 1.45 m
+X Distance: 1.11 Y Distance: -0.94
+Bearing: 130.29
+BHD: 130.29 90.84 39.45
+Set wheels to: 255, 143
+Location: -12.74, 0.81
+Destination: -11.78, 0.00
+Distance: 1.25 m
+X Distance: 0.96 Y Distance: -0.81
+Bearing: 130.27
+BHD: 130.27 89.23 41.04
+Set wheels to: 255, 139
+Location: -12.58, 0.72
+Destination: -11.78, 0.00
+Distance: 1.08 m
+X Distance: 0.80 Y Distance: -0.72
+Bearing: 132.20
+BHD: 132.20 86.13 46.07
+Set wheels to: 255, 124
+Location: -12.45, 0.61
+Destination: -11.78, 0.00
+Distance: 0.91 m
+X Distance: 0.67 Y Distance: -0.61
+Bearing: 132.72
+BHD: 132.72 87.74 44.98
+Set wheels to: 255, 128
+Location: -12.38, 0.55
+Destination: -11.78, 0.00
+Distance: 0.81 m
+X Distance: 0.60 Y Distance: -0.55
+Bearing: 132.64
+BHD: 132.64 88.43 44.20
+Set wheels to: 255, 130
+Location: -12.25, 0.49
+Destination: -11.78, 0.00
+Distance: 0.68 m
+X Distance: 0.47 Y Distance: -0.49
+Bearing: 135.72
+BHD: 135.72 89.05 46.67
+Set wheels to: 255, 123
+Location: -12.15, 0.41
+Destination: -11.78, 0.00
+Distance: 0.55 m
+X Distance: 0.37 Y Distance: -0.41
+Bearing: 138.24
+BHD: 138.24 92.28 45.96
+Set wheels to: 255, 125
+Location: -12.05, 0.34
+Destination: -11.78, 0.00
+Distance: 0.43 m
+X Distance: 0.27 Y Distance: -0.34
+Bearing: 141.65
+BHD: 141.65 82.79 58.86
+Set wheels to: 255, 88
+Location: -11.98, 0.30
+Destination: -11.78, 0.00
+Distance: 0.36 m
+X Distance: 0.20 Y Distance: -0.30
+Bearing: 146.37
+BHD: 146.37 89.14 57.23
+Set wheels to: 255, 93
+Location: -11.88, 0.25
+Destination: -11.78, 0.00
+Distance: 0.27 m
+X Distance: 0.10 Y Distance: -0.25
+Bearing: 157.62
+BHD: 157.62 87.74 69.88
+Set wheels to: 255, 57
+Location: -11.81, 0.19
+Destination: -11.78, 0.00
+Distance: 0.19 m
+X Distance: 0.03 Y Distance: -0.19
+Bearing: 172.07
+BHD: 172.07 85.16 86.91
+Set wheels to: 255, 9
+Location: -11.72, 0.15
+Destination: -11.78, 0.00
+Distance: 0.16 m
+X Distance: -0.06 Y Distance: -0.15
+Bearing: 201.17
+BHD: 201.17 87.68 113.49
+Set wheels to: 255, -67
+Location: -11.67, 0.11
+Destination: -11.78, 0.00
+Distance: 0.16 m
+X Distance: -0.11 Y Distance: -0.11
+Bearing: 223.17
+BHD: 223.17 90.69 132.48
+Set wheels to: 255, -120
+Location: -11.60, 0.08
+Destination: -11.78, 0.00
+Distance: 0.20 m
+X Distance: -0.18 Y Distance: -0.08
+Bearing: 246.79
+BHD: 246.79 95.30 151.49
+Set wheels to: 255, -174
+Location: -11.52, 0.04
+Destination: -11.78, 0.00
+Distance: 0.26 m
+X Distance: -0.26 Y Distance: -0.04
+Bearing: 261.05
+BHD: 261.05 89.28 171.77
+Set wheels to: 255, -232
+Location: -11.45, 0.01
+Destination: -11.78, 0.00
+Distance: 0.33 m
+X Distance: -0.33 Y Distance: -0.01
+Bearing: 268.78
+BHD: 268.78 92.35 176.44
+Set wheels to: 255, -245
+Location: -11.40, -0.01
+Destination: -11.78, 0.00
+Distance: 0.38 m
+X Distance: -0.38 Y Distance: 0.01
+Bearing: 271.04
+BHD: 271.04 94.36 176.67
+Set wheels to: 255, -246
+Location: -11.35, -0.03
+Destination: -11.78, 0.00
+Distance: 0.43 m
+X Distance: -0.43 Y Distance: 0.03
+Bearing: 274.25
+BHD: 274.25 86.58 -172.33
+Set wheels to: -232, 255
+Location: -11.29, -0.05
+Destination: -11.78, 0.00
+Distance: 0.49 m
+X Distance: -0.49 Y Distance: 0.05
+Bearing: 276.24
+BHD: 276.24 87.74 -171.50
+Set wheels to: -230, 255
+Location: -11.23, -0.07
+Destination: -11.78, 0.00
+Distance: 0.56 m
+X Distance: -0.55 Y Distance: 0.07
+Bearing: 276.93
+BHD: 276.93 93.08 -176.15
+Set wheels to: -243, 255
+Location: -11.19, -0.08
+Destination: -11.78, 0.00
+Distance: 0.59 m
+X Distance: -0.59 Y Distance: 0.08
+Bearing: 278.20
+BHD: 278.20 89.21 -171.01
+Set wheels to: -229, 255
+Location: -11.14, -0.10
+Destination: -11.78, 0.00
+Distance: 0.65 m
+X Distance: -0.64 Y Distance: 0.10
+Bearing: 278.79
+BHD: 278.79 85.55 -166.76
+Set wheels to: -217, 255
+Location: -11.09, -0.12
+Destination: -11.78, 0.00
+Distance: 0.70 m
+X Distance: -0.69 Y Distance: 0.12
+Bearing: 279.56
+BHD: 279.56 90.79 -171.23
+Set wheels to: -229, 255
+Location: -11.05, -0.13
+Destination: -11.78, 0.00
+Distance: 0.74 m
+X Distance: -0.73 Y Distance: 0.13
+Bearing: 279.85
+BHD: 279.85 88.98 -169.13
+Set wheels to: -223, 255
+Location: -11.00, -0.14
+Destination: -11.78, 0.00
+Distance: 0.79 m
+X Distance: -0.78 Y Distance: 0.14
+Bearing: 280.39
+BHD: 280.39 90.84 -170.45
+Set wheels to: -227, 255
+Location: -10.97, -0.16
+Destination: -11.78, 0.00
+Distance: 0.83 m
+X Distance: -0.81 Y Distance: 0.16
+Bearing: 280.85
+BHD: 280.85 89.80 -168.95
+Set wheels to: -223, 255
+Location: -10.93, -0.17
+Destination: -11.78, 0.00
+Distance: 0.86 m
+X Distance: -0.85 Y Distance: 0.17
+Bearing: 281.49
+BHD: 281.49 85.91 -164.42
+Set wheels to: -210, 255
+Location: -10.89, -0.20
+Destination: -11.78, 0.00
+Distance: 0.91 m
+X Distance: -0.89 Y Distance: 0.20
+Bearing: 282.51
+BHD: 282.51 90.75 -168.24
+Set wheels to: -221, 255
+Location: -10.85, -0.22
+Destination: -11.78, 0.00
+Distance: 0.95 m
+X Distance: -0.93 Y Distance: 0.22
+Bearing: 283.37
+BHD: 283.37 89.14 -165.77
+Set wheels to: -214, 255
+Location: -10.82, -0.23
+Destination: -11.78, 0.00
+Distance: 0.99 m
+X Distance: -0.96 Y Distance: 0.23
+Bearing: 283.61
+BHD: 283.61 88.55 -164.94
+Set wheels to: -211, 255
+Location: -10.79, -0.25
+Destination: -11.78, 0.00
+Distance: 1.03 m
+X Distance: -0.99 Y Distance: 0.25
+Bearing: 283.97
+BHD: 283.97 93.45 -169.47
+Set wheels to: -224, 255
+Location: -10.75, -0.25
+Destination: -11.78, 0.00
+Distance: 1.06 m
+X Distance: -1.03 Y Distance: 0.25
+Bearing: 283.79
+BHD: 283.79 86.58 -162.79
+Set wheels to: -205, 255
+Location: -10.72, -0.27
+Destination: -11.78, 0.00
+Distance: 1.10 m
+X Distance: -1.06 Y Distance: 0.27
+Bearing: 284.42
+BHD: 284.42 94.32 -169.90
+Set wheels to: -225, 255
+Location: -10.69, -0.28
+Destination: -11.78, 0.00
+Distance: 1.12 m
+X Distance: -1.09 Y Distance: 0.28
+Bearing: 284.65
+BHD: 284.65 86.77 -162.12
+Set wheels to: -203, 255
+Location: -10.66, -0.29
+Destination: -11.78, 0.00
+Distance: 1.16 m
+X Distance: -1.12 Y Distance: 0.29
+Bearing: 284.58
+BHD: 284.58 87.80 -163.21
+Set wheels to: -206, 255
+Location: -10.64, -0.30
+Destination: -11.78, 0.00
+Distance: 1.17 m
+X Distance: -1.14 Y Distance: 0.30
+Bearing: 284.75
+BHD: 284.75 95.15 -170.40
+Set wheels to: -227, 255
+Location: -10.61, -0.32
+Destination: -11.78, 0.00
+Distance: 1.21 m
+X Distance: -1.17 Y Distance: 0.32
+Bearing: 285.29
+BHD: 285.29 86.77 -161.48
+Set wheels to: -202, 255
+Location: -10.60, -0.33
+Destination: -11.78, 0.00
+Distance: 1.22 m
+X Distance: -1.18 Y Distance: 0.33
+Bearing: 285.67
+BHD: 285.67 93.16 -167.50
+Set wheels to: -219, 255
+Location: -10.58, -0.36
+Destination: -11.78, 0.00
+Distance: 1.26 m
+X Distance: -1.20 Y Distance: 0.36
+Bearing: 286.72
+BHD: 286.72 98.80 -172.07
+Set wheels to: -232, 255
+Location: -10.54, -0.37
+Destination: -11.78, 0.00
+Distance: 1.29 m
+X Distance: -1.24 Y Distance: 0.37
+Bearing: 286.81
+BHD: 286.81 87.68 -160.87
+Set wheels to: -200, 255
+Location: -10.52, -0.39
+Destination: -11.78, 0.00
+Distance: 1.32 m
+X Distance: -1.26 Y Distance: 0.39
+Bearing: 287.05
+BHD: 287.05 92.41 -165.36
+Set wheels to: -213, 255
+Location: -10.51, -0.40
+Destination: -11.78, 0.00
+Distance: 1.33 m
+X Distance: -1.27 Y Distance: 0.40
+Bearing: 287.58
+BHD: 287.58 92.45 -164.87
+Set wheels to: -211, 255
+Location: -10.47, -0.42
+Destination: -11.78, 0.00
+Distance: 1.37 m
+X Distance: -1.31 Y Distance: 0.42
+Bearing: 287.62
+BHD: 287.62 88.19 -160.57
+Set wheels to: -199, 255
+Location: -10.44, -0.43
+Destination: -11.78, 0.00
+Distance: 1.40 m
+X Distance: -1.34 Y Distance: 0.43
+Bearing: 287.88
+BHD: 287.88 93.55 -165.67
+Set wheels to: -213, 255
+Location: -10.41, -0.44
+Destination: -11.78, 0.00
+Distance: 1.44 m
+X Distance: -1.37 Y Distance: 0.44
+Bearing: 287.88
+BHD: 287.88 90.79 -162.91
+Set wheels to: -206, 255
+Location: -10.39, -0.45
+Destination: -11.78, 0.00
+Distance: 1.47 m
+X Distance: -1.39 Y Distance: 0.45
+Bearing: 288.03
+BHD: 288.03 90.01 -161.99
+Set wheels to: -203, 255
+Location: -10.36, -0.47
+Destination: -11.78, 0.00
+Distance: 1.49 m
+X Distance: -1.42 Y Distance: 0.47
+Bearing: 288.23
+BHD: 288.23 86.58 -158.35
+Set wheels to: -193, 255
+Location: -10.34, -0.48
+Destination: -11.78, 0.00
+Distance: 1.52 m
+X Distance: -1.44 Y Distance: 0.48
+Bearing: 288.33
+BHD: 288.33 87.61 -159.29
+Set wheels to: -195, 255
+Location: -10.32, -0.49
+Destination: -11.78, 0.00
+Distance: 1.54 m
+X Distance: -1.46 Y Distance: 0.49
+Bearing: 288.48
+BHD: 288.48 93.25 -164.77
+Set wheels to: -211, 255
+Location: -10.29, -0.50
+Destination: -11.78, 0.00
+Distance: 1.58 m
+X Distance: -1.49 Y Distance: 0.50
+Bearing: 288.62
+BHD: 288.62 90.84 -162.21
+Set wheels to: -204, 255
+Location: -10.27, -0.51
+Destination: -11.78, 0.00
+Distance: 1.59 m
+X Distance: -1.51 Y Distance: 0.51
+Bearing: 288.71
+BHD: 288.71 86.86 -158.15
+Set wheels to: -192, 255
+Location: -10.24, -0.53
+Destination: -11.78, 0.00
+Distance: 1.63 m
+X Distance: -1.54 Y Distance: 0.53
+Bearing: 288.94
+BHD: 288.94 87.61 -158.67
+Set wheels to: -194, 255
+Location: -10.22, -0.54
+Destination: -11.78, 0.00
+Distance: 1.65 m
+X Distance: -1.56 Y Distance: 0.54
+Bearing: 289.23
+BHD: 289.23 92.80 -163.56
+Set wheels to: -207, 255
+Location: -10.20, -0.56
+Destination: -11.78, 0.00
+Distance: 1.68 m
+X Distance: -1.58 Y Distance: 0.56
+Bearing: 289.51
+BHD: 289.51 92.28 -162.77
+Set wheels to: -205, 255
