@@ -2,6 +2,7 @@
 #define LOCATION_H
 
 #include "MPU9250.h"
+#include "Kalman.h"
 
 #define GPS_I2C_Address 0x42
 #define GPS_Sample_Rate 5
@@ -38,6 +39,14 @@ class Location {
     float latitude_to_meters;
     // IMU measurements
     long last_imu_measurement;
+    float min_magx;
+    float min_magy;
+    float max_magx;
+    float max_magy;
+    float magx_offset;
+    float magy_offset;
+    float magx_scale;
+    float magy_scale;
     // Computed position
     long last_update;
     float computed_x;
@@ -47,6 +56,7 @@ class Location {
     float computed_velE;
     float computed_velD;
     bool self_drive=false;
+    float maintain_heading=-1.0;
 
     uint32_t computed_haccuracy;
     uint32_t computed_accuracy;
@@ -74,5 +84,8 @@ class Location {
         float Get_Local_Distance();
         float Get_Compass_Reading();
         void Set_Time_Step(uint16_t step);
+        void Calibrate_Compass();
+        void Maintain_Heading(float bearing);
+        void Set_Heading(float heading);
 };
 #endif

@@ -79,6 +79,7 @@ void process_line(char *string){
                         }
                         location.Set_Destination(x, y);
                         location.Set_Self_Drive(true);
+                        location.Set_Heading(-1.0);
                     }
                     break;
                 case 92: {
@@ -103,6 +104,11 @@ void process_line(char *string){
                         send_ok();
                     }
                     break;
+                case 132: {
+                    location.Calibrate_Compass();
+                    send_ok();
+                    break;
+                    }
                 case 1000: {
                         short int left = -999;
                         short int right = -999;
@@ -137,6 +143,7 @@ void process_line(char *string){
                             right = 255;
                         }
                         location.Set_Self_Drive(false);
+                        location.Set_Heading(-1.0);
                         wheels.set_speeds(left, right);
                         send_ok();
                     }
@@ -180,6 +187,25 @@ void process_line(char *string){
                         send_ok();
                     }
                     break;
+                case 1002:{
+                        ptr = strtok(NULL, delim);
+                        if(ptr != NULL)
+                            number = atof(ptr);
+                        if((number<0) || (number>=360)){
+                            // We didn't get a properly formatted line
+                            send_err();
+                            return;
+                        }
+                        location.Set_Self_Drive(false);
+                        location.Set_Heading(number);
+                    }
+                    break;
+                case 1003:{
+                        number = location.Get_Compass_Reading();
+                        location.Set_Self_Drive(false);
+                        location.Set_Heading(number);
+                    }
+                    break;
                 default:
                     send_err();
                     break;
@@ -195,10 +221,16 @@ void process_line(char *string){
                     Serial.print(F(" "));
                     Serial.print(location.Get_Z());
                     Serial.print(F(" "));
+                    Serial.print(location.Get_Compass_Reading());
+                    Serial.print(F(" "));
                     Serial.print(location.Get_Horizontal_Accuracy());
                     Serial.print(F(" "));
                     Serial.print(location.Get_3D_Accuracy());
                     Serial.println();
+                    send_ok();
+                    break;
+                case 1000:
+                    Serial.println(location.Get_Compass_Reading());
                     send_ok();
                     break;
                 default:

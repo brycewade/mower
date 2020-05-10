@@ -1,6 +1,13 @@
 #include "location.h"
 #include "SparkFun_Ublox_Arduino_Library.h"
+#include <EEPROM.h>
+
 MPU9250 IMU(Wire,0x68);
+Kalman magxFilter(0.125,1,1023,0);
+Kalman magyFilter(0.125,1,1023,0);
+Kalman xFilter(0.125,32,1023,0);
+Kalman yFilter(0.125,32,1023,0);
+Kalman zFilter(0.125,32,1023,0);
 
 void Setup_Scaling(){
     location.setOriginLongitude(ORIGIN_LONGITUDE);
@@ -11,6 +18,9 @@ void Setup_Scaling(){
 
 void Setup_Compass() {
     int status;
+    float offset;
+    float scale;
+    int address=0;
     // start communication with IMU 
     status = IMU.begin();
     if (status < 0) {
@@ -20,10 +30,128 @@ void Setup_Compass() {
         Serial.println(status);
         while(1) {}
     }
-    Serial.println(F("Setting Calibration of compass."));
-    IMU.setMagCalX(29.55, 1.0009310987);
-    IMU.setMagCalY(61.835, 1.00315345754);
-    IMU.setMagCalZ(-32.61, 0.995942751262);
+    Serial.println(F("Setting Calibration of compass from EEPROM."));
+    EEPROM.get(address, offset);
+    address+=sizeof(float);
+    EEPROM.get(address, scale);
+    address+=sizeof(float);
+    IMU.setMagCalX(offset, scale);
+    Serial.print(offset);
+    Serial.print(",");
+    Serial.println(scale);
+    EEPROM.get(address, offset);
+    address+=sizeof(float);
+    EEPROM.get(address, scale);
+    address+=sizeof(float);
+    IMU.setMagCalY(offset, scale);
+    Serial.print(offset);
+    Serial.print(",");
+    Serial.println(scale);
+    EEPROM.get(address, offset);
+    address+=sizeof(float);
+    EEPROM.get(address, scale);
+    address+=sizeof(float);
+    IMU.setMagCalZ(offset, scale);
+    Serial.print(offset);
+    Serial.print(",");
+    Serial.println(scale);
+}
+
+void Location::Calibrate_Compass() {
+    float min_magx;
+    float min_magy;
+    float max_magx;
+    float max_magy;
+    float magx_offset;
+    float magy_offset;
+    float magx_scale;
+    float magy_scale;
+    float x;
+    float y;
+    long start;
+    float scale_average;
+    int address=0;
+
+    IMU.setMagCalX(0, 1.0);
+    IMU.setMagCalY(0, 1.0);
+    //IMU.setMagCalZ(0, 1.0);
+    min_magx=1000;
+    min_magy=1000;
+    max_magx=-1000;
+    max_magy=-1000;
+    // Turn left for a while
+    wheels.set_speeds(-255, 255);
+    start=millis();
+    while(millis()-start<10000){
+        IMU.readSensor();
+        x=IMU.getMagX_uT();
+        y=IMU.getMagY_uT();
+        if(x<min_magx)
+            min_magx=x;
+        if(x>max_magx)
+            max_magx=x;
+        if(y<min_magy)
+            min_magy=y;
+        if(y>max_magy)
+            max_magy=y;
+    }
+    wheels.set_speeds(0, 0);
+    Serial.print(min_magx);
+    Serial.print(", ");
+    Serial.print(max_magx);
+    Serial.print("  ");
+    Serial.print(min_magy);
+    Serial.print(", ");
+    Serial.println(max_magy);
+    delay(500);
+    // Turn right for a while
+    wheels.set_speeds(255, -255);
+    start=millis();
+    while(millis()-start<10000){
+        IMU.readSensor();
+        x=IMU.getMagX_uT();
+        y=IMU.getMagY_uT();
+        if(x<min_magx)
+            min_magx=x;
+        if(x>max_magx)
+            max_magx=x;
+        if(y<min_magy)
+            min_magy=y;
+        if(y>max_magy)
+            max_magy=y;
+    }
+    wheels.set_speeds(0, 0);
+    Serial.print(min_magx);
+    Serial.print(", ");
+    Serial.print(max_magx);
+    Serial.print("  ");
+    Serial.print(min_magy);
+    Serial.print(", ");
+    Serial.println(max_magy);
+    magx_offset=(max_magx + min_magx)/2;
+    magy_offset=(max_magy + min_magy)/2;
+    magx_scale=(max_magx - min_magx);
+    magy_scale=(max_magy - min_magy);
+    scale_average=(magx_scale + magy_scale)/2;
+    magx_scale/=scale_average;
+    magy_scale/=scale_average;
+    IMU.setMagCalX(magx_offset, magx_scale);
+    IMU.setMagCalY(magy_offset, magy_scale);
+    Serial.println(F("Writing calibration of compass to EEPROM."));
+    Serial.print(magx_offset);
+    Serial.print(", ");
+    Serial.print(magx_scale);
+    Serial.print("  ");
+    Serial.print(magy_offset);
+    Serial.print(", ");
+    Serial.println(magy_scale);
+    EEPROM.put(address, magx_offset);
+    address+=sizeof(float);
+    EEPROM.put(address, magx_scale);
+    address+=sizeof(float);
+    EEPROM.put(address, magy_offset);
+    address+=sizeof(float);
+    EEPROM.put(address, magy_scale);
 }
 
 void Scan_and_reset_I2C(){
@@ -157,26 +285,28 @@ float Location::Get_Bearing(){
     if (bearing >= 360) {
         bearing -= 360;
     }
-    Serial.print("Bearing: ");
-    Serial.println(bearing);
+    // Serial.print("Bearing: ");
+    // Serial.println(bearing);
     return bearing;
 }
 
-float Location::Get_Compass_Reading() {
-    float heading, magx, magy;
+float Location::Get_Compass_Reading(){
+    float heading;
     int reading;
-    magx=0;
-    magy=0;
-    for(reading=0; reading<HEADING_READINGS; reading++){
-        IMU.readSensor();
-        magx+=IMU.getMagY_uT();
-        magy+=IMU.getMagX_uT();
-        delay(5);
-    }
-    magx /= HEADING_READINGS;
-    magy /= HEADING_READINGS;
-    heading = atan2(magy,magx) * 180 / PI - 55/60;
-    heading=-heading;
+    float measured_magx;
+    float measured_magy;
+    float filtered_magx;
+    float filtered_magy;
+
+    IMU.readSensor();
+    measured_magx=IMU.getMagY_uT();
+    filtered_magx=magxFilter.getFilteredValue(measured_magx);
+    measured_magy=IMU.getMagX_uT();
+    filtered_magy=magyFilter.getFilteredValue(measured_magy);
+
+
+    heading = atan2(filtered_magy,filtered_magx) * 180 / PI - 55/60;
+    heading-=90;
     if (heading<0){
         heading += 360;
     }
@@ -266,9 +396,9 @@ void Location::Update_Position(){
             // sprintf(buffer, "Lat: (%ld - %ld + %d /100 * %4f) = %4f\0", gps_latitude, origin_latitude, gps_latitudeHP, latitude_to_meters, gps_y);
             // Serial.println(buffer);
 
-            computed_x = gps_x;
-            computed_y = gps_y;
-            computed_z = gps_altitude/1000;
+            computed_x = xFilter.getFilteredValue(gps_x);
+            computed_y = yFilter.getFilteredValue(gps_y);
+            computed_z = zFilter.getFilteredValue(gps_altitude/1000);
             computed_haccuracy = gps_haccuracy;
             computed_accuracy = gps_accuracy;
             count=0;
@@ -280,9 +410,9 @@ void Location::Update_Position(){
             return;
         }
     }
-    computed_x = predicted_x;
-    computed_y = predicted_y;
-    computed_z = predicted_z;
+    computed_x = xFilter.getFilteredValue(predicted_x);
+    computed_y = yFilter.getFilteredValue(predicted_y);
+    computed_z = zFilter.getFilteredValue(predicted_z);
     count++;
 }
 
@@ -334,7 +464,6 @@ void Location::Set_Self_Drive(bool value){
 
 void Location::Navigate(){
     float drift, bearing, heading;
-    short left, right;
     if(self_drive)
     {
         Serial.print("Location: ");
@@ -352,37 +481,50 @@ void Location::Navigate(){
         {
             self_drive=false;
             wheels.set_speeds(0,0);
-            send_ok();
+            Serial.println(F("OK"));
             return;
         }
         bearing=Get_Bearing();
-        heading=Get_Compass_Reading();
-        drift=bearing-heading;
-        if(drift>180)
-            drift-=360;
-        if(drift<=-180)
-            drift+=360;
-        Serial.print("BHD: ");
-        Serial.print(bearing);
-        Serial.print(" ");
-        Serial.print(heading);
-        Serial.print(" ");
-        Serial.println(drift);
-        // left=255;
-        // if(drift<-3)
-        //     left=0;
-        // if(drift<-45)
-        //     left=-255;
-        // right=255;
-        // if(drift>3)
-        //     right=0;
-        // if(drift>45)
-        //     right=-255;
-        left=max(min(255,255+int(drift*255/90+0.5)),-255);
-        right=max(min(255,255-int(drift*255/90+0.5)),-255);
-        wheels.set_speeds(left,right);
-        delay(time_step);
+        Maintain_Heading(bearing);
+    } else if(maintain_heading>=0){
+        Maintain_Heading(maintain_heading);
     }
+}
+
+void Location::Maintain_Heading(float bearing){
+    float drift, heading;
+    short left, right;
+
+    heading=Get_Compass_Reading();
+    drift=bearing-heading;
+    if(drift>180)
+        drift-=360;
+    if(drift<=-180)
+        drift+=360;
+    Serial.print("BHD: ");
+    Serial.print(bearing);
+    Serial.print(" ");
+    Serial.print(heading);
+    Serial.print(" ");
+    Serial.println(drift);
+    // left=255;
+    // if(drift<-3)
+    //     left=0;
+    // if(drift<-45)
+    //     left=-255;
+    // right=255;
+    // if(drift>3)
+    //     right=0;
+    // if(drift>45)
+    //     right=-255;
+    left=max(min(255,255+int(drift*255/90+0.5)),-255);
+    right=max(min(255,255-int(drift*255/90+0.5)),-255);
+    wheels.set_speeds(left,right);
+    delay(time_step);
+}
+
+void Location::Set_Heading(float heading){
+    maintain_heading = heading;
 }
 
 void Location::Set_Time_Step(uint16_t step){
