@@ -12,6 +12,7 @@
 #define ORIGIN_ALTITUDE 232
 #define INITIAL_TIME_STEP 0
 #define HEADING_READINGS 20
+#define MIN_TURN_POWER 40
 
 // #define origin_latitude -91000000
 // #define orgigin_longitude 41000000
@@ -56,6 +57,7 @@ class Location {
     float computed_velE;
     float computed_velD;
     bool self_drive=false;
+    float heading;
     float maintain_heading=-1.0;
 
     uint32_t computed_haccuracy;
@@ -87,5 +89,6 @@ class Location {
         void Calibrate_Compass();
         void Maintain_Heading(float bearing);
         void Set_Heading(float heading);
+        void Turn_To_Bearing(float bearing);
 };
 #endif

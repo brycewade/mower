@@ -5,9 +5,9 @@
 MPU9250 IMU(Wire,0x68);
 Kalman magxFilter(0.125,1,1023,0);
 Kalman magyFilter(0.125,1,1023,0);
-Kalman xFilter(0.125,32,1023,0);
-Kalman yFilter(0.125,32,1023,0);
-Kalman zFilter(0.125,32,1023,0);
+Kalman xFilter(0.125,0.25,1023,0);
+Kalman yFilter(0.125,0.25,1023,0);
+Kalman zFilter(0.125,0.25,1023,0);
 
 void Setup_Scaling(){
     location.setOriginLongitude(ORIGIN_LONGITUDE);
@@ -331,9 +331,9 @@ void Location::Update_Position(){
     // Serial.print(computed_x);
     // Serial.print(", ");
     // Serial.println(computed_y);
-    predicted_x = computed_x + gps_velE * (current_time - last_update) / 1000;
-    predicted_y = computed_y + gps_velN * (current_time - last_update) / 1000;
-    predicted_z = computed_z - gps_velD * (current_time - last_update) / 1000;
+    predicted_x = computed_x + gps_velE * (current_time - last_update) / 100000;
+    predicted_y = computed_y + gps_velN * (current_time - last_update) / 100000;
+    predicted_z = computed_z - gps_velD * (current_time - last_update) / 100000;
     last_update = current_time;
     // Serial.print("Predicted: ");
     // Serial.print(predicted_x);
@@ -395,7 +395,18 @@ void Location::Update_Position(){
             // Serial.println(gps_y);
             // sprintf(buffer, "Lat: (%ld - %ld + %d /100 * %4f) = %4f\0", gps_latitude, origin_latitude, gps_latitudeHP, latitude_to_meters, gps_y);
             // Serial.println(buffer);
-
+            Serial.print(F("Updating position from GPS: "));
+            Serial.print(gps_x);
+            Serial.print(" ");
+            Serial.print(gps_y);
+            Serial.print(" ");
+            Serial.print(gps_altitude/1000);
+            Serial.print(" ");
+            Serial.print(gps_velE);
+            Serial.print(" ");
+            Serial.print(gps_velN);
+            Serial.print(" ");
+            Serial.println(gps_velD);
             computed_x = xFilter.getFilteredValue(gps_x);
             computed_y = yFilter.getFilteredValue(gps_y);
             computed_z = zFilter.getFilteredValue(gps_altitude/1000);
@@ -463,9 +474,13 @@ void Location::Set_Self_Drive(bool value){
 }
 
 void Location::Navigate(){
-    float drift, bearing, heading;
+    float drift, bearing;
+
+    heading=Get_Compass_Reading();
     if(self_drive)
     {
+        Serial.print("Time: ");
+        Serial.println(millis());
         Serial.print("Location: ");
         Serial.print(computed_x);
         Serial.print(", ");
@@ -492,39 +507,72 @@ void Location::Navigate(){
 }
 
 void Location::Maintain_Heading(float bearing){
-    float drift, heading;
+    float drift;
     short left, right;
 
-    heading=Get_Compass_Reading();
     drift=bearing-heading;
     if(drift>180)
         drift-=360;
     if(drift<=-180)
         drift+=360;
+    if((drift>-10)&&(drift<0))
+        drift=-10;
+    if((drift<10)&&(drift>0))
+        drift=10;
     Serial.print("BHD: ");
     Serial.print(bearing);
     Serial.print(" ");
     Serial.print(heading);
     Serial.print(" ");
     Serial.println(drift);
-    // left=255;
-    // if(drift<-3)
-    //     left=0;
-    // if(drift<-45)
-    //     left=-255;
-    // right=255;
-    // if(drift>3)
-    //     right=0;
-    // if(drift>45)
-    //     right=-255;
     left=max(min(255,255+int(drift*255/90+0.5)),-255);
     right=max(min(255,255-int(drift*255/90+0.5)),-255);
     wheels.set_speeds(left,right);
     delay(time_step);
 }
 
-void Location::Set_Heading(float heading){
-    maintain_heading = heading;
+void Location::Set_Heading(float new_heading){
+    maintain_heading = new_heading;
+}
+
+void Location::Turn_To_Bearing(float bearing){
+    float drift=180.0;
+    float power;
+    short left, right, i;
+
+    Serial.print("Turning to heading: ");
+    Serial.println(bearing);
+    Serial.print("Letting compass reading steady:");
+    for(i=0; i<255; i++)
+        heading=Get_Compass_Reading();
+    while((drift>3)||(drift<-3)){
+        heading=Get_Compass_Reading();
+        drift=bearing-heading;
+        if(drift>180)
+            drift-=360;
+        if(drift<=-180)
+            drift+=360;
+        Serial.print("BHD: ");
+        Serial.print(bearing);
+        Serial.print(" ");
+        Serial.print(heading);
+        Serial.print(" ");
+        Serial.println(drift);
+        power=drift*255/180;
+        left=int(power+0.5);
+        if((left>0)&&(left<MIN_TURN_POWER))
+            left=MIN_TURN_POWER;
+        if((left<0)&&(left>-MIN_TURN_POWER))
+            left=-MIN_TURN_POWER;
+        right=-left;
+        wheels.set_speeds(left,right);
+    }
+    wheels.set_speeds(0,0);
+    Serial.print("Letting compass reading steady:");
+    for(i=0; i<255; i++)
+        heading=Get_Compass_Reading();
+    Serial.print("Done turning to heading: ");
+    Serial.println(bearing);
 }
 
 void Location::Set_Time_Step(uint16_t step){

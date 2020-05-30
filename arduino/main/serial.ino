@@ -78,6 +78,7 @@ void process_line(char *string){
                             return;
                         }
                         location.Set_Destination(x, y);
+                        location.Turn_To_Bearing(location.Get_Bearing());
                         location.Set_Self_Drive(true);
                         location.Set_Heading(-1.0);
                     }
