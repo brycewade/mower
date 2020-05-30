@@ -9,6 +9,7 @@ L1_BUTTON = 4
 R1_BUTTON = 5
 X_BUTTON = 0
 TRIANGLE_BUTTON = 2
+SQUARE_BUTTON = 1
 PS_BUTTON = 10
 ARDUINO = "/dev/serial/by-id/usb-Arduino__www.arduino.cc__Arduino_Mega_2560_55838323735351102081-if00"
 
@@ -41,6 +42,10 @@ def record_position(arduino):
 
 def hold_heading(arduino):
     send_to_arduino(arduino, "G1003")
+
+
+def calibrate_compass(arduino):
+    send_to_arduino(arduino, "G136")
 
 
 def send_updated_directions(arduino, left, right):
@@ -87,6 +92,11 @@ def main():
             print("Holding current heading")
             hold_heading(arduino)
         previous_tri = tri_button
+        
+        if square_button and not previous_square:
+            print("Calibrating compass")
+            calibrate_compass(arduino)
+        previous_square = square_button
 
 
         if l1_button and not previous_l1:
