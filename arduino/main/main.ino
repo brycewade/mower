@@ -52,5 +52,6 @@ void setup(){
 void loop(){
     process_serial_input();
     location.Update_Position();
+    location.Update_IMU();
     location.Navigate();
 }

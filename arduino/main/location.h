@@ -1,7 +1,9 @@
 #ifndef LOCATION_H
 #define LOCATION_H
 
-#include "MPU9250.h"
+#include <EEPROM.h>
+#include "SparkFun_Ublox_Arduino_Library.h"
+#include "SparkFun_BNO080_Arduino_Library.h"
 #include "Kalman.h"
 
 #define GPS_I2C_Address 0x42
@@ -58,6 +60,9 @@ class Location {
     float computed_velD;
     bool self_drive=false;
     float heading;
+    float yaw;
+    float pitch;
+    float roll;
     float maintain_heading=-1.0;
 
     uint32_t computed_haccuracy;
@@ -85,6 +90,7 @@ class Location {
         void Set_Self_Drive(bool value);
         float Get_Local_Distance();
         float Get_Compass_Reading();
+        void Update_IMU();
         void Set_Time_Step(uint16_t step);
         void Calibrate_Compass();
         void Maintain_Heading(float bearing);

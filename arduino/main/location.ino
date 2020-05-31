@@ -1,8 +1,7 @@
 #include "location.h"
-#include "SparkFun_Ublox_Arduino_Library.h"
-#include <EEPROM.h>
 
-MPU9250 IMU(Wire,0x68);
+
+BNO080 myIMU;
 Kalman magxFilter(0.125,1,1023,0);
 Kalman magyFilter(0.125,1,1023,0);
 Kalman xFilter(0.125,0.25,1023,0);
@@ -22,39 +21,18 @@ void Setup_Compass() {
     float scale;
     int address=0;
     // start communication with IMU 
-    status = IMU.begin();
-    if (status < 0) {
+    status = myIMU.begin();
+    if (status == false) {
         Serial.println("IMU initialization unsuccessful");
         Serial.println("Check IMU wiring or try cycling power");
         Serial.print("Status: ");
         Serial.println(status);
         while(1) {}
     }
-    Serial.println(F("Setting Calibration of compass from EEPROM."));
-    EEPROM.get(address, offset);
-    address+=sizeof(float);
-    EEPROM.get(address, scale);
-    address+=sizeof(float);
-    IMU.setMagCalX(offset, scale);
-    Serial.print(offset);
-    Serial.print(",");
-    Serial.println(scale);
-    EEPROM.get(address, offset);
-    address+=sizeof(float);
-    EEPROM.get(address, scale);
-    address+=sizeof(float);
-    IMU.setMagCalY(offset, scale);
-    Serial.print(offset);
-    Serial.print(",");
-    Serial.println(scale);
-    EEPROM.get(address, offset);
-    address+=sizeof(float);
-    EEPROM.get(address, scale);
-    address+=sizeof(float);
-    IMU.setMagCalZ(offset, scale);
-    Serial.print(offset);
-    Serial.print(",");
-    Serial.println(scale);
+    myIMU.enableRotationVector(50); //Send data update every 50ms
+
+    Serial.println(F("Rotation vector enabled"));
+    Serial.println(F("Output in form roll, pitch, yaw"));
 }
 
 void Location::Calibrate_Compass() {
@@ -71,7 +49,7 @@ void Location::Calibrate_Compass() {
     long start;
     float scale_average;
     int address=0;
-
+/*
     IMU.setMagCalX(0, 1.0);
     IMU.setMagCalY(0, 1.0);
     //IMU.setMagCalZ(0, 1.0);
@@ -152,6 +130,7 @@ void Location::Calibrate_Compass() {
     EEPROM.put(address, magy_offset);
     address+=sizeof(float);
     EEPROM.put(address, magy_scale);
+    */
 }
 
 void Scan_and_reset_I2C(){
@@ -291,31 +270,31 @@ float Location::Get_Bearing(){
 }
 
 float Location::Get_Compass_Reading(){
-    float heading;
-    int reading;
-    float measured_magx;
-    float measured_magy;
-    float filtered_magx;
-    float filtered_magy;
-
-    IMU.readSensor();
-    measured_magx=IMU.getMagY_uT();
-    filtered_magx=magxFilter.getFilteredValue(measured_magx);
-    measured_magy=IMU.getMagX_uT();
-    filtered_magy=magyFilter.getFilteredValue(measured_magy);
-
-
-    heading = atan2(filtered_magy,filtered_magx) * 180 / PI - 55/60;
-    heading-=90;
-    if (heading<0){
-        heading += 360;
-    }
-    if (heading>=360){
-        heading -= 360;
-    }
-    return heading;
+    return yaw;
 }
 
+void Location::Update_IMU(){
+    if (myIMU.dataAvailable() == true)
+    {
+        roll = (myIMU.getRoll()) * 180.0 / PI; // Convert roll to degrees
+        pitch = (myIMU.getPitch()) * 180.0 / PI; // Convert pitch to degrees
+        yaw = (myIMU.getYaw()) * 180.0 / PI; // Convert yaw / heading to degrees
+        yaw = -yaw;
+        if (yaw < 0) {
+            yaw += 360;
+        }
+        if (yaw >= 360) {
+            yaw -= 360;
+        }
+        Serial.print(roll, 1);
+        Serial.print(F(","));
+        Serial.print(pitch, 1);
+        Serial.print(F(","));
+        Serial.print(yaw, 1);
+
+        Serial.println();
+    }
+}
 void Location::Update_Position(){
     float gps_x;
     float gps_y;
@@ -407,9 +386,14 @@ void Location::Update_Position(){
             Serial.print(gps_velN);
             Serial.print(" ");
             Serial.println(gps_velD);
+            /*
             computed_x = xFilter.getFilteredValue(gps_x);
             computed_y = yFilter.getFilteredValue(gps_y);
             computed_z = zFilter.getFilteredValue(gps_altitude/1000);
+            */
+            computed_x = gps_x;
+            computed_y = gps_y;
+            computed_z = gps_altitude/1000;
             computed_haccuracy = gps_haccuracy;
             computed_accuracy = gps_accuracy;
             count=0;
@@ -421,9 +405,15 @@ void Location::Update_Position(){
             return;
         }
     }
+    /*
     computed_x = xFilter.getFilteredValue(predicted_x);
     computed_y = yFilter.getFilteredValue(predicted_y);
     computed_z = zFilter.getFilteredValue(predicted_z);
+    */
+    computed_x = predicted_x;
+    computed_y = predicted_y;
+    computed_z = predicted_z;
+
     count++;
 }
 
