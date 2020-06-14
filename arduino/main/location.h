@@ -42,6 +42,7 @@ class Location {
     float latitude_to_meters;
     // IMU measurements
     long last_imu_measurement;
+    /*
     float min_magx;
     float min_magy;
     float max_magx;
@@ -50,8 +51,12 @@ class Location {
     float magy_offset;
     float magx_scale;
     float magy_scale;
+    */
     // Computed position
     long last_update;
+    BLA::Matrix<3> Ex;
+    BLA::Matrix<3> Ey;
+    BLA::Matrix<3> Ez;
     float computed_x;
     float computed_y;
     float computed_z;

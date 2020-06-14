@@ -35,12 +35,15 @@ Blades blades;
 Location location;
 
 void setup(){
+    Serial.begin(115200);
+    Serial.println(F("Initializing..."));
     Setup_Relays();
     Setup_Wheels();
     Setup_Blades();
     Turn_On_Relay();
     serial_init();
     Wire.begin();
+    Setup_Filters();
     Setup_GPS();
     Setup_Scaling();
     location.Set_Time_Step(INITIAL_TIME_STEP);

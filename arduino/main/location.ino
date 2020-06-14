@@ -1,12 +1,59 @@
 #include "location.h"
-
+#include "Kalman.h"
+using namespace BLA;
 
 BNO080 myIMU;
-Kalman magxFilter(0.125,1,1023,0);
-Kalman magyFilter(0.125,1,1023,0);
-Kalman xFilter(0.125,0.25,1023,0);
-Kalman yFilter(0.125,0.25,1023,0);
-Kalman zFilter(0.125,0.25,1023,0);
+
+
+//------------------------------------
+/****  MODELIZATION PARAMETERS  ****/
+//------------------------------------
+
+#define Nstate 3 // position, velocity, acceleration
+#define Nobs 3   // position, velocity, acceleration
+
+// measurement std
+#define n_p 0.3
+#define n_v 0.1
+#define n_a 5.0
+// model std (1/inertia)
+#define m_p 0.1
+#define m_v 0.1
+#define m_a 0.8
+
+#define IDENTITY_MATRIX {1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0}
+
+
+KALMAN<Nstate,Nobs> Kx; // your Kalman filter
+KALMAN<Nstate,Nobs> Ky; // your Kalman filter
+KALMAN<Nstate,Nobs> Kz; // your Kalman filter
+
+void Setup_Filters(){
+    Kx.F = IDENTITY_MATRIX;
+    Kx.H = IDENTITY_MATRIX;
+    Kx.R = {n_p*n_p, 0.0,     0.0,
+            0.0,     n_v*n_v, 0.0,
+            0.0,     0.0,     n_a*n_a};
+    Kx.Q = {m_p*m_p, 0.0,     0.0,
+            0.0,     m_v*m_v, 0.0,
+			0.0,     0.0,     m_a*m_a};
+    Ky.F = IDENTITY_MATRIX;
+    Ky.H = IDENTITY_MATRIX;
+    Ky.R = {n_p*n_p, 0.0,     0.0,
+            0.0,     n_v*n_v, 0.0,
+            0.0,     0.0,     n_a*n_a};
+    Ky.Q = {m_p*m_p, 0.0,     0.0,
+            0.0,     m_v*m_v, 0.0,
+			0.0,     0.0,     m_a*m_a};
+    Kz.F = IDENTITY_MATRIX;
+    Kz.H = IDENTITY_MATRIX;
+    Kz.R = {n_p*n_p, 0.0,     0.0,
+            0.0,     n_v*n_v, 0.0,
+            0.0,     0.0,     n_a*n_a};
+    Kz.Q = {m_p*m_p, 0.0,     0.0,
+            0.0,     m_v*m_v, 0.0,
+			0.0,     0.0,     m_a*m_a};
+}
 
 void Setup_Scaling(){
     location.setOriginLongitude(ORIGIN_LONGITUDE);
@@ -29,108 +76,32 @@ void Setup_Compass() {
         Serial.println(status);
         while(1) {}
     }
-    myIMU.enableRotationVector(50); //Send data update every 50ms
+    myIMU.calibrateAll();
 
+    myIMU.enableRotationVector(50); //Send data update every 50ms
     Serial.println(F("Rotation vector enabled"));
     Serial.println(F("Output in form roll, pitch, yaw"));
+
+    myIMU.enableAccelerometer(50); //Send data update every 50ms
+    Serial.println(F("Accelerometer enabled"));
+    Serial.println(F("Output in form x, y, z, in m/s^2"));
 }
 
 void Location::Calibrate_Compass() {
-    float min_magx;
-    float min_magy;
-    float max_magx;
-    float max_magy;
-    float magx_offset;
-    float magy_offset;
-    float magx_scale;
-    float magy_scale;
-    float x;
-    float y;
-    long start;
-    float scale_average;
-    int address=0;
-/*
-    IMU.setMagCalX(0, 1.0);
-    IMU.setMagCalY(0, 1.0);
-    //IMU.setMagCalZ(0, 1.0);
-    min_magx=1000;
-    min_magy=1000;
-    max_magx=-1000;
-    max_magy=-1000;
-    // Turn left for a while
-    wheels.set_speeds(-255, 255);
-    start=millis();
-    while(millis()-start<10000){
-        IMU.readSensor();
-        x=IMU.getMagX_uT();
-        y=IMU.getMagY_uT();
-        if(x<min_magx)
-            min_magx=x;
-        if(x>max_magx)
-            max_magx=x;
-        if(y<min_magy)
-            min_magy=y;
-        if(y>max_magy)
-            max_magy=y;
+    /*
+    Serial.print("Calibrating Accelerometer, spinning around for a bit");
+    myIMU.calibrateAccelerometer();
+    while(1) {
+        if(myIMU.dataAvailable() == true) {
+
+        }
     }
-    wheels.set_speeds(0, 0);
-    Serial.print(min_magx);
-    Serial.print(", ");
-    Serial.print(max_magx);
-    Serial.print("  ");
-    Serial.print(min_magy);
-    Serial.print(", ");
-    Serial.println(max_magy);
-    delay(500);
-    // Turn right for a while
-    wheels.set_speeds(255, -255);
-    start=millis();
-    while(millis()-start<10000){
-        IMU.readSensor();
-        x=IMU.getMagX_uT();
-        y=IMU.getMagY_uT();
-        if(x<min_magx)
-            min_magx=x;
-        if(x>max_magx)
-            max_magx=x;
-        if(y<min_magy)
-            min_magy=y;
-        if(y>max_magy)
-            max_magy=y;
-    }
-    wheels.set_speeds(0, 0);
-    Serial.print(min_magx);
-    Serial.print(", ");
-    Serial.print(max_magx);
-    Serial.print("  ");
-    Serial.print(min_magy);
-    Serial.print(", ");
-    Serial.println(max_magy);
-    magx_offset=(max_magx + min_magx)/2;
-    magy_offset=(max_magy + min_magy)/2;
-    magx_scale=(max_magx - min_magx);
-    magy_scale=(max_magy - min_magy);
-    scale_average=(magx_scale + magy_scale)/2;
-    magx_scale/=scale_average;
-    magy_scale/=scale_average;
-    IMU.setMagCalX(magx_offset, magx_scale);
-    IMU.setMagCalY(magy_offset, magy_scale);
-    Serial.println(F("Writing calibration of compass to EEPROM."));
-    Serial.print(magx_offset);
-    Serial.print(", ");
-    Serial.print(magx_scale);
-    Serial.print("  ");
-    Serial.print(magy_offset);
-    Serial.print(", ");
-    Serial.println(magy_scale);
-    EEPROM.put(address, magx_offset);
-    address+=sizeof(float);
-    EEPROM.put(address, magx_scale);
-    address+=sizeof(float);
-    EEPROM.put(address, magy_offset);
-    address+=sizeof(float);
-    EEPROM.put(address, magy_scale);
+    delay(3000);
     */
+    Serial.print("Calibrating Gyroscope, staying static for 3 seconds");
+    myIMU.calibrateMagnetometer();
+    wheels.set_speeds(-255, 255);
+    delay(5000);
 }
 
 void Scan_and_reset_I2C(){
@@ -241,8 +212,8 @@ float Location::Get_Local_Distance(){
     float distance;
     float x;
     float y;
-    x=destination_x-computed_x;
-    y=destination_y-computed_y;
+    x=destination_x-Ex(0);
+    y=destination_y-Ey(0);
     distance=sqrt(x*x+y*y);
     return(distance);
 }
@@ -250,8 +221,8 @@ float Location::Get_Local_Distance(){
 float Location::Get_Bearing(){
     float x, y, bearing;
 
-    y = destination_y - computed_y;
-    x = destination_x - computed_x;
+    y = destination_y - Ey(0);
+    x = destination_x - Ex(0);
     Serial.print("X Distance: ");
     Serial.print(x);
     Serial.print(" Y Distance: ");
@@ -279,7 +250,7 @@ void Location::Update_IMU(){
         roll = (myIMU.getRoll()) * 180.0 / PI; // Convert roll to degrees
         pitch = (myIMU.getPitch()) * 180.0 / PI; // Convert pitch to degrees
         yaw = (myIMU.getYaw()) * 180.0 / PI; // Convert yaw / heading to degrees
-        yaw = -yaw;
+        yaw += 90;
         if (yaw < 0) {
             yaw += 360;
         }
@@ -298,27 +269,21 @@ void Location::Update_IMU(){
 void Location::Update_Position(){
     float gps_x;
     float gps_y;
-    float gpz_z;
-    float predicted_x;
-    float predicted_y;
-    float predicted_z;
+    float gps_z;
     long current_time;
+    long dt;
     char buffer[255];
+    BLA::Matrix<Nstate,Nobs> F;
+    BLA::Matrix<Nobs> obsx; // observation vector
+    BLA::Matrix<Nobs> obsy; // observation vector
+    BLA::Matrix<Nobs> obsz; // observation vector
 
     current_time=millis();
-    // Serial.print("Computed: ");
-    // Serial.print(computed_x);
-    // Serial.print(", ");
-    // Serial.println(computed_y);
-    predicted_x = computed_x + gps_velE * (current_time - last_update) / 100000;
-    predicted_y = computed_y + gps_velN * (current_time - last_update) / 100000;
-    predicted_z = computed_z - gps_velD * (current_time - last_update) / 100000;
-    last_update = current_time;
-    // Serial.print("Predicted: ");
-    // Serial.print(predicted_x);
-    // Serial.print(", ");
-    // Serial.println(predicted_y);
-    if (millis()-last_gps_measurement > 100)
+    dt=current_time-last_update;
+    F = {1.0, dt,  dt*dt/2,
+         0.0, 1.0, dt,
+         0.0, 0.0, 1.0};
+    if (current_time-last_gps_measurement > 100)
     {
         if (myGPS.getPVT())
         {
@@ -386,17 +351,17 @@ void Location::Update_Position(){
             Serial.print(gps_velN);
             Serial.print(" ");
             Serial.println(gps_velD);
-            /*
-            computed_x = xFilter.getFilteredValue(gps_x);
-            computed_y = yFilter.getFilteredValue(gps_y);
-            computed_z = zFilter.getFilteredValue(gps_altitude/1000);
-            */
-            computed_x = gps_x;
-            computed_y = gps_y;
-            computed_z = gps_altitude/1000;
-            computed_haccuracy = gps_haccuracy;
-            computed_accuracy = gps_accuracy;
-            count=0;
+
+            obsx = {gps_x, gps_velE, 0.0};
+            obsy = {gps_y, gps_velN, 0.0};
+            obsz = {gps_z, -gps_velD/100, 0.0};
+            Kx.F = Ky.F = Kz.F = F;
+            Kx.update(obsx);
+            Ky.update(obsy);
+            Kz.update(obsz);
+            Ex = Kx.x;
+            Ey = Ky.x;
+            Ez = Kz.x;
             // sprintf(buffer, "Measured: %ld.%d, %ld.%d  ", gps_longitude, gps_longitudeHP, gps_latitude, gps_latitudeHP);
             // Serial.print(buffer);
             // Serial.print(gps_x);
@@ -405,14 +370,10 @@ void Location::Update_Position(){
             return;
         }
     }
-    /*
-    computed_x = xFilter.getFilteredValue(predicted_x);
-    computed_y = yFilter.getFilteredValue(predicted_y);
-    computed_z = zFilter.getFilteredValue(predicted_z);
-    */
-    computed_x = predicted_x;
-    computed_y = predicted_y;
-    computed_z = predicted_z;
+    // Ok, no GPS updates, so just update our estimate of where we are
+    Ex = F * Ex;
+    Ey = F * Ey;
+    Ez = F * Ez;
 
     count++;
 }
@@ -423,15 +384,15 @@ void Location::Set_Destination(float x, float y){
 }
 
 float Location::Get_X(){
-    return computed_x;
+    return Ex(0);
 }
 
 float Location::Get_Y(){
-    return computed_y;
+    return Ey(0);
 }
 
 float Location::Get_Z(){
-    return computed_z;
+    return Ez(0);
 }
 
 uint32_t Location::Get_Horizontal_Accuracy(){
@@ -472,9 +433,9 @@ void Location::Navigate(){
         Serial.print("Time: ");
         Serial.println(millis());
         Serial.print("Location: ");
-        Serial.print(computed_x);
+        Serial.print(Ex(0));
         Serial.print(", ");
-        Serial.println(computed_y);
+        Serial.println(Ey(0));
         Serial.print("Destination: ");
         Serial.print(destination_x);
         Serial.print(", ");
