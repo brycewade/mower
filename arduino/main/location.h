@@ -42,27 +42,11 @@ class Location {
     float latitude_to_meters;
     // IMU measurements
     long last_imu_measurement;
-    /*
-    float min_magx;
-    float min_magy;
-    float max_magx;
-    float max_magy;
-    float magx_offset;
-    float magy_offset;
-    float magx_scale;
-    float magy_scale;
-    */
     // Computed position
     long last_update;
     BLA::Matrix<3> Ex;
     BLA::Matrix<3> Ey;
     BLA::Matrix<3> Ez;
-    float computed_x;
-    float computed_y;
-    float computed_z;
-    float computed_velN;
-    float computed_velE;
-    float computed_velD;
     bool self_drive=false;
     float heading;
     float yaw;
