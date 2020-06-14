@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+import re
+from datetime import datetime
 import ps3
 import serial
 
@@ -26,18 +28,32 @@ def read_serial(arduino):
         return_message = arduino.read(32767)
 
 
+def read_from_arduino(arduino, start):
+    message = ""
+    search = '(?s){}(.*?)OK'.format(start)
+    result = None
+    while result is None:
+        # print("Looking for {} in {}".format(search, message))
+        new = arduino.read(32767)
+        if new:
+            print(new.decode(), end ="")
+            message += new.decode()
+            result = re.search(search, message)
+    return result.group(1)
+    
+
 def send_to_arduino(arduino, message):
-    # print(" " + message)
     message_bytes=message.encode() + b'\r'
-    # for i in message_bytes:
-    #     print(i)
     arduino.write(message_bytes)
     read_serial(arduino)
 
 
-def record_position(arduino):
+def record_position(arduino, output):
     send_to_arduino(arduino, "M114")
-    # location=read_from_arduino()
+    location = read_from_arduino(arduino, "M114")
+    lines = location.splitlines()
+    output.write(lines[1])
+    output.write("\n")
 
 
 def hold_heading(arduino):
@@ -45,7 +61,7 @@ def hold_heading(arduino):
 
 
 def calibrate_compass(arduino):
-    send_to_arduino(arduino, "G136")
+    send_to_arduino(arduino, "G132")
 
 
 def send_updated_directions(arduino, left, right):
@@ -59,6 +75,8 @@ def send_blade_change(arduino, string):
 
 
 def main():
+    outfile = "/home/pi/maps/{}.txt".format(datetime.now().strftime("%Y%m%d%H%M%S"))
+    output = open(outfile, "w")
     done = False
     previous_left = 0
     previous_right = 0
@@ -80,12 +98,13 @@ def main():
         right = joystick.get_axis(RIGHT_JOYSTICK)
         x_button = joystick.get_button(X_BUTTON)
         tri_button = joystick.get_button(TRIANGLE_BUTTON)
+        square_button = joystick.get_button(SQUARE_BUTTON)
         x_button = joystick.get_button(X_BUTTON)
         l1_button = joystick.get_button(L1_BUTTON)
         r1_button = joystick.get_button(R1_BUTTON)
         if x_button and not previous_x:
             print("Recording position")
-            record_position(arduino)
+            record_position(arduino, output)
         previous_x = x_button
         
         if tri_button and not previous_tri:
@@ -125,6 +144,7 @@ def main():
             print("Exiting.")
             done = True
         read_serial(arduino)
+    output.close()
 
 if __name__ == "__main__":
     # execute only if run as a script
