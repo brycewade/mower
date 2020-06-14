@@ -281,13 +281,14 @@ void Location::Update_Position(){
     current_time=millis();
     dt=(current_time-last_update)/1000;
     last_update = current_time;
-    F = {1.0, dt,  dt*dt/2,
-         0.0, 1.0, dt,
-         0.0, 0.0, 1.0};
     if (current_time-last_gps_measurement > 100)
     {
         if (myGPS.getPVT())
         {
+            dt = (current_time-last_gps_measurement)/1000;
+            F = {1.0, dt,  dt*dt/2,
+                0.0, 1.0, dt,
+                0.0, 0.0, 1.0};
             // Serial.print(F("loops since last update: "));
             // Serial.println(count);
             // Serial.print(F("millis since last update: "));
@@ -373,6 +374,9 @@ void Location::Update_Position(){
         }
     }
     // Ok, no GPS updates, so just update our estimate of where we are
+    F = {1.0, dt,  dt*dt/2,
+         0.0, 1.0, dt,
+         0.0, 0.0, 1.0};
     Ex = F * Ex;
     Ey = F * Ey;
     // Serial.print(dt*1000);
