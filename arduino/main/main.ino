@@ -50,6 +50,7 @@ void setup(){
     Setup_Compass();
     myGPS.setAutoPVT(true); //Tell the GPS to "send" each solution
     blades.enable_blades();
+    Serial.println(F("Initialization complete."));
 }
 
 void loop(){

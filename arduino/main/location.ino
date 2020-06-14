@@ -14,7 +14,7 @@ BNO080 myIMU;
 
 // measurement std
 #define n_p 0.3
-#define n_v 0.1
+#define n_v 0.5
 #define n_a 5.0
 // model std (1/inertia)
 #define m_p 0.1
@@ -26,7 +26,7 @@ BNO080 myIMU;
 
 KALMAN<Nstate,Nobs> Kx; // your Kalman filter
 KALMAN<Nstate,Nobs> Ky; // your Kalman filter
-KALMAN<Nstate,Nobs> Kz; // your Kalman filter
+// KALMAN<Nstate,Nobs> Kz; // your Kalman filter
 
 void Setup_Filters(){
     Kx.F = IDENTITY_MATRIX;
@@ -45,14 +45,14 @@ void Setup_Filters(){
     Ky.Q = {m_p*m_p, 0.0,     0.0,
             0.0,     m_v*m_v, 0.0,
 			0.0,     0.0,     m_a*m_a};
-    Kz.F = IDENTITY_MATRIX;
-    Kz.H = IDENTITY_MATRIX;
-    Kz.R = {n_p*n_p, 0.0,     0.0,
-            0.0,     n_v*n_v, 0.0,
-            0.0,     0.0,     n_a*n_a};
-    Kz.Q = {m_p*m_p, 0.0,     0.0,
-            0.0,     m_v*m_v, 0.0,
-			0.0,     0.0,     m_a*m_a};
+    // Kz.F = IDENTITY_MATRIX;
+    // Kz.H = IDENTITY_MATRIX;
+    // Kz.R = {n_p*n_p, 0.0,     0.0,
+    //         0.0,     n_v*n_v, 0.0,
+    //         0.0,     0.0,     n_a*n_a};
+    // Kz.Q = {m_p*m_p, 0.0,     0.0,
+    //         0.0,     m_v*m_v, 0.0,
+	// 		0.0,     0.0,     m_a*m_a};
 }
 
 void Setup_Scaling(){
@@ -257,13 +257,13 @@ void Location::Update_IMU(){
         if (yaw >= 360) {
             yaw -= 360;
         }
-        Serial.print(roll, 1);
-        Serial.print(F(","));
-        Serial.print(pitch, 1);
-        Serial.print(F(","));
-        Serial.print(yaw, 1);
+        // Serial.print(roll, 1);
+        // Serial.print(F(","));
+        // Serial.print(pitch, 1);
+        // Serial.print(F(","));
+        // Serial.print(yaw, 1);
 
-        Serial.println();
+        // Serial.println();
     }
 }
 void Location::Update_Position(){
@@ -271,15 +271,16 @@ void Location::Update_Position(){
     float gps_y;
     float gps_z;
     long current_time;
-    long dt;
-    char buffer[255];
+    float dt;
+    // char buffer[255];
     BLA::Matrix<Nstate,Nobs> F;
     BLA::Matrix<Nobs> obsx; // observation vector
     BLA::Matrix<Nobs> obsy; // observation vector
-    BLA::Matrix<Nobs> obsz; // observation vector
+    // BLA::Matrix<Nobs> obsz; // observation vector
 
     current_time=millis();
-    dt=current_time-last_update;
+    dt=(current_time-last_update)/1000;
+    last_update = current_time;
     F = {1.0, dt,  dt*dt/2,
          0.0, 1.0, dt,
          0.0, 0.0, 1.0};
@@ -339,29 +340,30 @@ void Location::Update_Position(){
             // Serial.println(gps_y);
             // sprintf(buffer, "Lat: (%ld - %ld + %d /100 * %4f) = %4f\0", gps_latitude, origin_latitude, gps_latitudeHP, latitude_to_meters, gps_y);
             // Serial.println(buffer);
-            Serial.print(F("Updating position from GPS: "));
-            Serial.print(gps_x);
-            Serial.print(" ");
-            Serial.print(gps_y);
-            Serial.print(" ");
-            Serial.print(gps_altitude/1000);
-            Serial.print(" ");
-            Serial.print(gps_velE);
-            Serial.print(" ");
-            Serial.print(gps_velN);
-            Serial.print(" ");
-            Serial.println(gps_velD);
+            // Serial.print(F("Updating position from GPS: "));
+            // Serial.print(gps_x);
+            // Serial.print(" ");
+            // Serial.print(gps_y);
+            // Serial.print(" ");
+            // Serial.print(gps_altitude/1000);
+            // Serial.print(" ");
+            // Serial.print(gps_velE);
+            // Serial.print(" ");
+            // Serial.print(gps_velN);
+            // Serial.print(" ");
+            // Serial.println(gps_velD);
 
-            obsx = {gps_x, gps_velE, 0.0};
-            obsy = {gps_y, gps_velN, 0.0};
-            obsz = {gps_z, -gps_velD/100, 0.0};
-            Kx.F = Ky.F = Kz.F = F;
+            obsx = {gps_x, gps_velE/100, 0.0};
+            obsy = {gps_y, gps_velN/100, 0.0};
+            // obsz = {gps_z, -gps_velD/100, 0.0};
+            Kx.F = Ky.F = F;
             Kx.update(obsx);
             Ky.update(obsy);
-            Kz.update(obsz);
+            // Kz.update(obsz);
             Ex = Kx.x;
             Ey = Ky.x;
-            Ez = Kz.x;
+            // Serial << '\n' << obsx << ' ' << obsy << ' ' << Ex << ' ' << Ey << "\n\r";
+            // Ez = Kz.x;
             // sprintf(buffer, "Measured: %ld.%d, %ld.%d  ", gps_longitude, gps_longitudeHP, gps_latitude, gps_latitudeHP);
             // Serial.print(buffer);
             // Serial.print(gps_x);
@@ -373,7 +375,9 @@ void Location::Update_Position(){
     // Ok, no GPS updates, so just update our estimate of where we are
     Ex = F * Ex;
     Ey = F * Ey;
-    Ez = F * Ez;
+    // Serial.print(dt*1000);
+    // Serial << ' ' << Ex << ' ' << Ey << "\n\r";
+    // Ez = F * Ez;
 
     count++;
 }
@@ -493,9 +497,6 @@ void Location::Turn_To_Bearing(float bearing){
 
     Serial.print("Turning to heading: ");
     Serial.println(bearing);
-    Serial.print("Letting compass reading steady:");
-    for(i=0; i<255; i++)
-        heading=Get_Compass_Reading();
     while((drift>3)||(drift<-3)){
         heading=Get_Compass_Reading();
         drift=bearing-heading;
@@ -519,9 +520,6 @@ void Location::Turn_To_Bearing(float bearing){
         wheels.set_speeds(left,right);
     }
     wheels.set_speeds(0,0);
-    Serial.print("Letting compass reading steady:");
-    for(i=0; i<255; i++)
-        heading=Get_Compass_Reading();
     Serial.print("Done turning to heading: ");
     Serial.println(bearing);
 }
