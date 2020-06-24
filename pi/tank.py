@@ -24,8 +24,12 @@ def start_serial():
 def read_serial(arduino):
     return_message = arduino.read(32767)
     while return_message:
-        print(return_message.decode(), end ="")
-        return_message = arduino.read(32767)
+        try:
+            print(return_message.decode(), end ="")
+            return_message = arduino.read(32767)
+        except UnicodeDecodeError:
+            print("...undecoadable characters...")
+            return_message = arduino.read(32767)
 
 
 def read_from_arduino(arduino, start):
