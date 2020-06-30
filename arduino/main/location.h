@@ -6,6 +6,7 @@
 #include "SparkFun_BNO080_Arduino_Library.h"
 #include "Kalman.h"
 
+#define LED 13
 #define GPS_I2C_Address 0x42
 #define GPS_Sample_Rate 5
 #define CLOSE_ENOUGH 0.1
@@ -42,24 +43,14 @@ class Location {
     float latitude_to_meters;
     // IMU measurements
     long last_imu_measurement;
-    float min_magx;
-    float min_magy;
-    float max_magx;
-    float max_magy;
-    float magx_offset;
-    float magy_offset;
-    float magx_scale;
-    float magy_scale;
     // Computed position
     long last_update;
-    float computed_x;
-    float computed_y;
-    float computed_z;
-    float computed_velN;
-    float computed_velE;
-    float computed_velD;
+    BLA::Matrix<3> Ex;
+    BLA::Matrix<3> Ey;
+    BLA::Matrix<3> Ez;
     bool self_drive=false;
     float heading;
+    float yaw_offset;
     float yaw;
     float pitch;
     float roll;
