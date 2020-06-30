@@ -88,20 +88,9 @@ void Setup_Compass() {
 }
 
 void Location::Calibrate_Compass() {
-    /*
-    Serial.print("Calibrating Accelerometer, spinning around for a bit");
-    myIMU.calibrateAccelerometer();
-    while(1) {
-        if(myIMU.dataAvailable() == true) {
-
-        }
-    }
-    delay(3000);
-    */
-    Serial.print("Calibrating Gyroscope, staying static for 3 seconds");
-    myIMU.calibrateMagnetometer();
-    wheels.set_speeds(-255, 255);
-    delay(5000);
+    Serial.print("Setting compass offset");
+    yaw_offset = (myIMU.getYaw()) * 180.0 / PI; // Convert yaw / heading to degrees
+    yaw_offset = -yaw_offset;
 }
 
 void Scan_and_reset_I2C(){
@@ -250,7 +239,8 @@ void Location::Update_IMU(){
         roll = (myIMU.getRoll()) * 180.0 / PI; // Convert roll to degrees
         pitch = (myIMU.getPitch()) * 180.0 / PI; // Convert pitch to degrees
         yaw = (myIMU.getYaw()) * 180.0 / PI; // Convert yaw / heading to degrees
-        yaw += 90;
+        yaw = -yaw;
+        yaw += yaw_offset;
         if (yaw < 0) {
             yaw += 360;
         }
@@ -289,10 +279,6 @@ void Location::Update_Position(){
             F = {1.0, dt,  dt*dt/2,
                 0.0, 1.0, dt,
                 0.0, 0.0, 1.0};
-            // Serial.print(F("loops since last update: "));
-            // Serial.println(count);
-            // Serial.print(F("millis since last update: "));
-            // Serial.println(millis() - last_gps_measurement);
             last_gps_measurement = millis();  //Update the time stamp for the GPS reading
             gps_latitude = myGPS.getLatitude();
             gps_latitudeHP = myGPS.getLatHp();
@@ -304,55 +290,12 @@ void Location::Update_Position(){
             gps_velE = myGPS.getVelE();
             gps_velD = myGPS.getVelD();
             gps_haccuracy = myGPS.getHorizontalAccuracy();
-            // gps_accuracy = myGPS.getPositionAccuracy();
-            // Convert position to meters from origin point
-            // Serial.print("Computing X: ");
-            // Serial.print(gps_longitude);
-            // Serial.print(" ");
-            // Serial.print(origin_longitude);
-            // Serial.print(" ");
             gps_x = float(gps_longitude-origin_longitude);
-            // Serial.print(gps_x);
-            // Serial.print(" ");
             gps_x += gps_longitudeHP/100;
-            // Serial.print(gps_x);
-            // Serial.print(" ");
             gps_x *= longitude_to_meters;
-            // Serial.println(gps_x);
-
-            // Serial.print("Long: ");
-            // Serial.println(gps_x);
-            // sprintf(buffer, "Lon: (%ld - %ld + %d /100) * %4f = %4f\0", gps_longitude, origin_longitude, gps_longitudeHP, longitude_to_meters, gps_x);
-            // Serial.println(buffer);
-            // Serial.print("Computing Y: ");
-            // Serial.print(gps_latitude);
-            // Serial.print(" ");
-            // Serial.print(origin_latitude);
-            // Serial.print(" ");
             gps_y = float(gps_latitude-origin_latitude);
-            // Serial.print(gps_y);
-            // Serial.print(" ");
             gps_y += float(gps_latitudeHP)/100;
-            // Serial.print(gps_y);
-            // Serial.print(" ");
             gps_y *= latitude_to_meters;
-            // Serial.println(gps_y);
-            // Serial.print("Lat: ");
-            // Serial.println(gps_y);
-            // sprintf(buffer, "Lat: (%ld - %ld + %d /100 * %4f) = %4f\0", gps_latitude, origin_latitude, gps_latitudeHP, latitude_to_meters, gps_y);
-            // Serial.println(buffer);
-            // Serial.print(F("Updating position from GPS: "));
-            // Serial.print(gps_x);
-            // Serial.print(" ");
-            // Serial.print(gps_y);
-            // Serial.print(" ");
-            // Serial.print(gps_altitude/1000);
-            // Serial.print(" ");
-            // Serial.print(gps_velE);
-            // Serial.print(" ");
-            // Serial.print(gps_velN);
-            // Serial.print(" ");
-            // Serial.println(gps_velD);
 
             obsx = {gps_x, gps_velE/100, 0.0};
             obsy = {gps_y, gps_velN/100, 0.0};

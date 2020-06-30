@@ -6,6 +6,7 @@
 #include "SparkFun_BNO080_Arduino_Library.h"
 #include "Kalman.h"
 
+#define LED 13
 #define GPS_I2C_Address 0x42
 #define GPS_Sample_Rate 5
 #define CLOSE_ENOUGH 0.1
@@ -49,6 +50,7 @@ class Location {
     BLA::Matrix<3> Ez;
     bool self_drive=false;
     float heading;
+    float yaw_offset;
     float yaw;
     float pitch;
     float roll;
