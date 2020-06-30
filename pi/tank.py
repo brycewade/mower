@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+import sys
+import select
 import re
 from datetime import datetime
 import ps3
@@ -10,8 +12,9 @@ RIGHT_JOYSTICK = 4
 L1_BUTTON = 4
 R1_BUTTON = 5
 X_BUTTON = 0
+CIRCLE_BUTTON = 1
 TRIANGLE_BUTTON = 2
-SQUARE_BUTTON = 1
+SQUARE_BUTTON = 3
 PS_BUTTON = 10
 ARDUINO = "/dev/serial/by-id/usb-Arduino__www.arduino.cc__Arduino_Mega_2560_55838323735351102081-if00"
 
@@ -44,7 +47,19 @@ def read_from_arduino(arduino, start):
             message += new.decode()
             result = re.search(search, message)
     return result.group(1)
-    
+
+
+def wait_for_ok(arduino):
+    message = ""
+    search = 'OK'
+    result = None
+    while result is None:
+        new = arduino.read(32767)
+        if new:
+            print(new.decode(), end ="")
+            message += new.decode()
+            result = re.search(search, message)
+
 
 def send_to_arduino(arduino, message):
     message_bytes=message.encode() + b'\r'
@@ -78,6 +93,20 @@ def send_blade_change(arduino, string):
     send_to_arduino(arduino, g_code)
 
 
+def check_keyboard(arduino):
+    input = select.select([sys.stdin], [], [], 1)[0]
+    if input:
+        value = sys.stdin.readline().rstrip()
+        send_to_arduino(arduino,value)
+
+
+def play_file(arduino, file):
+    input = open(file, 'r')
+    for line in input.readlines():
+        send_to_arduino(arduino, line)
+        wait_for_ok(arduino)
+
+
 def main():
     outfile = "/home/pi/maps/{}.txt".format(datetime.now().strftime("%Y%m%d%H%M%S"))
     output = open(outfile, "w")
@@ -103,9 +132,12 @@ def main():
         x_button = joystick.get_button(X_BUTTON)
         tri_button = joystick.get_button(TRIANGLE_BUTTON)
         square_button = joystick.get_button(SQUARE_BUTTON)
+        circle_button = joystick.get_button(CIRCLE_BUTTON)
         x_button = joystick.get_button(X_BUTTON)
         l1_button = joystick.get_button(L1_BUTTON)
         r1_button = joystick.get_button(R1_BUTTON)
+        # check_keyboard(arduino)
+
         if x_button and not previous_x:
             print("Recording position")
             record_position(arduino, output)
@@ -120,6 +152,11 @@ def main():
             print("Calibrating compass")
             calibrate_compass(arduino)
         previous_square = square_button
+        
+        if circle_button and not previous_circle:
+            print("Playing file")
+            play_file(arduino, "input.txt")
+        previous_circle = circle_button
 
 
         if l1_button and not previous_l1:
