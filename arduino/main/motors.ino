@@ -3,13 +3,13 @@
 void Setup_Wheels() {
     //Left Wheel motor
     pinMode(ENAPin, OUTPUT);
-    pinMode(IN1Pin, OUTPUT);
-    pinMode(IN2Pin, OUTPUT);
+    pinMode(LEFTBRAKE, OUTPUT);
+    pinMode(LEFTDIRECTION, OUTPUT);
 
     //Right Wheel motor
     pinMode(ENBPin, OUTPUT);
-    pinMode(IN3Pin, OUTPUT);
-    pinMode(IN4Pin, OUTPUT);
+    pinMode(RIGHTBRAKE, OUTPUT);
+    pinMode(RIGHTDIRECTION, OUTPUT);
 
     // Make sure the wheels are stopped
     wheels.set_speeds(0, 0);
@@ -39,28 +39,28 @@ void Wheels::set_speeds (short left, short right) {
     right_speed=right;
     if(left >= 0) {
         // Set pins to move left forwards
-        digitalWrite(IN1Pin, LOW);
-        digitalWrite(IN2Pin, HIGH);
+        digitalWrite(LEFTBRAKE, LOW);
+        digitalWrite(LEFTDIRECTION, LOW);
     } else {
         // Set pins to move left backwards
-        digitalWrite(IN1Pin, HIGH);
-        digitalWrite(IN2Pin, LOW);
+        digitalWrite(LEFTBRAKE, LOW);
+        digitalWrite(LEFTDIRECTION, HIGH);
     }
     if(right >= 0) {
         // Set pins to move right forwards
-        digitalWrite(IN3Pin, LOW);
-        digitalWrite(IN4Pin, HIGH);
+        digitalWrite(RIGHTBRAKE, LOW);
+        digitalWrite(RIGHTDIRECTION, LOW);
     } else {
         // Set pins to move right backwards
-        digitalWrite(IN3Pin, HIGH);
-        digitalWrite(IN4Pin, LOW);
+        digitalWrite(RIGHTBRAKE, LOW);
+        digitalWrite(RIGHTDIRECTION, HIGH);
     }
     analogWrite(ENAPin, abs(left) );
     analogWrite(ENBPin, abs(right) );
-    Serial.print(F("Set wheels to: "));
-    Serial.print(left);
-    Serial.print(F(", "));
-    Serial.println(right);
+    // Serial.print(F("Set wheels to: "));
+    // Serial.print(left);
+    // Serial.print(F(", "));
+    // Serial.println(right);
 }
 
 short Wheels::get_left_speed() {

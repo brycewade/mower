@@ -8,12 +8,12 @@
 //Pin Setup for the wheel Motor Bridge Controller
 //Right Wheel motor
 #define ENAPin 7                // EN Pins need a digital pin with PWM
-#define IN1Pin 6                // IN Pins dont need digital PWM 
-#define IN2Pin 5
+#define LEFTBRAKE 6                // IN Pins dont need digital PWM 
+#define LEFTDIRECTION 5
 //Left Wheel motor
 #define ENBPin 2                // EN Pins need a digital pin with PWM
-#define IN3Pin 4                // IN Pins dont need digital PWM
-#define IN4Pin 3
+#define RIGHTBRAKE 3                // IN Pins dont need digital PWM
+#define RIGHTDIRECTION 4
 //Left Blade motor
 #define LPWM 8
 #define LR_EN 25
@@ -22,7 +22,7 @@
 #define RPWM 9
 #define RR_EN 29
 #define RL_EN 31
-//Left Blade motor
+//Trimmer motor
 #define TPWM 10
 #define TR_EN 33
 #define TL_EN 35
@@ -48,6 +48,7 @@ void setup(){
     Setup_Scaling();
     location.Set_Time_Step(INITIAL_TIME_STEP);
     Setup_Compass();
+    location.Setup_Display();
     myGPS.setAutoPVT(true); //Tell the GPS to "send" each solution
     blades.enable_blades();
     Serial.println(F("Initialization complete."));
@@ -58,4 +59,5 @@ void loop(){
     location.Update_Position();
     location.Update_IMU();
     location.Navigate();
+    location.Update_Display();
 }
