@@ -3,6 +3,7 @@
 using namespace BLA;
 
 BNO080 myIMU;
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
 
 //------------------------------------
@@ -64,7 +65,7 @@ void Setup_Scaling(){
 
 void Setup_Compass() {
     int status;
-    float offset;
+    float offset = 0.00f;
     float scale;
     int address=0;
     // start communication with IMU 
@@ -85,12 +86,15 @@ void Setup_Compass() {
     myIMU.enableAccelerometer(50); //Send data update every 50ms
     Serial.println(F("Accelerometer enabled"));
     Serial.println(F("Output in form x, y, z, in m/s^2"));
+    // Read the offset from EEPROM
+    EEPROM.get(address, offset);
+    Serial.print(F("Setting compass offset to "));
+    Serial.println(offset);
+    location.Set_Yaw_Offset(offset);
 }
 
-void Location::Calibrate_Compass() {
-    Serial.print("Setting compass offset");
-    yaw_offset = (myIMU.getYaw()) * 180.0 / PI; // Convert yaw / heading to degrees
-    yaw_offset = -yaw_offset;
+void Location::Set_Yaw_Offset(float offset){
+    yaw_offset = offset;
 }
 
 void Scan_and_reset_I2C(){
@@ -99,8 +103,8 @@ void Scan_and_reset_I2C(){
 
     for(address = 1; address < 127; address++ ) 
     {
-        // Skip 0x68 we know what is there
-        if(address != 104)
+        // Skip 0x68 and 0x3c we know what is there
+        if((address != 104) && (address!=60))
         {
             // The i2c_scanner uses the return value of
             // the Write.endTransmisstion to see if
@@ -212,10 +216,10 @@ float Location::Get_Bearing(){
 
     y = destination_y - Ey(0);
     x = destination_x - Ex(0);
-    Serial.print("X Distance: ");
-    Serial.print(x);
-    Serial.print(" Y Distance: ");
-    Serial.println(y);
+    // Serial.print("X Distance: ");
+    // Serial.print(x);
+    // Serial.print(" Y Distance: ");
+    // Serial.println(y);
     bearing = atan2(y,x) * 180 / PI;
     bearing=90-bearing;
     if (bearing < 0) {
@@ -229,33 +233,49 @@ float Location::Get_Bearing(){
     return bearing;
 }
 
+void Location::Calibrate_Compass() {
+    float raw_yaw;
+
+    Serial.println("Setting compass offset");
+    //Set the offset to 0 and read the compass
+    yaw_offset=0.0;
+    Serial.println(yaw_offset);
+    raw_yaw = (myIMU.getYaw()) * 180.0 / PI;
+    yaw_offset = Adjust_Yaw(raw_yaw);
+    Serial.println(yaw_offset);
+    EEPROM.put(0, yaw_offset);
+    Serial.print("Compass offset set to ");
+    Serial.println(yaw_offset);
+}
+
 float Location::Get_Compass_Reading(){
+    Update_IMU();
     return yaw;
 }
 
+float Location::Adjust_Yaw(float yaw){
+    yaw = -yaw;
+    yaw -= yaw_offset;
+    if (yaw < 0) {
+        yaw += 360;
+    }
+    if (yaw >= 360) {
+        yaw -= 360;
+    }
+    return(yaw);
+}
+
 void Location::Update_IMU(){
+    float raw_yaw;
     if (myIMU.dataAvailable() == true)
     {
         roll = (myIMU.getRoll()) * 180.0 / PI; // Convert roll to degrees
         pitch = (myIMU.getPitch()) * 180.0 / PI; // Convert pitch to degrees
-        yaw = (myIMU.getYaw()) * 180.0 / PI; // Convert yaw / heading to degrees
-        yaw = -yaw;
-        yaw += yaw_offset;
-        if (yaw < 0) {
-            yaw += 360;
-        }
-        if (yaw >= 360) {
-            yaw -= 360;
-        }
-        // Serial.print(roll, 1);
-        // Serial.print(F(","));
-        // Serial.print(pitch, 1);
-        // Serial.print(F(","));
-        // Serial.print(yaw, 1);
-
-        // Serial.println();
+        raw_yaw = (myIMU.getYaw()) * 180.0 / PI; // Convert yaw / heading to degrees
+        yaw=Adjust_Yaw(raw_yaw);
     }
 }
+
 void Location::Update_Position(){
     float gps_x;
     float gps_y;
@@ -296,6 +316,7 @@ void Location::Update_Position(){
             gps_y = float(gps_latitude-origin_latitude);
             gps_y += float(gps_latitudeHP)/100;
             gps_y *= latitude_to_meters;
+            fixType = myGPS.getCarrierSolutionType();
 
             obsx = {gps_x, gps_velE/100, 0.0};
             obsy = {gps_y, gps_velN/100, 0.0};
@@ -306,13 +327,7 @@ void Location::Update_Position(){
             // Kz.update(obsz);
             Ex = Kx.x;
             Ey = Ky.x;
-            // Serial << '\n' << obsx << ' ' << obsy << ' ' << Ex << ' ' << Ey << "\n\r";
-            // Ez = Kz.x;
-            // sprintf(buffer, "Measured: %ld.%d, %ld.%d  ", gps_longitude, gps_longitudeHP, gps_latitude, gps_latitudeHP);
-            // Serial.print(buffer);
-            // Serial.print(gps_x);
-            // Serial.print(", ");
-            // Serial.println(gps_y);
+
             return;
         }
     }
@@ -322,9 +337,6 @@ void Location::Update_Position(){
          0.0, 0.0, 1.0};
     Ex = F * Ex;
     Ey = F * Ey;
-    // Serial.print(dt*1000);
-    // Serial << ' ' << Ex << ' ' << Ey << "\n\r";
-    // Ez = F * Ez;
 
     count++;
 }
@@ -412,21 +424,25 @@ void Location::Maintain_Heading(float bearing){
     float drift;
     short left, right;
 
-    drift=bearing-heading;
+    drift=bearing-yaw;
     if(drift>180)
         drift-=360;
     if(drift<=-180)
         drift+=360;
     if((drift>-10)&&(drift<0))
-        drift=-10;
+        drift*=3;
     if((drift<10)&&(drift>0))
-        drift=10;
-    Serial.print("BHD: ");
-    Serial.print(bearing);
-    Serial.print(" ");
-    Serial.print(heading);
-    Serial.print(" ");
-    Serial.println(drift);
+        drift*=3;
+    //If off by more than 15 degrees just stop and turn
+    if((drift>15)||(drift<-15)){
+        drift*=6;
+    }
+    // Serial.print("BHD: ");
+    // Serial.print(bearing);
+    // Serial.print(" ");
+    // Serial.print(yaw);
+    // Serial.print(" ");
+    // Serial.println(drift);
     left=max(min(255,255+int(drift*255/90+0.5)),-255);
     right=max(min(255,255-int(drift*255/90+0.5)),-255);
     wheels.set_speeds(left,right);
@@ -451,12 +467,12 @@ void Location::Turn_To_Bearing(float bearing){
             drift-=360;
         if(drift<=-180)
             drift+=360;
-        Serial.print("BHD: ");
-        Serial.print(bearing);
-        Serial.print(" ");
-        Serial.print(heading);
-        Serial.print(" ");
-        Serial.println(drift);
+        // Serial.print("BHD: ");
+        // Serial.print(bearing);
+        // Serial.print(" ");
+        // Serial.print(heading);
+        // Serial.print(" ");
+        // Serial.println(drift);
         power=drift*255/180;
         left=int(power+0.5);
         if((left>0)&&(left<MIN_TURN_POWER))
@@ -465,6 +481,7 @@ void Location::Turn_To_Bearing(float bearing){
             left=-MIN_TURN_POWER;
         right=-left;
         wheels.set_speeds(left,right);
+        Update_Display();
     }
     wheels.set_speeds(0,0);
     Serial.print("Done turning to heading: ");
@@ -473,4 +490,55 @@ void Location::Turn_To_Bearing(float bearing){
 
 void Location::Set_Time_Step(uint16_t step){
     time_step = step;
+}
+
+void Location::Setup_Display(){
+    if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { // Address 0x3D for 128x64
+        Serial.println(F("SSD1306 allocation failed"));
+        for(;;); // Don't proceed, loop forever
+    }
+    display.clearDisplay();
+    display.setTextSize(1);
+    display.setTextColor(WHITE);
+}
+
+void Location::Update_Display(){
+    char buffer[17];
+    char buffer2[10];
+    char buffer3[10];
+    Serial.write(27);       // ESC command
+    Serial.print("[2J");    // clear screen command
+    Serial.write(27);
+    Serial.print("[H");     // cursor to home command
+    display.clearDisplay();
+    display.setCursor(0,0);
+    dtostrf(Get_X(),5,2,buffer2);
+    dtostrf(Get_Y(),5,2,buffer3);
+    sprintf(buffer, "LOC %s, %s", buffer2, buffer3);
+    display.println(buffer);
+    Serial.println(buffer);
+    dtostrf(destination_x,5,2,buffer2);
+    dtostrf(destination_y,5,2,buffer3);
+    sprintf(buffer, "DES %s, %s", buffer2, buffer3);
+    display.println(buffer);
+    Serial.println(buffer);
+    dtostrf(Get_Bearing(),6,2,buffer2);
+    sprintf(buffer, "BEARING %s", buffer2);
+    display.println(buffer);
+    Serial.println(buffer);
+    dtostrf(yaw,6,2,buffer2);
+    sprintf(buffer, "HEADING %s", buffer2);
+    display.println(buffer);
+    Serial.println(buffer);
+    dtostrf(Get_Local_Distance(),5,2,buffer2);
+    sprintf(buffer, "DISTANCE %s", buffer2);
+    display.println(buffer);
+    Serial.println(buffer);
+    sprintf(buffer, "WHL L %3d R %3d", wheels.get_left_speed(), wheels.get_right_speed());
+    display.println(buffer);
+    Serial.println(buffer);
+    sprintf(buffer, "Fix %d%d Acc %d", fixType, myIMU.getMagAccuracy(), gps_haccuracy);
+    display.println(buffer);
+    Serial.println(buffer);
+    display.display();
 }

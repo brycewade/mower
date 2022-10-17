@@ -49,11 +49,11 @@ void Wheels::set_speeds (short left, short right) {
     if(right >= 0) {
         // Set pins to move right forwards
         digitalWrite(RIGHTBRAKE, LOW);
-        digitalWrite(RIGHTDIRECTION, LOW);
+        digitalWrite(RIGHTDIRECTION, HIGH);
     } else {
         // Set pins to move right backwards
         digitalWrite(RIGHTBRAKE, LOW);
-        digitalWrite(RIGHTDIRECTION, HIGH);
+        digitalWrite(RIGHTDIRECTION, LOW);
     }
     analogWrite(ENAPin, abs(left) );
     analogWrite(ENBPin, abs(right) );

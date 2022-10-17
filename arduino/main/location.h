@@ -5,6 +5,8 @@
 #include "SparkFun_Ublox_Arduino_Library.h"
 #include "SparkFun_BNO080_Arduino_Library.h"
 #include "Kalman.h"
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h> 
 
 #define LED 13
 #define GPS_I2C_Address 0x42
@@ -15,7 +17,9 @@
 #define ORIGIN_ALTITUDE 232
 #define INITIAL_TIME_STEP 0
 #define HEADING_READINGS 20
-#define MIN_TURN_POWER 40
+#define MIN_TURN_POWER 200
+#define SCREEN_WIDTH 128 // OLED display width, in pixels
+#define SCREEN_HEIGHT 64 // OLED display height, in pixels
 
 // #define origin_latitude -91000000
 // #define orgigin_longitude 41000000
@@ -35,6 +39,7 @@ class Location {
     int32_t gps_velD;
     uint32_t gps_haccuracy;
     uint32_t gps_accuracy;
+    uint8_t fixType;
     // Conversion to meters
     int32_t origin_longitude;
     int32_t origin_latitude;
@@ -79,13 +84,17 @@ class Location {
         void computeScaling();
         void Navigate();
         void Set_Self_Drive(bool value);
+        float Adjust_Yaw(float yaw);
         float Get_Local_Distance();
         float Get_Compass_Reading();
         void Update_IMU();
         void Set_Time_Step(uint16_t step);
+        void Set_Yaw_Offset(float offset);
         void Calibrate_Compass();
         void Maintain_Heading(float bearing);
         void Set_Heading(float heading);
         void Turn_To_Bearing(float bearing);
+        void Setup_Display();
+        void Update_Display();
 };
 #endif

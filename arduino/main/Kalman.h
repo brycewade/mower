@@ -31,12 +31,12 @@
 #ifndef Kalman_h
 #define Kalman_h
 
-#include "BasicLinearAlgebra.h" // MODIFIED! from <> to ""
+#include <BasicLinearAlgebra.h>
 
-#include "Arduino.h"
+#include <Arduino.h>
 
 #define KALMAN_CHECK true
-#define KALMAN_VERBOSE true
+#define KALMAN_VERBOSE false
 
 using namespace BLA;
 
@@ -176,17 +176,18 @@ void KALMAN<Nstate,Nobs,Ncom,MemF>::_update(BLA::Matrix<Nobs> obs, BLA::Matrix<N
   BLA::Matrix<Nobs,Nobs> S;
   BLA::Matrix<Nstate,Nobs> K; // Kalman gain matrix
   // UPDATE
-  x = F*x+comstate;
-  P = F*P*(~F)+Q;
+  this->x = this->F * this->x + comstate;
+  this->P = this->F * this->P * (~ this->F) + this->Q;
   // ESTIMATION
-  S = H*P*(~H)+R;
-  K = P*(~H)*S.Inverse(&status);
-  if(!status){
-    x += K*(obs-H*x); // K*y
-    P = (Id-K*H)*P;
+  S = this->H * this->P * (~ this->H) + this->R;
+  bool is_nonsingular = Invert(S); // inverse inplace (S <- S^{-1})
+  K = P*(~H)*S;
+  if(is_nonsingular){
+    this->x += K*(obs - this->H * this->x); // K*y
+    this->P = (this->Id - K * this->H)* this->P;
     if(KALMAN_CHECK){
       for(int i=0;i<Nstate;i++){
-        if(isnan(x(i)) || isinf(x(i))){
+        if(isnan(this->x(i)) || isinf(this->x(i))){
           if(KALMAN_VERBOSE){Serial.println(F("KALMAN:ERROR: estimated vector has nan or inf values"));}
           status = 1;
           return;
@@ -195,8 +196,8 @@ void KALMAN<Nstate,Nobs,Ncom,MemF>::_update(BLA::Matrix<Nobs> obs, BLA::Matrix<N
     }
   }else{
     if(KALMAN_VERBOSE){Serial.println(F("KALMAN:ERROR: could not invert S matrix. Try to reset P matrix."));}
-    P.Fill(0.0); // try to reset P. Better strategy?
-    K.Fill(0.0);
+    this->P.Fill(0.0); // try to reset P. Better strategy?
+    //K.Fill(0.0);
   }
 };
 
@@ -213,7 +214,7 @@ void KALMAN<Nstate,Nobs,Ncom,MemF>::update(BLA::Matrix<Nobs> obs, BLA::Matrix<Nc
       }
     }
   }
-  _update(obs,B*com);
+  _update(obs,this->B *com);
 };
 
 /**********      UPDATE with OBS      **********/
@@ -234,8 +235,8 @@ KALMAN<Nstate,Nobs,Ncom,MemF>::KALMAN(){
       Serial.println(F("KALMAN:ERROR: 'Nstate' and 'Nobs' must be > 1"));
     }
   }
-  P.Fill(0.0);
-  x.Fill(0.0);
+  this->P.Fill(0.0);
+  this->x.Fill(0.0);
 };
 
 /**********      GETXCOPY      **********/
@@ -244,7 +245,7 @@ template <int Nstate, int Nobs, int Ncom, class MemF>
 BLA::Matrix<Nstate> KALMAN<Nstate,Nobs,Ncom,MemF>::getxcopy(){
   BLA::Matrix<Nstate> out;
   for(int i=0;i<Nstate;i++){
-    out(i) = x(i);
+    out(i) = this->x(i);
   }
   return out;
 };
